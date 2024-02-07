@@ -1,13 +1,12 @@
 
-
 //The following code initializes the JS Psych 
 
 const jsPsych = initJsPsych({
     show_progress_bar: true,
     auto_update_progress_bar: false,
     on_finish: function(data) {
-        // proliferate.submit({"trials": data.values()});
-        jsPsych.data.displayData('csv');
+        proliferate.submit({"trials": data.values()});
+        // jsPsych.data.displayData('csv');
     }
 });
 
@@ -35,7 +34,7 @@ timeline.push(irb)
 
 const instructions = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: "In this experiment, you will read a series of sentences and will be asked to indicate the word which best completes it. If you're unsure about your choice, follow your first instinct.<br><br>When you're ready to begin, press the space bar.",
+    stimulus: "In this experiment, you will read a series of sentences and will be asked to indicate the word which best completes it.<br><br><strong>Please type the word 'is' or 'are' in the blank.</strong> <br><br>If you're unsure about your choice, follow your first instinct.<br><br>When you're ready to begin, press the space bar.",
     choices: [" "],
     on_finish: function(data) {
         data.category = "instructions"
@@ -47,13 +46,12 @@ timeline.push(instructions);
 
 let tv_array = create_tv_array(trial_objects)
 shuffleArray(tv_array)
-console.log(tv_array.length)
-console.log("tv_array"+tv_array)
+// console.log(tv_array.length)
+// console.log("tv_array"+tv_array)
 let tv_array_modded = check_dupes(tv_array)
-
+// console.log("Filtered Tv_Array"+tv_array_modded)
 
 // TRIALS //
-
 
 const trials = {
     timeline: [ 
@@ -112,9 +110,15 @@ const questionnaire = {
                 options: ['Some high school', 'Graduated high school', 'Some college', 'Graduated college', 'Hold a higher degree']
             },
             {
-                type: 'text',
-                prompt: "Native language(s)? (What was/were the language(s) spoken at home when you were growing up?)",
+                type: 'multi-choice',
+                prompt: "Is English your first language (i.e. did you start speaking English before age 5)?",
                 name: 'language',
+                options: ['Yes','No']
+            },
+            {
+                type: 'text',
+                prompt: "If you speak another language(s) fluently, please indicate the language(s) below.",
+                name: 'other-language',
                 textbox_columns: 20
             },
             {
@@ -159,3 +163,9 @@ timeline.push(thanks)
 // FINAL FUNCTION CALL //
 
 jsPsych.run(timeline)
+
+/// NOTES TO BRAN
+// Fix trial types
+// Fix progress bar
+
+// For future: fixed typos from Lu et al 2024 (eg. repairing < reparing)

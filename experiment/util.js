@@ -4,10 +4,11 @@ function create_tv_array(json_object) {
         obj = {};
         obj.text = json_object[i].text;
         obj.data = {};
-        obj.data.trialType = json_object[i].trialType;
+        // obj.data.trialType = json_object[i].trialType;
         obj.data.item = json_object[i].item;
         obj.data.conj1 = json_object[i].conj1;
         obj.data.conj2 = json_object[i].conj2;
+        obj.data.cond = json_object[i].cond;
         tv_array.push(obj)
     }
     return tv_array;
@@ -30,9 +31,10 @@ function check_dupes(tv_array) {
     let final_array = [];
     let unique_list = [];
     for (let i = 0; i < tv_array_modded.length; i++) {
-        if (!unique_list.includes(tv_array_modded[i].item)) {
+        if (!unique_list.includes(tv_array_modded[i].data.item)) {
+            // console.log(tv_array_modded[i].data.item);
             final_array.push(tv_array_modded[i]);
-            unique_list.push(tv_array_modded[i].item)
+            unique_list.push(tv_array_modded[i].data.item);
         }
     }
     return final_array;
