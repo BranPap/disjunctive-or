@@ -9,6 +9,9 @@ function create_tv_array(json_object) {
         obj.data.conj1 = json_object[i].conj1;
         obj.data.conj2 = json_object[i].conj2;
         obj.data.cond = json_object[i].cond;
+        obj.data.text = json_object[i].text;
+        obj.data.conj1_num = json_object[i].conj1_num;
+        obj.data.conj2_num = json_object[i].conj2_num;
         tv_array.push(obj)
     }
     return tv_array;

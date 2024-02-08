@@ -1,0 +1,21 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+DisjunctiveData <- read_csv("disjunctive-or-merged.csv")
+```
+
+
+```{r}
+DisjunctiveData %>% 
+  filter(is.na(cond),!is.na(item)) %>% 
+  group_by()
+```
+

@@ -49,7 +49,7 @@ shuffleArray(tv_array)
 // console.log(tv_array.length)
 // console.log("tv_array"+tv_array)
 let tv_array_modded = check_dupes(tv_array)
-// console.log("Filtered Tv_Array"+tv_array_modded)
+// 
 
 // TRIALS //
 
