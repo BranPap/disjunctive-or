@@ -5,17 +5,98 @@ output: html_notebook
 
 ```{r}
 library(tidyverse)
+library(stringr)
+source("helpers.R")
 ```
 
 
 ```{r}
-DisjunctiveData <- read_csv("disjunctive-or-merged.csv")
+DisjunctiveData <- read_csv("disjunctive_or_pilot-merged.csv")
+```
+
+# Ceiling Checks
+
+```{r}
+Ceilings <- DisjunctiveData %>% 
+  filter(!is.na(cond),!is.na(item)) %>% 
+  group_by(cond) %>% 
+  summarize(
+    are_prop = mean(response == "['are']", na.rm = TRUE),
+    is_prop = mean(response == "['is']", na.rm = TRUE)
+  ) %>% 
+  pivot_longer(cols = c("are_prop","is_prop"), names_to = "response_type", values_to = "proportion") %>%
+  mutate(response_type = ifelse(response_type == "are_prop", "are", "is"))
+```
+
+```{r}
+Ceilings %>% 
+  ggplot(aes(x=cond,y=proportion,fill=response_type)) + 
+  geom_bar(stat="identity",position="dodge") + 
+  scale_fill_brewer(palette = "Paired") + 
+  theme_bw() + 
+  ylim(0,1) + 
+  labs(x="Conjunct Numbers",y="Proportion of Responses", fill="Response Copula") + 
+  theme(legend.position = "bottom")
 ```
 
 
+
+# Main Data Analysis
+
 ```{r}
-DisjunctiveData %>% 
+DisjunctiveProcessed <- DisjunctiveData %>% 
   filter(is.na(cond),!is.na(item)) %>% 
-  group_by()
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(conj1_num,conj2_num) %>% 
+  summarize(
+    areRate = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary)
+    ) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High) %>% 
+  mutate(conjTypes = paste(conj1_num,conj2_num))
+```
+
+```{r}
+DisjunctiveProcessed %>% 
+  ggplot(aes(x=reorder(conjTypes,-areRate), y=areRate, fill=conjTypes)) +
+  geom_bar(stat="identity") + 
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
+  theme_bw() + 
+  ylim(0,1) + 
+  labs(x="Conjunct Numbers",y="Proportion of 'are' Responses", fill="Response Copula") + 
+  scale_fill_brewer(palette = "Pastel2") + 
+  theme(legend.position = "none") + 
+  scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular"))
+```
+
+
+
+### Old Version
+
+
+
+```{r}
+#   group_by(conj1_num,conj2_num) %>% 
+#   summarize(
+#     are_prop = mean(response == "['are']", na.rm = TRUE),
+#     is_prop = mean(response == "['is']", na.rm = TRUE)
+#    # tokens = n() Need to figure out how to make this happen after all the following 
+#   ) %>% 
+#   pivot_longer(cols = c("are_prop","is_prop"), names_to = "response_type", values_to = "proportion") %>%
+#   mutate(response_type = ifelse(response_type == "are_prop", "are", "is"),
+#          conjTypes = paste(conj1_num,conj2_num))
+# 
+# head(DisjunctiveProcessed)
+
+DisjunctiveProcessed %>% 
+  ggplot(aes(x=conjTypes,y=proportion,fill=response_type)) + 
+  geom_bar(stat="identity",position="dodge") + 
+  scale_fill_brewer(palette = "Paired") + 
+  theme_bw() + 
+  ylim(0,1) + 
+  labs(x="Conjunct Numbers",y="Proportion of Responses", fill="Response Copula") + 
+  scale_x_discrete(labels=c("Plural+\nPlural","Plural+\nSingular","Singular+\nPlural","Singular+\nSingular")) + 
+  theme(legend.position = "bottom")
 ```
 
