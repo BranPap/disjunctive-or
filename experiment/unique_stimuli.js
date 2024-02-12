@@ -15,7 +15,8 @@ let trial_objects = [
     "sentence": "Either John or those boys %is,are% interviewing the movie star.",
     "passive_pred": "The movie star is being interviewed by",
     "context": "The movie star is being interviewed by either John or those boys.",
-    "text": "Either John or those boys %is,are% interviewing the movie star."
+    "text": "Either John or those boys %is,are% interviewing the movie star.",
+    "dataType": "Critical"
   },
   {
     "item": 1,
@@ -33,7 +34,8 @@ let trial_objects = [
     "sentence": "Either those boys or John %is,are% interviewing the movie star.",
     "passive_pred": "The movie star is being interviewed by",
     "context": "The movie star is being interviewed by either those boys or John.",
-    "text": "Either those boys or John %is,are% interviewing the movie star."
+    "text": "Either those boys or John %is,are% interviewing the movie star.",
+    "dataType": "Critical"
   },
   {
     "item": 1,
@@ -51,7 +53,8 @@ let trial_objects = [
     "sentence": "Either these girls or those boys %is,are% interviewing the movie star.",
     "passive_pred": "The movie star is being interviewed by",
     "context": "The movie star is being interviewed by either these girls or those boys.",
-    "text": "Either these girls or those boys %is,are% interviewing the movie star."
+    "text": "Either these girls or those boys %is,are% interviewing the movie star.",
+    "dataType": "Critical"
   },
   {
     "item": 1,
@@ -69,7 +72,8 @@ let trial_objects = [
     "sentence": "Either John or Mary %is,are% interviewing the movie star.",
     "passive_pred": "The movie star is being interviewed by",
     "context": "The movie star is being interviewed by either John or Mary.",
-    "text": "Either John or Mary %is,are% interviewing the movie star."
+    "text": "Either John or Mary %is,are% interviewing the movie star.",
+    "dataType": "Critical"
   },
   {
     "item": 2,
@@ -87,7 +91,8 @@ let trial_objects = [
     "sentence": "Either William or those students %is,are% drafting the important email.",
     "passive_pred": "The important email is being drafted by",
     "context": "The important email is being drafted by either William or those students.",
-    "text": "Either William or those students %is,are% drafting the important email."
+    "text": "Either William or those students %is,are% drafting the important email.",
+    "dataType": "Critical"
   },
   {
     "item": 2,
@@ -105,7 +110,8 @@ let trial_objects = [
     "sentence": "Either those students or William %is,are% drafting the important email.",
     "passive_pred": "The important email is being drafted by",
     "context": "The important email is being drafted by either those students or William.",
-    "text": "Either those students or William %is,are% drafting the important email."
+    "text": "Either those students or William %is,are% drafting the important email.",
+    "dataType": "Critical"
   },
   {
     "item": 2,
@@ -123,7 +129,8 @@ let trial_objects = [
     "sentence": "Either these professors or those students %is,are% drafting the important email.",
     "passive_pred": "The important email is being drafted by",
     "context": "The important email is being drafted by either these professors or those students.",
-    "text": "Either these professors or those students %is,are% drafting the important email."
+    "text": "Either these professors or those students %is,are% drafting the important email.",
+    "dataType": "Critical"
   },
   {
     "item": 2,
@@ -141,7 +148,8 @@ let trial_objects = [
     "sentence": "Either William or Jackie %is,are% drafting the important email.",
     "passive_pred": "The important email is being drafted by",
     "context": "The important email is being drafted by either William or Jackie.",
-    "text": "Either William or Jackie %is,are% drafting the important email."
+    "text": "Either William or Jackie %is,are% drafting the important email.",
+    "dataType": "Critical"
   },
   {
     "item": 3,
@@ -159,7 +167,8 @@ let trial_objects = [
     "sentence": "Either Harry or those detectives %is,are% investigating the crime scene.",
     "passive_pred": "The crime scene is being investigated by",
     "context": "The crime scene is being investigated by either Harry or those detectives.",
-    "text": "Either Harry or those detectives %is,are% investigating the crime scene."
+    "text": "Either Harry or those detectives %is,are% investigating the crime scene.",
+    "dataType": "Critical"
   },
   {
     "item": 3,
@@ -177,7 +186,8 @@ let trial_objects = [
     "sentence": "Either those detectives or Harry %is,are% investigating the crime scene.",
     "passive_pred": "The crime scene is being investigated by",
     "context": "The crime scene is being investigated by either those detectives or Harry.",
-    "text": "Either those detectives or Harry %is,are% investigating the crime scene."
+    "text": "Either those detectives or Harry %is,are% investigating the crime scene.",
+    "dataType": "Critical"
   },
   {
     "item": 3,
@@ -195,7 +205,8 @@ let trial_objects = [
     "sentence": "Either the team of police officers or those detectives %is,are% investigating the crime scene.",
     "passive_pred": "The crime scene is being investigated by",
     "context": "The crime scene is being investigated by either the team of police officers or those detectives.",
-    "text": "Either the team of police officers or those detectives %is,are% investigating the crime scene."
+    "text": "Either the team of police officers or those detectives %is,are% investigating the crime scene.",
+    "dataType": "Critical"
   },
   {
     "item": 3,
@@ -213,7 +224,8 @@ let trial_objects = [
     "sentence": "Either Harry or Ahmad %is,are% investigating the crime scene.",
     "passive_pred": "The crime scene is being investigated by",
     "context": "The crime scene is being investigated by either Harry or Ahmad.",
-    "text": "Either Harry or Ahmad %is,are% investigating the crime scene."
+    "text": "Either Harry or Ahmad %is,are% investigating the crime scene.",
+    "dataType": "Critical"
   },
   {
     "item": 3,
@@ -231,7 +243,8 @@ let trial_objects = [
     "sentence": "Either those police officers or those detectives %is,are% investigating the crime scene.",
     "passive_pred": "The crime scene is being investigated by",
     "context": "The crime scene is being investigated by either those police officers or those detectives.",
-    "text": "Either those police officers or those detectives %is,are% investigating the crime scene."
+    "text": "Either those police officers or those detectives %is,are% investigating the crime scene.",
+    "dataType": "Critical"
   },
   {
     "item": 4,
@@ -249,7 +262,8 @@ let trial_objects = [
     "sentence": "Either Hanako or those mechanics %is,are% repairing the truck engine.",
     "passive_pred": "The truck engine is being repaired by",
     "context": "The truck engine is being repaired by either Hanako or those mechanics.",
-    "text": "Either Hanako or those mechanics %is,are% repairing the truck engine."
+    "text": "Either Hanako or those mechanics %is,are% repairing the truck engine.",
+    "dataType": "Critical"
   },
   {
     "item": 4,
@@ -267,7 +281,8 @@ let trial_objects = [
     "sentence": "Either those mechanics or Hanako %is,are% repairing the truck engine.",
     "passive_pred": "The truck engine is being repaired by",
     "context": "The truck engine is being repaired by either those mechanics or Hanako.",
-    "text": "Either those mechanics or Hanako %is,are% repairing the truck engine."
+    "text": "Either those mechanics or Hanako %is,are% repairing the truck engine.",
+    "dataType": "Critical"
   },
   {
     "item": 4,
@@ -285,7 +300,8 @@ let trial_objects = [
     "sentence": "Either these drivers or those mechanics %is,are% repairing the truck engine.",
     "passive_pred": "The truck engine is being repaired by",
     "context": "The truck engine is being repaired by either these drivers or those mechanics.",
-    "text": "Either these drivers or those mechanics %is,are% repairing the truck engine."
+    "text": "Either these drivers or those mechanics %is,are% repairing the truck engine.",
+    "dataType": "Critical"
   },
   {
     "item": 4,
@@ -303,7 +319,8 @@ let trial_objects = [
     "sentence": "Either Hanako or George %is,are% repairing the truck engine.",
     "passive_pred": "The truck engine is being repaired by",
     "context": "The truck engine is being repaired by either Hanako or George.",
-    "text": "Either Hanako or George %is,are% repairing the truck engine."
+    "text": "Either Hanako or George %is,are% repairing the truck engine.",
+    "dataType": "Critical"
   },
   {
     "item": 5,
@@ -321,7 +338,8 @@ let trial_objects = [
     "sentence": "Either Lisa or those children %is,are% preparing dinner.",
     "passive_pred": "Dinner is being prepared by",
     "context": "Dinner is being prepared by either Lisa or those children.",
-    "text": "Either Lisa or those children %is,are% preparing dinner."
+    "text": "Either Lisa or those children %is,are% preparing dinner.",
+    "dataType": "Critical"
   },
   {
     "item": 5,
@@ -339,7 +357,8 @@ let trial_objects = [
     "sentence": "Either those children or Lisa %is,are% preparing dinner.",
     "passive_pred": "Dinner is being prepared by",
     "context": "Dinner is being prepared by either those children or Lisa.",
-    "text": "Either those children or Lisa %is,are% preparing dinner."
+    "text": "Either those children or Lisa %is,are% preparing dinner.",
+    "dataType": "Critical"
   },
   {
     "item": 5,
@@ -357,7 +376,8 @@ let trial_objects = [
     "sentence": "Either these cooks or those children %is,are% preparing dinner.",
     "passive_pred": "Dinner is being prepared by",
     "context": "Dinner is being prepared by either these cooks or those children.",
-    "text": "Either these cooks or those children %is,are% preparing dinner."
+    "text": "Either these cooks or those children %is,are% preparing dinner.",
+    "dataType": "Critical"
   },
   {
     "item": 5,
@@ -375,7 +395,8 @@ let trial_objects = [
     "sentence": "Either Lisa or George %is,are% preparing dinner.",
     "passive_pred": "Dinner is being prepared by",
     "context": "Dinner is being prepared by either Lisa or George.",
-    "text": "Either Lisa or George %is,are% preparing dinner."
+    "text": "Either Lisa or George %is,are% preparing dinner.",
+    "dataType": "Critical"
   },
   {
     "item": 6,
@@ -393,7 +414,8 @@ let trial_objects = [
     "sentence": "Either David or those plumbers %is,are% fixing the leaking pipe.",
     "passive_pred": "The leaking pipe is being fixed by",
     "context": "The leaking pipe is being fixed by either David or those plumbers.",
-    "text": "Either David or those plumbers %is,are% fixing the leaking pipe."
+    "text": "Either David or those plumbers %is,are% fixing the leaking pipe.",
+    "dataType": "Critical"
   },
   {
     "item": 6,
@@ -411,7 +433,8 @@ let trial_objects = [
     "sentence": "Either those plumbers or David %is,are% fixing the leaking pipe.",
     "passive_pred": "The leaking pipe is being fixed by",
     "context": "The leaking pipe is being fixed by either those plumbers or David.",
-    "text": "Either those plumbers or David %is,are% fixing the leaking pipe."
+    "text": "Either those plumbers or David %is,are% fixing the leaking pipe.",
+    "dataType": "Critical"
   },
   {
     "item": 6,
@@ -429,7 +452,8 @@ let trial_objects = [
     "sentence": "Either these housekeepers or those plumbers %is,are% fixing the leaking pipe.",
     "passive_pred": "The leaking pipe is being fixed by",
     "context": "The leaking pipe is being fixed by either these housekeepers or those plumbers.",
-    "text": "Either these housekeepers or those plumbers %is,are% fixing the leaking pipe."
+    "text": "Either these housekeepers or those plumbers %is,are% fixing the leaking pipe.",
+    "dataType": "Critical"
   },
   {
     "item": 6,
@@ -447,7 +471,8 @@ let trial_objects = [
     "sentence": "Either David or Joan %is,are% fixing the leaking pipe.",
     "passive_pred": "The leaking pipe is being fixed by",
     "context": "The leaking pipe is being fixed by either David or Joan.",
-    "text": "Either David or Joan %is,are% fixing the leaking pipe."
+    "text": "Either David or Joan %is,are% fixing the leaking pipe.",
+    "dataType": "Critical"
   },
   {
     "item": 7,
@@ -465,7 +490,8 @@ let trial_objects = [
     "sentence": "Either Fatima or these research assistants %is,are% conducting the experiments.",
     "passive_pred": "The experiments are being conducted by",
     "context": "The experiments are being conducted by either Fatima or these research assistants.",
-    "text": "Either Fatima or these research assistants %is,are% conducting the experiments."
+    "text": "Either Fatima or these research assistants %is,are% conducting the experiments.",
+    "dataType": "Critical"
   },
   {
     "item": 7,
@@ -483,7 +509,8 @@ let trial_objects = [
     "sentence": "Either these research assistants or Fatima %is,are% conducting the experiments.",
     "passive_pred": "The experiments are being conducted by",
     "context": "The experiments are being conducted by either these research assistants or Fatima.",
-    "text": "Either these research assistants or Fatima %is,are% conducting the experiments."
+    "text": "Either these research assistants or Fatima %is,are% conducting the experiments.",
+    "dataType": "Critical"
   },
   {
     "item": 7,
@@ -501,7 +528,8 @@ let trial_objects = [
     "sentence": "Either those graduate students or these research assistants %is,are% conducting the experiments.",
     "passive_pred": "The experiments are being conducted by",
     "context": "The experiments are being conducted by either those graduate students or these research assistants.",
-    "text": "Either those graduate students or these research assistants %is,are% conducting the experiments."
+    "text": "Either those graduate students or these research assistants %is,are% conducting the experiments.",
+    "dataType": "Critical"
   },
   {
     "item": 7,
@@ -519,7 +547,8 @@ let trial_objects = [
     "sentence": "Either Fatima or Lucas %is,are% conducting the experiments.",
     "passive_pred": "The experiments are being conducted by",
     "context": "The experiments are being conducted by either Fatima or Lucas.",
-    "text": "Either Fatima or Lucas %is,are% conducting the experiments."
+    "text": "Either Fatima or Lucas %is,are% conducting the experiments.",
+    "dataType": "Critical"
   },
   {
     "item": 8,
@@ -537,7 +566,8 @@ let trial_objects = [
     "sentence": "Either Melissa or those electricians %is,are% fixing the wiring issues.",
     "passive_pred": "The wiring issues are being fixed by",
     "context": "The wiring issues are being fixed by either Melissa or those electricians.",
-    "text": "Either Melissa or those electricians %is,are% fixing the wiring issues."
+    "text": "Either Melissa or those electricians %is,are% fixing the wiring issues.",
+    "dataType": "Critical"
   },
   {
     "item": 8,
@@ -555,7 +585,8 @@ let trial_objects = [
     "sentence": "Either those electricians or Melissa %is,are% fixing the wiring issues.",
     "passive_pred": "The wiring issues are being fixed by",
     "context": "The wiring issues are being fixed by either those electricians or Melissa.",
-    "text": "Either those electricians or Melissa %is,are% fixing the wiring issues."
+    "text": "Either those electricians or Melissa %is,are% fixing the wiring issues.",
+    "dataType": "Critical"
   },
   {
     "item": 8,
@@ -573,7 +604,8 @@ let trial_objects = [
     "sentence": "Either these engineers or those electricians %is,are% fixing the wiring issues.",
     "passive_pred": "The wiring issues are being fixed by",
     "context": "The wiring issues are being fixed by either these engineers or those electricians.",
-    "text": "Either these engineers or those electricians %is,are% fixing the wiring issues."
+    "text": "Either these engineers or those electricians %is,are% fixing the wiring issues.",
+    "dataType": "Critical"
   },
   {
     "item": 8,
@@ -591,7 +623,8 @@ let trial_objects = [
     "sentence": "Either Melissa or Patrick %is,are% fixing the wiring issues.",
     "passive_pred": "The wiring issues are being fixed by",
     "context": "The wiring issues are being fixed by either Melissa or Patrick.",
-    "text": "Either Melissa or Patrick %is,are% fixing the wiring issues."
+    "text": "Either Melissa or Patrick %is,are% fixing the wiring issues.",
+    "dataType": "Critical"
   },
   {
     "item": 9,
@@ -609,7 +642,8 @@ let trial_objects = [
     "sentence": "Either Brian or those designers %is,are% creating the fashion collection.",
     "passive_pred": "The fashion collection is being created by",
     "context": "The fashion collection is being created by either Brian or those designers.",
-    "text": "Either Brian or those designers %is,are% creating the fashion collection."
+    "text": "Either Brian or those designers %is,are% creating the fashion collection.",
+    "dataType": "Critical"
   },
   {
     "item": 9,
@@ -627,7 +661,8 @@ let trial_objects = [
     "sentence": "Either those designers or Brian %is,are% creating the fashion collection.",
     "passive_pred": "The fashion collection is being created by",
     "context": "The fashion collection is being created by either those designers or Brian.",
-    "text": "Either those designers or Brian %is,are% creating the fashion collection."
+    "text": "Either those designers or Brian %is,are% creating the fashion collection.",
+    "dataType": "Critical"
   },
   {
     "item": 9,
@@ -645,7 +680,8 @@ let trial_objects = [
     "sentence": "Either these stylists or those designers %is,are% creating the fashion collection.",
     "passive_pred": "The fashion collection is being created by",
     "context": "The fashion collection is being created by either these stylists or those designers.",
-    "text": "Either these stylists or those designers %is,are% creating the fashion collection."
+    "text": "Either these stylists or those designers %is,are% creating the fashion collection.",
+    "dataType": "Critical"
   },
   {
     "item": 9,
@@ -663,7 +699,8 @@ let trial_objects = [
     "sentence": "Either Brian or Jamaal %is,are% creating the fashion collection.",
     "passive_pred": "The fashion collection is being created by",
     "context": "The fashion collection is being created by either Brian or Jamaal.",
-    "text": "Either Brian or Jamaal %is,are% creating the fashion collection."
+    "text": "Either Brian or Jamaal %is,are% creating the fashion collection.",
+    "dataType": "Critical"
   },
   {
     "item": 10,
@@ -681,7 +718,8 @@ let trial_objects = [
     "sentence": "Either Sarah or those staff members %is,are% writing the end-of-year report.",
     "passive_pred": "The end-of-year report is being written by",
     "context": "The end-of-year report is being written by either Sarah or those staff members.",
-    "text": "Either Sarah or those staff members %is,are% writing the end-of-year report."
+    "text": "Either Sarah or those staff members %is,are% writing the end-of-year report.",
+    "dataType": "Critical"
   },
   {
     "item": 10,
@@ -699,7 +737,8 @@ let trial_objects = [
     "sentence": "Either those staff members or Sarah %is,are% writing the end-of-year report.",
     "passive_pred": "The end-of-year report is being written by",
     "context": "The end-of-year report is being written by either those staff members or Sarah.",
-    "text": "Either those staff members or Sarah %is,are% writing the end-of-year report."
+    "text": "Either those staff members or Sarah %is,are% writing the end-of-year report.",
+    "dataType": "Critical"
   },
   {
     "item": 10,
@@ -717,7 +756,8 @@ let trial_objects = [
     "sentence": "Either those managers or those staff members %is,are% writing the end-of-year report.",
     "passive_pred": "The end-of-year report is being written by",
     "context": "The end-of-year report is being written by either those managers or those staff members.",
-    "text": "Either those managers or those staff members %is,are% writing the end-of-year report."
+    "text": "Either those managers or those staff members %is,are% writing the end-of-year report.",
+    "dataType": "Critical"
   },
   {
     "item": 10,
@@ -735,7 +775,8 @@ let trial_objects = [
     "sentence": "Either Sarah or Matt %is,are% writing the end-of-year report.",
     "passive_pred": "The end-of-year report is being written by",
     "context": "The end-of-year report is being written by either Sarah or Matt.",
-    "text": "Either Sarah or Matt %is,are% writing the end-of-year report."
+    "text": "Either Sarah or Matt %is,are% writing the end-of-year report.",
+    "dataType": "Critical"
   },
   {
     "item": 11,
@@ -753,7 +794,8 @@ let trial_objects = [
     "sentence": "Either Juan or these teachers %is,are% making the admission decisions.",
     "passive_pred": "The admission decisions are being made by",
     "context": "The admission decisions are being made by either Juan or these teachers.",
-    "text": "Either Juan or these teachers %is,are% making the admission decisions."
+    "text": "Either Juan or these teachers %is,are% making the admission decisions.",
+    "dataType": "Critical"
   },
   {
     "item": 11,
@@ -771,7 +813,8 @@ let trial_objects = [
     "sentence": "Either these teachers or Juan %is,are% making the admission decisions.",
     "passive_pred": "The admission decisions are being made by",
     "context": "The admission decisions are being made by either these teachers or Juan.",
-    "text": "Either these teachers or Juan %is,are% making the admission decisions."
+    "text": "Either these teachers or Juan %is,are% making the admission decisions.",
+    "dataType": "Critical"
   },
   {
     "item": 11,
@@ -789,7 +832,8 @@ let trial_objects = [
     "sentence": "Either those administrators or these teachers %is,are% making the admission decisions.",
     "passive_pred": "The admission decisions are being made by",
     "context": "The admission decisions are being made by either those administrators or these teachers.",
-    "text": "Either those administrators or these teachers %is,are% making the admission decisions."
+    "text": "Either those administrators or these teachers %is,are% making the admission decisions.",
+    "dataType": "Critical"
   },
   {
     "item": 11,
@@ -807,7 +851,8 @@ let trial_objects = [
     "sentence": "Either Juan or Antonio %is,are% making the admission decisions.",
     "passive_pred": "The admission decisions are being made by",
     "context": "The admission decisions are being made by either Juan or Antonio.",
-    "text": "Either Juan or Antonio %is,are% making the admission decisions."
+    "text": "Either Juan or Antonio %is,are% making the admission decisions.",
+    "dataType": "Critical"
   },
   {
     "item": 12,
@@ -825,7 +870,8 @@ let trial_objects = [
     "sentence": "Either Krishna or those statisticians %is,are% analyzing the market trends.",
     "passive_pred": "The market trends are being analyzed by",
     "context": "The market trends are being analyzed by either Krishna or those statisticians.",
-    "text": "Either Krishna or those statisticians %is,are% analyzing the market trends."
+    "text": "Either Krishna or those statisticians %is,are% analyzing the market trends.",
+    "dataType": "Critical"
   },
   {
     "item": 12,
@@ -843,7 +889,8 @@ let trial_objects = [
     "sentence": "Either those statisticians or Krishna %is,are% analyzing the market trends.",
     "passive_pred": "The market trends are being analyzed by",
     "context": "The market trends are being analyzed by either those statisticians or Krishna.",
-    "text": "Either those statisticians or Krishna %is,are% analyzing the market trends."
+    "text": "Either those statisticians or Krishna %is,are% analyzing the market trends.",
+    "dataType": "Critical"
   },
   {
     "item": 12,
@@ -861,7 +908,8 @@ let trial_objects = [
     "sentence": "Either those economists or those statisticians %is,are% analyzing the market trends.",
     "passive_pred": "The market trends are being analyzed by",
     "context": "The market trends are being analyzed by either those economists or those statisticians.",
-    "text": "Either those economists or those statisticians %is,are% analyzing the market trends."
+    "text": "Either those economists or those statisticians %is,are% analyzing the market trends.",
+    "dataType": "Critical"
   },
   {
     "item": 12,
@@ -879,7 +927,8 @@ let trial_objects = [
     "sentence": "Either Krishna or Amir %is,are% analyzing the market trends.",
     "passive_pred": "The market trends are being analyzed by",
     "context": "The market trends are being analyzed by either Krishna or Amir.",
-    "text": "Either Krishna or Amir %is,are% analyzing the market trends."
+    "text": "Either Krishna or Amir %is,are% analyzing the market trends.",
+    "dataType": "Critical"
   },
   {
     "item": 13,
@@ -897,7 +946,8 @@ let trial_objects = [
     "sentence": "Either Mateo or these architects %is,are% designing the building's layout.",
     "passive_pred": "The building's layout is being designed by",
     "context": "The building's layout is being designed by either Mateo or these architects.",
-    "text": "Either Mateo or these architects %is,are% designing the building's layout."
+    "text": "Either Mateo or these architects %is,are% designing the building's layout.",
+    "dataType": "Critical"
   },
   {
     "item": 13,
@@ -915,7 +965,8 @@ let trial_objects = [
     "sentence": "Either these architects or Mateo %is,are% designing the building's layout.",
     "passive_pred": "The building's layout is being designed by",
     "context": "The building's layout is being designed by either these architects or Mateo.",
-    "text": "Either these architects or Mateo %is,are% designing the building's layout."
+    "text": "Either these architects or Mateo %is,are% designing the building's layout.",
+    "dataType": "Critical"
   },
   {
     "item": 13,
@@ -933,7 +984,8 @@ let trial_objects = [
     "sentence": "Either these interior designers or these architects %is,are% designing the building's layout.",
     "passive_pred": "The building's layout is being designed by",
     "context": "The building's layout is being designed by either these interior designers or these architects.",
-    "text": "Either these interior designers or these architects %is,are% designing the building's layout."
+    "text": "Either these interior designers or these architects %is,are% designing the building's layout.",
+    "dataType": "Critical"
   },
   {
     "item": 13,
@@ -951,7 +1003,8 @@ let trial_objects = [
     "sentence": "Either Mateo or Lin %is,are% designing the building's layout.",
     "passive_pred": "The building's layout is being designed by",
     "context": "The building's layout is being designed by either Mateo or Lin.",
-    "text": "Either Mateo or Lin %is,are% designing the building's layout."
+    "text": "Either Mateo or Lin %is,are% designing the building's layout.",
+    "dataType": "Critical"
   },
   {
     "item": 14,
@@ -969,7 +1022,8 @@ let trial_objects = [
     "sentence": "Either Zeynab or those editors %is,are% proofreading the manuscripts.",
     "passive_pred": "The manuscripts are being proofread by",
     "context": "The manuscripts are being proofread by either Zeynab or those editors.",
-    "text": "Either Zeynab or those editors %is,are% proofreading the manuscripts."
+    "text": "Either Zeynab or those editors %is,are% proofreading the manuscripts.",
+    "dataType": "Critical"
   },
   {
     "item": 14,
@@ -987,7 +1041,8 @@ let trial_objects = [
     "sentence": "Either those editors or Zeynab %is,are% proofreading the manuscripts.",
     "passive_pred": "The manuscripts are being proofread by",
     "context": "The manuscripts are being proofread by either those editors or Zeynab.",
-    "text": "Either those editors or Zeynab %is,are% proofreading the manuscripts."
+    "text": "Either those editors or Zeynab %is,are% proofreading the manuscripts.",
+    "dataType": "Critical"
   },
   {
     "item": 14,
@@ -1005,7 +1060,8 @@ let trial_objects = [
     "sentence": "Either those secretaries or those editors %is,are% proofreading the manuscripts.",
     "passive_pred": "The manuscripts are being proofread by",
     "context": "The manuscripts are being proofread by either those secretaries or those editors.",
-    "text": "Either those secretaries or those editors %is,are% proofreading the manuscripts."
+    "text": "Either those secretaries or those editors %is,are% proofreading the manuscripts.",
+    "dataType": "Critical"
   },
   {
     "item": 14,
@@ -1023,7 +1079,8 @@ let trial_objects = [
     "sentence": "Either Zeynab or Emma %is,are% proofreading the manuscripts.",
     "passive_pred": "The manuscripts are being proofread by",
     "context": "The manuscripts are being proofread by either Zeynab or Emma.",
-    "text": "Either Zeynab or Emma %is,are% proofreading the manuscripts."
+    "text": "Either Zeynab or Emma %is,are% proofreading the manuscripts.",
+    "dataType": "Critical"
   },
   {
     "item": 15,
@@ -1041,7 +1098,8 @@ let trial_objects = [
     "sentence": "Either Peter or those lawyers %is,are% handling the legal documents.",
     "passive_pred": "The legal documents are being handled by",
     "context": "The legal documents are being handled by either Peter or those lawyers.",
-    "text": "Either Peter or those lawyers %is,are% handling the legal documents."
+    "text": "Either Peter or those lawyers %is,are% handling the legal documents.",
+    "dataType": "Critical"
   },
   {
     "item": 15,
@@ -1059,7 +1117,8 @@ let trial_objects = [
     "sentence": "Either those lawyers or Peter %is,are% handling the legal documents.",
     "passive_pred": "The legal documents are being handled by",
     "context": "The legal documents are being handled by either those lawyers or Peter.",
-    "text": "Either those lawyers or Peter %is,are% handling the legal documents."
+    "text": "Either those lawyers or Peter %is,are% handling the legal documents.",
+    "dataType": "Critical"
   },
   {
     "item": 15,
@@ -1077,7 +1136,8 @@ let trial_objects = [
     "sentence": "Either these paralegals or those lawyers %is,are% handling the legal documents.",
     "passive_pred": "The legal documents are being handled by",
     "context": "The legal documents are being handled by either these paralegals or those lawyers.",
-    "text": "Either these paralegals or those lawyers %is,are% handling the legal documents."
+    "text": "Either these paralegals or those lawyers %is,are% handling the legal documents.",
+    "dataType": "Critical"
   },
   {
     "item": 15,
@@ -1095,7 +1155,8 @@ let trial_objects = [
     "sentence": "Either Peter or Noah %is,are% handling the legal documents.",
     "passive_pred": "The legal documents are being handled by",
     "context": "The legal documents are being handled by either Peter or Noah.",
-    "text": "Either Peter or Noah %is,are% handling the legal documents."
+    "text": "Either Peter or Noah %is,are% handling the legal documents.",
+    "dataType": "Critical"
   },
   {
     "item": 16,
@@ -1113,7 +1174,8 @@ let trial_objects = [
     "sentence": "Either Alex or these photographers %is,are% recording the solar eclipse.",
     "passive_pred": "The solar eclipse is being recorded by",
     "context": "The solar eclipse is being recorded by either Alex or these photographers.",
-    "text": "Either Alex or these photographers %is,are% recording the solar eclipse."
+    "text": "Either Alex or these photographers %is,are% recording the solar eclipse.",
+    "dataType": "Critical"
   },
   {
     "item": 16,
@@ -1131,7 +1193,8 @@ let trial_objects = [
     "sentence": "Either these photographers or Alex %is,are% recording the solar eclipse.",
     "passive_pred": "The solar eclipse is being recorded by",
     "context": "The solar eclipse is being recorded by either these photographers or Alex.",
-    "text": "Either these photographers or Alex %is,are% recording the solar eclipse."
+    "text": "Either these photographers or Alex %is,are% recording the solar eclipse.",
+    "dataType": "Critical"
   },
   {
     "item": 16,
@@ -1149,7 +1212,8 @@ let trial_objects = [
     "sentence": "Either those astronomers or these photographers %is,are% recording the solar eclipse.",
     "passive_pred": "The solar eclipse is being recorded by",
     "context": "The solar eclipse is being recorded by either those astronomers or these photographers.",
-    "text": "Either those astronomers or these photographers %is,are% recording the solar eclipse."
+    "text": "Either those astronomers or these photographers %is,are% recording the solar eclipse.",
+    "dataType": "Critical"
   },
   {
     "item": 16,
@@ -1167,7 +1231,8 @@ let trial_objects = [
     "sentence": "Either Alex or Noah %is,are% recording the solar eclipse.",
     "passive_pred": "The solar eclipse is being recorded by",
     "context": "The solar eclipse is being recorded by either Alex or Noah.",
-    "text": "Either Alex or Noah %is,are% recording the solar eclipse."
+    "text": "Either Alex or Noah %is,are% recording the solar eclipse.",
+    "dataType": "Critical"
   },
   {
     "item": 17,
@@ -1185,7 +1250,8 @@ let trial_objects = [
     "sentence": "Either Bill or those nurses %is,are% attending to the patients.",
     "passive_pred": "The patients are being attended to by",
     "context": "The patients are being attended to by either Bill or those nurses.",
-    "text": "Either Bill or those nurses %is,are% attending to the patients."
+    "text": "Either Bill or those nurses %is,are% attending to the patients.",
+    "dataType": "Critical"
   },
   {
     "item": 17,
@@ -1203,7 +1269,8 @@ let trial_objects = [
     "sentence": "Either those nurses or Bill %is,are% attending to the patients.",
     "passive_pred": "The patients are being attended to by",
     "context": "The patients are being attended to by either those nurses or Bill.",
-    "text": "Either those nurses or Bill %is,are% attending to the patients."
+    "text": "Either those nurses or Bill %is,are% attending to the patients.",
+    "dataType": "Critical"
   },
   {
     "item": 17,
@@ -1221,7 +1288,8 @@ let trial_objects = [
     "sentence": "Either these surgeons or those nurses %is,are% attending to the patients.",
     "passive_pred": "The patients are being attended to by",
     "context": "The patients are being attended to by either these surgeons or those nurses.",
-    "text": "Either these surgeons or those nurses %is,are% attending to the patients."
+    "text": "Either these surgeons or those nurses %is,are% attending to the patients.",
+    "dataType": "Critical"
   },
   {
     "item": 17,
@@ -1239,7 +1307,8 @@ let trial_objects = [
     "sentence": "Either Bill or Kim %is,are% attending to the patients.",
     "passive_pred": "The patients are being attended to by",
     "context": "The patients are being attended to by either Bill or Kim.",
-    "text": "Either Bill or Kim %is,are% attending to the patients."
+    "text": "Either Bill or Kim %is,are% attending to the patients.",
+    "dataType": "Critical"
   },
   {
     "item": 18,
@@ -1257,7 +1326,8 @@ let trial_objects = [
     "sentence": "Either Jimmy or those kids %is,are% building the tree house.",
     "passive_pred": "The tree house is being built by",
     "context": "The tree house is being built by either Jimmy or those kids.",
-    "text": "Either Jimmy or those kids %is,are% building the tree house."
+    "text": "Either Jimmy or those kids %is,are% building the tree house.",
+    "dataType": "Critical"
   },
   {
     "item": 18,
@@ -1275,7 +1345,8 @@ let trial_objects = [
     "sentence": "Either those kids or Jimmy %is,are% building the tree house.",
     "passive_pred": "The tree house is being built by",
     "context": "The tree house is being built by either those kids or Jimmy.",
-    "text": "Either those kids or Jimmy %is,are% building the tree house."
+    "text": "Either those kids or Jimmy %is,are% building the tree house.",
+    "dataType": "Critical"
   },
   {
     "item": 18,
@@ -1293,7 +1364,8 @@ let trial_objects = [
     "sentence": "Either those carpenters or those kids %is,are% building the tree house.",
     "passive_pred": "The tree house is being built by",
     "context": "The tree house is being built by either those carpenters or those kids.",
-    "text": "Either those carpenters or those kids %is,are% building the tree house."
+    "text": "Either those carpenters or those kids %is,are% building the tree house.",
+    "dataType": "Critical"
   },
   {
     "item": 18,
@@ -1311,7 +1383,8 @@ let trial_objects = [
     "sentence": "Either Jimmy or Carlos %is,are% building the tree house.",
     "passive_pred": "The tree house is being built by",
     "context": "The tree house is being built by either Jimmy or Carlos.",
-    "text": "Either Jimmy or Carlos %is,are% building the tree house."
+    "text": "Either Jimmy or Carlos %is,are% building the tree house.",
+    "dataType": "Critical"
   },
   {
     "item": 19,
@@ -1329,7 +1402,8 @@ let trial_objects = [
     "sentence": "Either Thomas or those tailors %is,are% sewing the dresses.",
     "passive_pred": "The dresses are being sewn by",
     "context": "The dresses are being sewn by either Thomas or those tailors.",
-    "text": "Either Thomas or those tailors %is,are% sewing the dresses."
+    "text": "Either Thomas or those tailors %is,are% sewing the dresses.",
+    "dataType": "Critical"
   },
   {
     "item": 19,
@@ -1347,7 +1421,8 @@ let trial_objects = [
     "sentence": "Either those tailors or Thomas %is,are% sewing the dresses.",
     "passive_pred": "The dresses are being sewn by",
     "context": "The dresses are being sewn by either those tailors or Thomas.",
-    "text": "Either those tailors or Thomas %is,are% sewing the dresses."
+    "text": "Either those tailors or Thomas %is,are% sewing the dresses.",
+    "dataType": "Critical"
   },
   {
     "item": 19,
@@ -1365,7 +1440,8 @@ let trial_objects = [
     "sentence": "Either these fashion designers or those tailors %is,are% sewing the dresses.",
     "passive_pred": "The dresses are being sewn by",
     "context": "The dresses are being sewn by either these fashion designers or those tailors.",
-    "text": "Either these fashion designers or those tailors %is,are% sewing the dresses."
+    "text": "Either these fashion designers or those tailors %is,are% sewing the dresses.",
+    "dataType": "Critical"
   },
   {
     "item": 19,
@@ -1383,7 +1459,8 @@ let trial_objects = [
     "sentence": "Either Thomas or Maria %is,are% sewing the dresses.",
     "passive_pred": "The dresses are being sewn by",
     "context": "The dresses are being sewn by either Thomas or Maria.",
-    "text": "Either Thomas or Maria %is,are% sewing the dresses."
+    "text": "Either Thomas or Maria %is,are% sewing the dresses.",
+    "dataType": "Critical"
   },
   {
     "item": 20,
@@ -1401,7 +1478,8 @@ let trial_objects = [
     "sentence": "Either Hasan or those volunteers %is,are% sorting the books.",
     "passive_pred": "The books are being sorted by",
     "context": "The books are being sorted by either Hasan or those volunteers.",
-    "text": "Either Hasan or those volunteers %is,are% sorting the books."
+    "text": "Either Hasan or those volunteers %is,are% sorting the books.",
+    "dataType": "Critical"
   },
   {
     "item": 20,
@@ -1419,7 +1497,8 @@ let trial_objects = [
     "sentence": "Either those volunteers or Hasan %is,are% sorting the books.",
     "passive_pred": "The books are being sorted by",
     "context": "The books are being sorted by either those volunteers or Hasan.",
-    "text": "Either those volunteers or Hasan %is,are% sorting the books."
+    "text": "Either those volunteers or Hasan %is,are% sorting the books.",
+    "dataType": "Critical"
   },
   {
     "item": 20,
@@ -1437,7 +1516,8 @@ let trial_objects = [
     "sentence": "Either those librarians or those volunteers %is,are% sorting the books.",
     "passive_pred": "The books are being sorted by",
     "context": "The books are being sorted by either those librarians or those volunteers.",
-    "text": "Either those librarians or those volunteers %is,are% sorting the books."
+    "text": "Either those librarians or those volunteers %is,are% sorting the books.",
+    "dataType": "Critical"
   },
   {
     "item": 20,
@@ -1455,7 +1535,8 @@ let trial_objects = [
     "sentence": "Either Hasan or Yuki %is,are% sorting the books.",
     "passive_pred": "The books are being sorted by",
     "context": "The books are being sorted by either Hasan or Yuki.",
-    "text": "Either Hasan or Yuki %is,are% sorting the books."
+    "text": "Either Hasan or Yuki %is,are% sorting the books.",
+    "dataType": "Critical"
   },
   {
     "item": 21,
@@ -1473,7 +1554,8 @@ let trial_objects = [
     "sentence": "Either Lydia or those painters %is,are% using the art studio.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Lydia or those painters %is,are% using the art studio."
+    "text": "Either Lydia or those painters %is,are% using the art studio.",
+    "dataType": "Critical"
   },
   {
     "item": 21,
@@ -1491,7 +1573,8 @@ let trial_objects = [
     "sentence": "Either those painters or Lydia %is,are% using the art studio.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those painters or Lydia %is,are% using the art studio."
+    "text": "Either those painters or Lydia %is,are% using the art studio.",
+    "dataType": "Critical"
   },
   {
     "item": 21,
@@ -1509,7 +1592,8 @@ let trial_objects = [
     "sentence": "Either those sculptors or those painters %is,are% using the art studio.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those sculptors or those painters %is,are% using the art studio."
+    "text": "Either those sculptors or those painters %is,are% using the art studio.",
+    "dataType": "Critical"
   },
   {
     "item": 21,
@@ -1527,7 +1611,8 @@ let trial_objects = [
     "sentence": "Either Lydia or Liam %is,are% using the art studio.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Lydia or Liam %is,are% using the art studio."
+    "text": "Either Lydia or Liam %is,are% using the art studio.",
+    "dataType": "Critical"
   },
   {
     "item": 22,
@@ -1545,7 +1630,8 @@ let trial_objects = [
     "sentence": "Either Andy or those farmers %is,are% tending to the crops.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Andy or those farmers %is,are% tending to the crops."
+    "text": "Either Andy or those farmers %is,are% tending to the crops.",
+    "dataType": "Critical"
   },
   {
     "item": 22,
@@ -1563,7 +1649,8 @@ let trial_objects = [
     "sentence": "Either those farmers or Andy %is,are% tending to the crops.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those farmers or Andy %is,are% tending to the crops."
+    "text": "Either those farmers or Andy %is,are% tending to the crops.",
+    "dataType": "Critical"
   },
   {
     "item": 22,
@@ -1581,7 +1668,8 @@ let trial_objects = [
     "sentence": "Either those gardeners or those farmers %is,are% tending to the crops.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those gardeners or those farmers %is,are% tending to the crops."
+    "text": "Either those gardeners or those farmers %is,are% tending to the crops.",
+    "dataType": "Critical"
   },
   {
     "item": 22,
@@ -1599,7 +1687,8 @@ let trial_objects = [
     "sentence": "Either Andy or Joey %is,are% tending to the crops.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Andy or Joey %is,are% tending to the crops."
+    "text": "Either Andy or Joey %is,are% tending to the crops.",
+    "dataType": "Critical"
   },
   {
     "item": 23,
@@ -1617,7 +1706,8 @@ let trial_objects = [
     "sentence": "Either Ellen or those athletes %is,are% working out at the gym.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Ellen or those athletes %is,are% working out at the gym."
+    "text": "Either Ellen or those athletes %is,are% working out at the gym.",
+    "dataType": "Critical"
   },
   {
     "item": 23,
@@ -1635,7 +1725,8 @@ let trial_objects = [
     "sentence": "Either those athletes or Ellen %is,are% working out at the gym.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those athletes or Ellen %is,are% working out at the gym."
+    "text": "Either those athletes or Ellen %is,are% working out at the gym.",
+    "dataType": "Critical"
   },
   {
     "item": 23,
@@ -1653,7 +1744,8 @@ let trial_objects = [
     "sentence": "Either those trainers or those athletes %is,are% working out at the gym.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those trainers or those athletes %is,are% working out at the gym."
+    "text": "Either those trainers or those athletes %is,are% working out at the gym.",
+    "dataType": "Critical"
   },
   {
     "item": 23,
@@ -1671,7 +1763,8 @@ let trial_objects = [
     "sentence": "Either Ellen or Ali %is,are% working out at the gym.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Ellen or Ali %is,are% working out at the gym."
+    "text": "Either Ellen or Ali %is,are% working out at the gym.",
+    "dataType": "Critical"
   },
   {
     "item": 24,
@@ -1689,7 +1782,8 @@ let trial_objects = [
     "sentence": "Either Hank or those parents %is,are% taking care of the babies.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Hank or those parents %is,are% taking care of the babies."
+    "text": "Either Hank or those parents %is,are% taking care of the babies.",
+    "dataType": "Critical"
   },
   {
     "item": 24,
@@ -1707,7 +1801,8 @@ let trial_objects = [
     "sentence": "Either those parents or Hank %is,are% taking care of the babies.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those parents or Hank %is,are% taking care of the babies."
+    "text": "Either those parents or Hank %is,are% taking care of the babies.",
+    "dataType": "Critical"
   },
   {
     "item": 24,
@@ -1725,7 +1820,8 @@ let trial_objects = [
     "sentence": "Either those babysitters or those parents %is,are% taking care of the babies.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those babysitters or those parents %is,are% taking care of the babies."
+    "text": "Either those babysitters or those parents %is,are% taking care of the babies.",
+    "dataType": "Critical"
   },
   {
     "item": 24,
@@ -1743,7 +1839,8 @@ let trial_objects = [
     "sentence": "Either Hank or Pedro %is,are% taking care of the babies.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Hank or Pedro %is,are% taking care of the babies."
+    "text": "Either Hank or Pedro %is,are% taking care of the babies.",
+    "dataType": "Critical"
   },
   {
     "item": 25,
@@ -1761,7 +1858,8 @@ let trial_objects = [
     "sentence": "Either Hossein or those illustrators %is,are% sketching the concept art.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Hossein or those illustrators %is,are% sketching the concept art."
+    "text": "Either Hossein or those illustrators %is,are% sketching the concept art.",
+    "dataType": "Critical"
   },
   {
     "item": 25,
@@ -1779,7 +1877,8 @@ let trial_objects = [
     "sentence": "Either those illustrators or Hossein %is,are% sketching the concept art.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those illustrators or Hossein %is,are% sketching the concept art."
+    "text": "Either those illustrators or Hossein %is,are% sketching the concept art.",
+    "dataType": "Critical"
   },
   {
     "item": 25,
@@ -1797,7 +1896,8 @@ let trial_objects = [
     "sentence": "Either those art students or those illustrators %is,are% sketching the concept art.",
     "passive_pred": "",
     "context": "",
-    "text": "Either those art students or those illustrators %is,are% sketching the concept art."
+    "text": "Either those art students or those illustrators %is,are% sketching the concept art.",
+    "dataType": "Critical"
   },
   {
     "item": 25,
@@ -1815,7 +1915,8 @@ let trial_objects = [
     "sentence": "Either Hossein or Elias %is,are% sketching the concept art.",
     "passive_pred": "",
     "context": "",
-    "text": "Either Hossein or Elias %is,are% sketching the concept art."
+    "text": "Either Hossein or Elias %is,are% sketching the concept art.",
+    "dataType": "Critical"
   },
 
 // FILLERS START HERE
@@ -1832,7 +1933,8 @@ let trial_objects = [
     "conj2_num": "P",
     "predicate": "interviewing the movie star",
     "sentence": "Both these girls and those boys %is,are% interviewing the movie star.",
-    "text": "Both these girls and those boys %is,are% interviewing the movie star."
+    "text": "Both these girls and those boys %is,are% interviewing the movie star.",
+    "dataType": "Filler"
   },
   // based on item 2
       {
@@ -1845,7 +1947,8 @@ let trial_objects = [
     "conj2_num": "P",
     "predicate": "drafting the important email",
     "sentence": "Both these professors and those students %is,are% drafting the important email.",
-    "text": "Both these professors and those students %is,are% drafting the important email."
+    "text": "Both these professors and those students %is,are% drafting the important email.",
+    "dataType": "Filler"
   },
   // based on item 3
       {
@@ -1858,7 +1961,8 @@ let trial_objects = [
     "conj2_num": "P",
     "predicate": "investigating the crime scene",
     "sentence": "Both those police officers and those detectives %is,are% investigating the crime scene.",
-    "text": "Both those police officers and those detectives %is,are% investigating the crime scene."
+    "text": "Both those police officers and those detectives %is,are% investigating the crime scene.",
+    "dataType": "Filler"
   },
 
   // 3 BOTH AND with SP
@@ -1873,7 +1977,8 @@ let trial_objects = [
     "conj2_num": "P",
     "predicate": "repairing the truck engine",
     "sentence": "Both Hanako and those mechanics %is,are% repairing the truck engine.",
-    "text": "Both Hanako and those mechanics %is,are% repairing the truck engine."
+    "text": "Both Hanako and those mechanics %is,are% repairing the truck engine.",
+    "dataType": "Filler"
   },
   //based on item 5
         {
@@ -1886,7 +1991,8 @@ let trial_objects = [
     "conj2_num": "P",
     "predicate": "preparing dinner",
     "sentence": "Both Lisa and those children %is,are% preparing dinner.",
-    "text": "Both Lisa and those children %is,are% preparing dinner."
+    "text": "Both Lisa and those children %is,are% preparing dinner.",
+    "dataType": "Filler"
   },
     //based on item 6
         {
@@ -1899,7 +2005,8 @@ let trial_objects = [
     "conj2_num": "P",
     "predicate": "fixing the leaking pipe",
     "sentence": "Both David and those plumbers %is,are% fixing the leaking pipe.",
-    "text": "Both David and those plumbers %is,are% fixing the leaking pipe."
+    "text": "Both David and those plumbers %is,are% fixing the leaking pipe.",
+    "dataType": "Filler"
   },
     // 3 BOTH AND with PS
     //based on item 7
@@ -1913,7 +2020,8 @@ let trial_objects = [
     "conj2_num": "S",
     "predicate": "conducting the experiments",
     "sentence": "Both these research assistants and Fatima %is,are% conducting the experiments.",
-    "text": "Both these research assistants and Fatima %is,are% conducting the experiments."
+    "text": "Both these research assistants and Fatima %is,are% conducting the experiments.",
+    "dataType": "Filler"
   },
     //based on item 8
         {
@@ -1926,7 +2034,8 @@ let trial_objects = [
     "conj2_num": "S",
     "predicate": "fixing the wiring issues",
     "sentence": "Both those electricians and Melissa %is,are% fixing the wiring issues.",
-    "text": "Both those electricians and Melissa %is,are% fixing the wiring issues."
+    "text": "Both those electricians and Melissa %is,are% fixing the wiring issues.",
+    "dataType": "Filler"
   },
     //based on item 9
         {
@@ -1939,7 +2048,8 @@ let trial_objects = [
     "conj2_num": "S",
     "predicate": "creating the fashion collection",
     "sentence": "Both those designers and Brian %is,are% creating the fashion collection.",
-    "text": "Both those designers and Brian %is,are% creating the fashion collection."
+    "text": "Both those designers and Brian %is,are% creating the fashion collection.",
+    "dataType": "Filler"
   },
     // 3 BOTH AND with SS
     //based on item 10
@@ -1953,7 +2063,8 @@ let trial_objects = [
     "conj2_num": "S",
     "predicate": "writing the end-of-year report",
     "sentence": "Both Sarah and Matt %is,are% writing the end-of-year report.",
-    "text": "Both Sarah and Matt %is,are% writing the end-of-year report."
+    "text": "Both Sarah and Matt %is,are% writing the end-of-year report.",
+    "dataType": "Filler"
   },
     //based on item 11
         {
@@ -1966,7 +2077,8 @@ let trial_objects = [
     "conj2_num": "S",
     "predicate": "making the admission decisions",
     "sentence": "Both Juan and Antonio %is,are% making the admission decisions.",
-    "text": "Both Juan and Antonio %is,are% making the admission decisions."
+    "text": "Both Juan and Antonio %is,are% making the admission decisions.",
+    "dataType": "Filler"
   },
     //based on item 12
         {
@@ -1979,7 +2091,8 @@ let trial_objects = [
     "conj2_num": "S",
     "predicate": "analyzing the market trends",
     "sentence": "Both Krishna and Amir %is,are% analyzing the market trends.",
-    "text": "Both Krishna and Amir %is,are% analyzing the market trends."
+    "text": "Both Krishna and Amir %is,are% analyzing the market trends.",
+    "dataType": "Filler"
   },
 
       // 12 PL
@@ -1994,7 +2107,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "designing the building's layout",
     "sentence": "These architects %is,are% designing the building's layout.",
-    "text": "These architects %is,are% designing the building's layout."
+    "text": "These architects %is,are% designing the building's layout.",
+    "dataType": "Filler"
   },
 
     //based on item 14
@@ -2008,7 +2122,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "proofreading the manuscripts",
     "sentence": "Those editors %is,are% proofreading the manuscripts.",
-    "text": "Those editors %is,are% proofreading the manuscripts."
+    "text": "Those editors %is,are% proofreading the manuscripts.",
+    "dataType": "Filler"
   },
     //based on item 15
         {
@@ -2021,7 +2136,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "handling the legal documents",
     "sentence": "Those lawyers %is,are% handling the legal documents.",
-    "text": "Those lawyers %is,are% handling the legal documents."
+    "text": "Those lawyers %is,are% handling the legal documents.",
+    "dataType": "Filler"
   },
       //based on item 16
         {
@@ -2034,7 +2150,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "recording the solar eclipse",
     "sentence": "These photographers %is,are% recording the solar eclipse.",
-    "text": "These photographers %is,are% recording the solar eclipse."
+    "text": "These photographers %is,are% recording the solar eclipse.",
+    "dataType": "Filler"
   },
       //based on item 17
         {
@@ -2047,7 +2164,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "attending to the patients",
     "sentence": "Those nurses %is,are% attending to the patients.",
-    "text": "Those nurses %is,are% attending to the patients."
+    "text": "Those nurses %is,are% attending to the patients.",
+    "dataType": "Filler"
   },
         //based on item 18
         {
@@ -2060,7 +2178,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "building the tree house",
     "sentence": "Those kids %is,are% building the tree house.",
-    "text": "Those kids %is,are% building the tree house."
+    "text": "Those kids %is,are% building the tree house.",
+    "dataType": "Filler"
   },
           //based on item 19
         {
@@ -2073,7 +2192,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "sewing the dresses",
     "sentence": "Those tailors %is,are% sewing the dresses.",
-    "text": "Those tailors %is,are% sewing the dresses."
+    "text": "Those tailors %is,are% sewing the dresses.",
+    "dataType": "Filler"
   },
             //based on item 20
         {
@@ -2086,7 +2206,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "sorting the books",
     "sentence": "Those volunteers %is,are% sorting the books.",
-    "text": "Those volunteers %is,are% sorting the books."
+    "text": "Those volunteers %is,are% sorting the books.",
+    "dataType": "Filler"
   },
               //based on item 21
         {
@@ -2099,7 +2220,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "using the art studio",
     "sentence": "Those painters %is,are% using the art studio.",
-    "text": "Those painters %is,are% using the art studio."
+    "text": "Those painters %is,are% using the art studio.",
+    "dataType": "Filler"
   },
                 //based on item 22
         {
@@ -2112,7 +2234,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "tending to the crops",
     "sentence": "Those farmers %is,are% tending to the crops.",
-    "text": "Those farmers %is,are% tending to the crops."
+    "text": "Those farmers %is,are% tending to the crops.",
+    "dataType": "Filler"
   },
                   //based on item 23
         {
@@ -2125,7 +2248,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "working out at the gym",
     "sentence": "Those athletes %is,are% working out at the gym.",
-    "text": "Those athletes %is,are% working out at the gym."
+    "text": "Those athletes %is,are% working out at the gym.",
+    "dataType": "Filler"
   },
                   //based on item 24
         {
@@ -2138,7 +2262,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "taking care of the babies",
     "sentence": "Those parents %is,are% taking care of the babies.",
-    "text": "Those parents %is,are% taking care of the babies."
+    "text": "Those parents %is,are% taking care of the babies.",
+    "dataType": "Filler"
   },
      // 24 S
   // the singular names were taken from item 13-25
@@ -2153,7 +2278,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "organizing the charity event.",
     "sentence": "Mateo %is,are% organizing the charity event.",
-    "text": "Mateo %is,are% organizing the charity event."
+    "text": "Mateo %is,are% organizing the charity event.",
+    "dataType": "Filler"
   },
           {
     "item": 51,
@@ -2165,7 +2291,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "reviewing the project proposals",
     "sentence": "Lin %is,are% reviewing the project proposals.",
-    "text": "Lin %is,are% reviewing the project proposals."
+    "text": "Lin %is,are% reviewing the project proposals.",
+    "dataType": "Filler"
   },
           {
     "item": 52,
@@ -2177,7 +2304,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "leading the scientific research",
     "sentence": "Elias %is,are% leading the scientific research.",
-    "text": "Elias %is,are% leading the scientific research."
+    "text": "Elias %is,are% leading the scientific research.",
+    "dataType": "Filler"
   },
           {
     "item": 53,
@@ -2189,7 +2317,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "editing the academic journal",
     "sentence": "Pedro %is,are% editing the academic journal.",
-    "text": "Pedro %is,are% editing the academic journal."
+    "text": "Pedro %is,are% editing the academic journal.",
+    "dataType": "Filler"
   },
         {
     "item": 54,
@@ -2201,7 +2330,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "caring for the garden",
     "sentence": "Zeynab %is,are% caring for the garden.",
-    "text": "Zeynab %is,are% caring for the garden."
+    "text": "Zeynab %is,are% caring for the garden.",
+    "dataType": "Filler"
   },
           {
     "item": 55,
@@ -2213,7 +2343,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "resolving the network issues",
     "sentence": "Emma %is,are% resolving the network issues.",
-    "text": "Emma %is,are% resolving the network issues"
+    "text": "Emma %is,are% resolving the network issues",
+    "dataType": "Filler"
   },
         {
     "item": 56,
@@ -2225,7 +2356,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "composing the annual report",
     "sentence": "Peter %is,are% composing the annual report.",
-    "text": "Peter %is,are% composing the annual report."
+    "text": "Peter %is,are% composing the annual report.",
+    "dataType": "Filler"
   },
         {
     "item": 57,
@@ -2237,7 +2369,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "servicing the air conditioning units",
     "sentence": "Noah %is,are% servicing the air conditioning units.",
-    "text": "Noah %is,are% servicing the air conditioning units."
+    "text": "Noah %is,are% servicing the air conditioning units.",
+    "dataType": "Filler"
   },
         {
     "item": 58,
@@ -2249,7 +2382,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "installing the security system",
     "sentence": "Alex %is,are% installing the security system.",
-    "text": "Alex %is,are% installing the security system."
+    "text": "Alex %is,are% installing the security system.",
+    "dataType": "Filler"
   },
         {
     "item": 59,
@@ -2261,7 +2395,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "planning the conference",
     "sentence": "Bill %is,are% planning the conference.",
-    "text": "Bill %is,are% planning the conference."
+    "text": "Bill %is,are% planning the conference.",
+    "dataType": "Filler"
   },
         {
     "item": 60,
@@ -2273,7 +2408,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "cataloging the library collection",
     "sentence": "Kim %is,are% cataloging the library collection.",
-    "text": "Kim %is,are% cataloging the library collection."
+    "text": "Kim %is,are% cataloging the library collection.",
+    "dataType": "Filler"
   },
         {
     "item": 61,
@@ -2285,7 +2421,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "fertilizing the fields",
     "sentence": "Jimmy %is,are% fertilizing the fields.",
-    "text": "Jimmy %is,are% fertilizing the fields."
+    "text": "Jimmy %is,are% fertilizing the fields.",
+    "dataType": "Filler"
   },        
   {
     "item": 62,
@@ -2297,7 +2434,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "painting the mural",
     "sentence": "Carlos %is,are% painting the mural.",
-    "text": "Carlos %is,are% painting the mural."
+    "text": "Carlos %is,are% painting the mural.",
+    "dataType": "Filler"
   },
         {
     "item": 63,
@@ -2309,7 +2447,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "training at the sports center",
     "sentence": "Thomas %is,are% training at the sports center.",
-    "text": "Thomas %is,are% training at the sports center."
+    "text": "Thomas %is,are% training at the sports center.",
+    "dataType": "Filler"
   },
         {
     "item": 64,
@@ -2321,7 +2460,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "producing the documentary film",
     "sentence": "Maria %is,are% producing the documentary film.",
-    "text": "Maria %is,are% producing the documentary film."
+    "text": "Maria %is,are% producing the documentary film.",
+    "dataType": "Filler"
   },
           {
     "item": 65,
@@ -2333,7 +2473,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "decorating the gallery",
     "sentence": "Hasan %is,are% decorating the gallery.",
-    "text": "Hasan %is,are% decorating the gallery."
+    "text": "Hasan %is,are% decorating the gallery.",
+    "dataType": "Filler"
   },
         {
     "item": 66,
@@ -2345,7 +2486,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "evaluating the scholarship applications",
     "sentence": "Yuki %is,are% evaluating the scholarship applications.",
-    "text": "Yuki %is,are% evaluating the scholarship applications."
+    "text": "Yuki %is,are% evaluating the scholarship applications.",
+    "dataType": "Filler"
   },
         {
     "item": 67,
@@ -2357,7 +2499,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "tailoring the costumes",
     "sentence": "Lydia %is,are% tailoring the costumes.",
-    "text": "Lydia %is,are% tailoring the costumes."
+    "text": "Lydia %is,are% tailoring the costumes.",
+    "dataType": "Filler"
   },
         {
     "item": 68,
@@ -2369,7 +2512,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "solving the mystery case",
     "sentence": "Liam %is,are% solving the mystery case.",
-    "text": "Liam %is,are% solving the mystery case."
+    "text": "Liam %is,are% solving the mystery case.",
+    "dataType": "Filler"
   },
         {
     "item": 69,
@@ -2381,7 +2525,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "capturing the wildlife in photographs",
     "sentence": "Andy %is,are% capturing the wildlife in photographs.",
-    "text": "Andy %is,are% capturing the wildlife in photographs."
+    "text": "Andy %is,are% capturing the wildlife in photographs.",
+    "dataType": "Filler"
   },
        {
     "item": 70,
@@ -2393,7 +2538,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "developing the game software",
     "sentence": "Joey %is,are% developing the game software.",
-    "text": "Joey %is,are% developing the game software."
+    "text": "Joey %is,are% developing the game software.",
+    "dataType": "Filler"
   },
        {
     "item": 71,
@@ -2405,7 +2551,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "renovating the historic building",
     "sentence": "Ellen %is,are% renovating the historic building.",
-    "text": "Ellen %is,are% renovating the historic building." 
+    "text": "Ellen %is,are% renovating the historic building.",
+    "dataType": "Filler"
   },
        {
     "item": 72,
@@ -2417,7 +2564,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "cooking the festive meal",
     "sentence": "Ali %is,are% cooking the festive meal.",
-    "text": "Ali %is,are% cooking the festive meal."
+    "text": "Ali %is,are% cooking the festive meal.",
+    "dataType": "Filler"
   },
        {
     "item": 73,
@@ -2429,7 +2577,8 @@ let trial_objects = [
     "conj2_num": "",
     "predicate": "constructing the playground",
     "sentence": "Hank %is,are% constructing the playground.",
-    "text": "Hank %is,are% constructing the playground."
+    "text": "Hank %is,are% constructing the playground.",
+    "dataType": "Filler"
   }
 
 ]
@@ -2438,4 +2587,4 @@ let trial_objects = [
 // CORRECTED STIMULI FROM LU ET AL 2024: 
 // "writting" > "writing"
 // "reparing" > "repairing"
-// ""
+// "atheletes" > "athletes"

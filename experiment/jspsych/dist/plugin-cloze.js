@@ -1,4 +1,4 @@
-// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU, ALEXIA HERNANDEZ, JIAYI LU, and SARANG JEONG TO ACCEPT MULTIPLE CLOZE ANSWERS. THIS IS NOT THE STANDARD JSPSYCH CLOZE MODULE. THIS MODULE ONLY ALLOWS FOR THE USE OF A SINGLE BLANK, BUT DOES ALLOW FOR MULTIPLE ANSWERS
+// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU, ALEXIA HERNANDEZ, JIAYI LU, AND SARANG JEONG TO ACCEPT MULTIPLE CLOZE ANSWERS AND TO DISABLE PASTING. THIS IS NOT THE STANDARD JSPSYCH CLOZE MODULE. THIS MODULE ONLY ALLOWS FOR THE USE OF A SINGLE BLANK, BUT DOES ALLOW FOR MULTIPLE ANSWERS
 
 
 var jsPsychCloze = (function (jspsych) {
@@ -62,7 +62,7 @@ var jsPsychCloze = (function (jspsych) {
                   html += elements[i];
               }
               else {
-                  html += `<input type="text" id="input${solution_counter}" value="">`;
+                  html += `<input onpaste="return false" type="text" id="input${solution_counter}" value="">`;
                   solution_counter++;
               }
           }

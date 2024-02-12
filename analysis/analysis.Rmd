@@ -17,26 +17,30 @@ DisjunctiveData <- read_csv("disjunctive_or_pilot-merged.csv")
 # Ceiling Checks
 
 ```{r}
-Ceilings <- DisjunctiveData %>% 
+CeilingParticipant <- DisjunctiveData %>% 
   filter(!is.na(cond),!is.na(item)) %>% 
-  group_by(cond) %>% 
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(cond,workerid) %>% 
   summarize(
-    are_prop = mean(response == "['are']", na.rm = TRUE),
-    is_prop = mean(response == "['is']", na.rm = TRUE)
-  ) %>% 
-  pivot_longer(cols = c("are_prop","is_prop"), names_to = "response_type", values_to = "proportion") %>%
-  mutate(response_type = ifelse(response_type == "are_prop", "are", "is"))
+    areRate = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary),
+    tokens = n()) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
 ```
 
 ```{r}
-Ceilings %>% 
-  ggplot(aes(x=cond,y=proportion,fill=response_type)) + 
-  geom_bar(stat="identity",position="dodge") + 
-  scale_fill_brewer(palette = "Paired") + 
+CeilingParticipant %>% 
+  ggplot(aes(x=reorder(conjTypes,-areRate), y=areRate, fill=conjTypes)) +
+  geom_bar(stat="identity") + 
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
   theme_bw() + 
   ylim(0,1) + 
-  labs(x="Conjunct Numbers",y="Proportion of Responses", fill="Response Copula") + 
-  theme(legend.position = "bottom")
+  labs(x="Conjunct Numbers",y="Proportion of 'are' Responses", fill="Conjunct Types") + 
+  scale_fill_brewer(palette = "Pastel2") + 
+  # theme(legend.position = "none") + 
+  # scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular")) +
+  facet_wrap(~workerid)
 ```
 
 
@@ -70,7 +74,35 @@ DisjunctiveProcessed %>%
   scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular"))
 ```
 
+## Particpant-Level
 
+```{r}
+DisjunctiveParticipant <- DisjunctiveData %>% 
+  filter(is.na(cond),!is.na(item)) %>% 
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(conj1_num,conj2_num,workerid) %>% 
+  summarize(
+    areRate = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary),
+    tokens = n()) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High) %>% 
+  mutate(conjTypes = paste(conj1_num,conj2_num))
+```
+
+```{r}
+DisjunctiveParticipant %>% 
+  ggplot(aes(x=reorder(conjTypes,-areRate), y=areRate, fill=conjTypes,alpha=tokens)) +
+  geom_bar(stat="identity") + 
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
+  theme_bw() + 
+  ylim(0,1) + 
+  labs(x="Conjunct Numbers",y="Proportion of 'are' Responses", fill="Conjunct Types") + 
+  scale_fill_brewer(palette = "Pastel2") + 
+  # theme(legend.position = "none") + 
+  # scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular")) +
+  facet_wrap(~workerid)
+```
 
 ### Old Version
 
