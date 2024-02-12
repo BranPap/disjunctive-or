@@ -12,6 +12,7 @@ function create_tv_array(json_object) {
         obj.data.text = json_object[i].text;
         obj.data.conj1_num = json_object[i].conj1_num;
         obj.data.conj2_num = json_object[i].conj2_num;
+        obj.data.dataType = json_object[i].dataType;
         tv_array.push(obj)
     }
     return tv_array;
