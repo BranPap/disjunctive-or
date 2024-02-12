@@ -5,20 +5,20 @@ output: html_notebook
 
 ```{r}
 library(tidyverse)
-library(stringr)
 source("helpers.R")
+source("survey.R")
 ```
 
 
 ```{r}
-DisjunctiveData <- read_csv("disjunctive_or_pilot-merged.csv")
+DisjunctiveData <- read_csv("disjunctive_or-merged.csv")
 ```
 
 # Ceiling Checks
 
 ```{r}
 CeilingParticipant <- DisjunctiveData %>% 
-  filter(!is.na(cond),!is.na(item)) %>% 
+  filter(dataType == "Filler") %>% 
   mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
   group_by(cond,workerid) %>% 
   summarize(
@@ -31,7 +31,7 @@ CeilingParticipant <- DisjunctiveData %>%
 
 ```{r}
 CeilingParticipant %>% 
-  ggplot(aes(x=reorder(conjTypes,-areRate), y=areRate, fill=conjTypes)) +
+  ggplot(aes(x=reorder(cond,-areRate), y=areRate, fill=cond)) +
   geom_bar(stat="identity") + 
   geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
   theme_bw() + 
@@ -49,50 +49,48 @@ CeilingParticipant %>%
 
 ```{r}
 DisjunctiveProcessed <- DisjunctiveData %>% 
-  filter(is.na(cond),!is.na(item)) %>% 
+  filter(dataType == "Critical") %>% 
   mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
-  group_by(conj1_num,conj2_num) %>% 
+  group_by(cond) %>% 
   summarize(
     areRate = mean(response_binary),
     CI.Low = ci.low(response_binary),
     CI.High = ci.high(response_binary)
     ) %>% 
-  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High) %>% 
-  mutate(conjTypes = paste(conj1_num,conj2_num))
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
 ```
 
 ```{r}
 DisjunctiveProcessed %>% 
-  ggplot(aes(x=reorder(conjTypes,-areRate), y=areRate, fill=conjTypes)) +
+  ggplot(aes(x=reorder(cond,-areRate), y=areRate, fill=cond)) +
   geom_bar(stat="identity") + 
   geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
   theme_bw() + 
   ylim(0,1) + 
   labs(x="Conjunct Numbers",y="Proportion of 'are' Responses", fill="Response Copula") + 
   scale_fill_brewer(palette = "Pastel2") + 
-  theme(legend.position = "none") + 
-  scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular"))
+  theme(legend.position = "none")  
+  # scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular"))
 ```
 
 ## Particpant-Level
 
 ```{r}
 DisjunctiveParticipant <- DisjunctiveData %>% 
-  filter(is.na(cond),!is.na(item)) %>% 
+  filter(dataType == "Critical") %>% 
   mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
-  group_by(conj1_num,conj2_num,workerid) %>% 
+  group_by(workerid,cond) %>% 
   summarize(
     areRate = mean(response_binary),
     CI.Low = ci.low(response_binary),
-    CI.High = ci.high(response_binary),
-    tokens = n()) %>% 
-  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High) %>% 
-  mutate(conjTypes = paste(conj1_num,conj2_num))
+    CI.High = ci.high(response_binary)
+    ) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
 ```
 
 ```{r}
 DisjunctiveParticipant %>% 
-  ggplot(aes(x=reorder(conjTypes,-areRate), y=areRate, fill=conjTypes,alpha=tokens)) +
+  ggplot(aes(x=reorder(cond,-areRate), y=areRate, fill=cond)) +
   geom_bar(stat="identity") + 
   geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
   theme_bw() + 
@@ -104,31 +102,39 @@ DisjunctiveParticipant %>%
   facet_wrap(~workerid)
 ```
 
-### Old Version
 
-
+## Extracting Demographic Information
 
 ```{r}
-#   group_by(conj1_num,conj2_num) %>% 
-#   summarize(
-#     are_prop = mean(response == "['are']", na.rm = TRUE),
-#     is_prop = mean(response == "['is']", na.rm = TRUE)
-#    # tokens = n() Need to figure out how to make this happen after all the following 
-#   ) %>% 
-#   pivot_longer(cols = c("are_prop","is_prop"), names_to = "response_type", values_to = "proportion") %>%
-#   mutate(response_type = ifelse(response_type == "are_prop", "are", "is"),
-#          conjTypes = paste(conj1_num,conj2_num))
-# 
-# head(DisjunctiveProcessed)
-
-DisjunctiveProcessed %>% 
-  ggplot(aes(x=conjTypes,y=proportion,fill=response_type)) + 
-  geom_bar(stat="identity",position="dodge") + 
-  scale_fill_brewer(palette = "Paired") + 
-  theme_bw() + 
-  ylim(0,1) + 
-  labs(x="Conjunct Numbers",y="Proportion of Responses", fill="Response Copula") + 
-  scale_x_discrete(labels=c("Plural+\nPlural","Plural+\nSingular","Singular+\nPlural","Singular+\nSingular")) + 
-  theme(legend.position = "bottom")
+test <- extract_demographics(DisjunctiveData,"workerid","response")
 ```
 
+
+### Gender
+
+```{r}
+DisjunctiveProcessedGender <- test %>% 
+  filter(dataType == "Critical") %>% 
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(cond,gender) %>% 
+  summarize(
+    areRate = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary)
+    ) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
+```
+
+```{r}
+DisjunctiveProcessedGender %>% 
+  ggplot(aes(x=reorder(cond,-areRate), y=areRate, fill=cond)) +
+  geom_bar(stat="identity") + 
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
+  theme_bw() + 
+  ylim(0,1) + 
+  labs(x="Conjunct Numbers",y="Proportion of 'are' Responses", fill="Response Copula") + 
+  scale_fill_brewer(palette = "Pastel2") + 
+  theme(legend.position = "none") + 
+  facet_wrap(~gender)
+  # scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular"))
+```
