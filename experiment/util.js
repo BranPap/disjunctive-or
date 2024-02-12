@@ -4,7 +4,6 @@ function create_tv_array(json_object) {
         obj = {};
         obj.text = json_object[i].text;
         obj.data = {};
-        // obj.data.trialType = json_object[i].trialType;
         obj.data.item = json_object[i].item;
         obj.data.conj1 = json_object[i].conj1;
         obj.data.conj2 = json_object[i].conj2;

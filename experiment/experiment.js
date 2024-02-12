@@ -65,7 +65,7 @@ const trials = {
             mistake_fn: function (){ alert("Please ensure your answer is either 'is' or 'are.'") },
             on_finish: function(data) {
                 jsPsych.setProgressBar((data.trial_index - 1) / (timeline.length + tv_array_modded.length));
-                // console.log("data.cond: "+data.cond)
+                console.log("data.cond: "+data.cond)
             }
             // on_finish: function(data) {
             //     record_response(data)
