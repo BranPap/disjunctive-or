@@ -7,6 +7,10 @@ output: html_notebook
 library(tidyverse)
 source("helpers.R")
 source("survey.R")
+
+library(factoextra)
+library(NbClust)
+library(cluster)
 ```
 
 
@@ -103,6 +107,94 @@ DisjunctiveParticipant %>%
 ```
 
 
+```{r}
+# Pivot the data to create a vector for each workerid
+pivot_data <- DisjunctiveParticipant %>%
+  select(workerid, cond, areRate) %>%
+pivot_wider(names_from = cond, values_from = areRate, values_fill = NA)
+pivot_data <- na.omit(pivot_data)
+
+# Extract workerid and response vectors
+response_vectors <- pivot_data[, -1]
+workerid <- pivot_data$workerid
+
+wss <- sapply(1:10, function(k) {
+  kmeans_result <- kmeans(response_vectors, centers = k)
+  kmeans_result$tot.withinss
+})
+
+# Plot the elbow curve
+plot(1:10, wss, type = "b", pch = 19, frame = FALSE,
+     xlab = "Number of Clusters",
+     ylab = "Total Within-cluster Sum of Squares")
+```
+
+```{r}
+#Silhouette method
+fviz_nbclust(response_vectors, kmeans, method = "silhouette")+
+  labs(subtitle = "Silhouette method")
+```
+
+```{r}
+# Perform k-means clustering
+kmeans_result <- kmeans(response_vectors, centers = 3)
+
+# Get cluster labels for each workerid
+cluster_labels <- as.factor(kmeans_result$cluster)
+
+# Combine cluster labels with workerid
+clustered_workerid <- data.frame(workerid, cluster_labels)
+
+#calculate distance scores 
+distances <- apply(response_vectors, 1, function(x) sqrt(rowSums((x - kmeans_result$centers)^2)))
+# Option 1: Calculate a score as the inverse of the distance (smaller distance = higher score)
+#likelihood_scores <- 1 / distances
+
+# Option 2: Use distance as score (greater distance = higher score)
+likelihood_scores <- distances
+
+# Transpose the likelihood_scores matrix to get scores for each workerid
+worker_scores <- t(likelihood_scores)
+
+# Create a data frame with workerid and the three scores
+worker_scores_df <- data.frame(workerid, worker_scores)
+
+# Print the worker scores
+print(worker_scores_df)
+
+merged_data <- DisjunctiveParticipant %>%
+  left_join(clustered_workerid, by = "workerid")%>%
+  left_join(worker_scores_df, by = "workerid")
+merged_data <- na.omit(merged_data)
+
+averaged_responses <- merged_data %>%
+  group_by(cond, cluster_labels) %>%
+  summarize(mean_plural = mean(areRate), 
+            CI.Low = ci.low(areRate),
+            CI.High = ci.high(areRate))%>%
+   mutate(YMin = mean_plural - CI.Low, YMax = mean_plural + CI.High)
+  
+
+# Plot the clustering result as a bar plot
+ggplot(averaged_responses, aes(x = cond, y = mean_plural)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  # scale_fill_manual(values = cbPalette) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
+  labs(x = "Condition",
+       y = "Rate of plural copula") +
+  facet_wrap(~ cluster_labels ) +
+  theme_minimal()
+```
+
+```{r}
+# Calculate the counts of workerid in each cluster
+cluster_counts <- table(clustered_workerid$cluster_labels)
+
+# Print the cluster counts
+print(cluster_counts)
+```
+
+
 ## Extracting Demographic Information
 
 ```{r}
@@ -137,4 +229,107 @@ DisjunctiveProcessedGender %>%
   theme(legend.position = "none") + 
   facet_wrap(~gender)
   # scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular"))
+```
+
+
+## Adding up the pieces
+
+```{r}
+DisjunctiveParticipant <- test %>% 
+  filter(dataType == "Critical") %>% 
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(workerid,cond) %>% 
+  summarize(
+    areRate = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary)
+    ) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
+```
+
+```{r}
+merged_data <- test %>%
+  left_join(clustered_workerid, by = "workerid")%>%
+  left_join(worker_scores_df, by = "workerid")
+# merged_data <- na.omit(merged_data)
+
+averaged_responses <- merged_data %>%
+  group_by(cond, cluster_labels) %>%
+  summarize(mean_plural = mean(areRate), 
+            CI.Low = ci.low(areRate),
+            CI.High = ci.high(areRate))%>%
+   mutate(YMin = mean_plural - CI.Low, YMax = mean_plural + CI.High)
+  
+
+# Plot the clustering result as a bar plot
+ggplot(averaged_responses, aes(x = cond, y = mean_plural)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  # scale_fill_manual(values = cbPalette) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
+  labs(x = "Condition",
+       y = "Rate of plural copula") +
+  facet_wrap(~ cluster_labels ) +
+  theme_minimal()
+```
+
+```{r}
+merged_data %>%
+  filter(dataType == "Critical") %>%
+  filter(!is.na(education),!is.na(cluster_labels)) %>%
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(education,cluster_labels,cond) %>%
+  summarize(
+    mean_plural = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary)
+  ) %>%
+  mutate(YMin = mean_plural - CI.Low, YMax = mean_plural + CI.High) %>%
+  ggplot(aes(x=cond,y=mean_plural)) + 
+  geom_bar(stat="identity", position="dodge") + 
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width = 0.25) + 
+  labs(x="Condition",
+      y = "Rate of plural copula") + 
+  facet_grid(education~cluster_labels) + 
+  theme_bw()
+```
+
+```{r}
+unique_participant <- merged_data %>%
+  select(c("education","cluster_labels","age","gender","workerid")) %>%
+  mutate(ageGroup = ifelse(age >= 40, "older","younger")) %>%
+  group_by(education, cluster_labels, age, gender, workerid) %>%
+  unique()
+```
+
+```{r}
+table(unique_participant$cluster_labels,unique_participant$education)
+```
+
+
+### age
+
+```{r}
+merged_data %>%
+  filter(dataType == "Critical") %>%
+  filter(!is.na(age),!is.na(cluster_labels)) %>%
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  mutate(ageGroup = ifelse(age >= 40,"older","younger")) %>%
+  group_by(ageGroup,cluster_labels,cond) %>%
+  summarize(
+    mean_plural = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary)
+  ) %>%
+  mutate(YMin = mean_plural - CI.Low, YMax = mean_plural + CI.High) %>%
+  ggplot(aes(x=cond,y=mean_plural)) + 
+  geom_bar(stat="identity", position="dodge") + 
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width = 0.25) + 
+  labs(x="Condition",
+      y = "Rate of plural copula") + 
+  facet_grid(ageGroup~cluster_labels) + 
+  theme_bw()
+```
+
+```{r}
+table(unique_participant$cluster_labels, unique_participant$ageGroup)
 ```
