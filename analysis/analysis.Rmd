@@ -73,9 +73,15 @@ DisjunctiveProcessed %>%
   ylim(0,1) + 
   labs(x="Conjunct Numbers",y="Proportion of 'are' Responses", fill="Response Copula") + 
   scale_fill_brewer(palette = "Pastel2") + 
-  theme(legend.position = "none")  
+  theme(legend.position = "none") + 
+  theme(text = element_text(size=28))
   # scale_x_discrete(labels=c("Singular+\nPlural","Plural+\nPlural","Plural+\nSingular","Singular+\nSingular"))
 ```
+
+```{r}
+ggsave("figures/CollapsedResults.png",height=8,width=14)
+```
+
 
 ## Particpant-Level
 
@@ -333,3 +339,28 @@ merged_data %>%
 ```{r}
 table(unique_participant$cluster_labels, unique_participant$ageGroup)
 ```
+
+
+
+
+```{r}
+DisjunctiveParticipantCondless <- DisjunctiveData %>% 
+  filter(dataType == "Critical") %>% 
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(workerid) %>% 
+  summarize(
+    areRate = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary)
+    ) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
+```
+
+```{r}
+DisjunctiveParticipant %>% 
+  ggplot(aes(x=areRate)) + 
+  geom_bar() + 
+  labs(x="Rate of 'are' production",y="# of Participants") + 
+  facet_wrap(~cond)
+```
+

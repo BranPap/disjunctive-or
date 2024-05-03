@@ -1,4 +1,4 @@
-let trial_objects = [
+[
     {
         "id": 52,
         "conj1": "the electrician",
@@ -1092,7 +1092,7 @@ let trial_objects = [
         "cond": "3P_or_3P"
     },
     {
-        "id": 172,
+        "id": 84,
         "conj1": "Hazel",
         "conj2": "null",
         "predicate": "training for a martial arts tournament.",
@@ -1612,7 +1612,7 @@ let trial_objects = [
         "cond": "3P"
     },
     {
-        "id": 124,
+        "item": 26,
         "unique_id": 2601,
         "cond": "PP",
         "conj1": "these girls",
@@ -1622,11 +1622,11 @@ let trial_objects = [
         "predicate": "interviewing the movie star",
         "sentence": "Both these girls and those boys %is,are% interviewing the movie star.",
         "text": "Both these girls and those boys %is,are% interviewing the movie star.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
        
           {
-        "id": 125,
+        "item": 27,
         "unique_id": 2602,
         "cond": "PP",
         "conj1": "these professors",
@@ -1636,11 +1636,11 @@ let trial_objects = [
         "predicate": "drafting the important email",
         "sentence": "Both these professors and those students %is,are% drafting the important email.",
         "text": "Both these professors and those students %is,are% drafting the important email.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
        
           {
-        "id": 126,
+        "item": 28,
         "unique_id": 2603,
         "cond": "PP",
         "conj1": "those police officers",
@@ -1650,13 +1650,13 @@ let trial_objects = [
         "predicate": "investigating the crime scene",
         "sentence": "Both those police officers and those detectives %is,are% investigating the crime scene.",
         "text": "Both those police officers and those detectives %is,are% investigating the crime scene.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
     
        
        
           {
-        "id": 127,
+        "item": 29,
         "unique_id": 2701,
         "cond": "SP",
         "conj1": "Hanako",
@@ -1666,11 +1666,11 @@ let trial_objects = [
         "predicate": "repairing the truck engine",
         "sentence": "Both Hanako and those mechanics %is,are% repairing the truck engine.",
         "text": "Both Hanako and those mechanics %is,are% repairing the truck engine.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
         
             {
-        "id": 128,
+        "item": 30,
         "unique_id": 2702,
         "cond": "SP",
         "conj1": "Lisa",
@@ -1680,11 +1680,11 @@ let trial_objects = [
         "predicate": "preparing dinner",
         "sentence": "Both Lisa and those children %is,are% preparing dinner.",
         "text": "Both Lisa and those children %is,are% preparing dinner.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
           
             {
-        "id": 129,
+        "item": 31,
         "unique_id": 2703,
         "cond": "SP",
         "conj1": "David",
@@ -1694,12 +1694,12 @@ let trial_objects = [
         "predicate": "fixing the leaking pipe",
         "sentence": "Both David and those plumbers %is,are% fixing the leaking pipe.",
         "text": "Both David and those plumbers %is,are% fixing the leaking pipe.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
          
           
             {
-        "id": 130,
+        "item": 32,
         "unique_id": 2801,
         "cond": "PS",
         "conj1": "these research assistants",
@@ -1709,11 +1709,11 @@ let trial_objects = [
         "predicate": "conducting the experiments",
         "sentence": "Both these research assistants and Fatima %is,are% conducting the experiments.",
         "text": "Both these research assistants and Fatima %is,are% conducting the experiments.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
           
             {
-        "id": 131,
+        "item": 33,
         "unique_id": 2802,
         "cond": "PS",
         "conj1": "those electricians",
@@ -1723,11 +1723,11 @@ let trial_objects = [
         "predicate": "fixing the wiring issues",
         "sentence": "Both those electricians and Melissa %is,are% fixing the wiring issues.",
         "text": "Both those electricians and Melissa %is,are% fixing the wiring issues.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
           
             {
-        "id": 132,
+        "item": 34,
         "unique_id": 2803,
         "cond": "PS",
         "conj1": "those designers",
@@ -1737,12 +1737,12 @@ let trial_objects = [
         "predicate": "creating the fashion collection",
         "sentence": "Both those designers and Brian %is,are% creating the fashion collection.",
         "text": "Both those designers and Brian %is,are% creating the fashion collection.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
          
           
             {
-        "id": 133,
+        "item": 35,
         "unique_id": 2901,
         "cond": "SS",
         "conj1": "Sarah",
@@ -1752,11 +1752,11 @@ let trial_objects = [
         "predicate": "writing the end-of-year report",
         "sentence": "Both Sarah and Matt %is,are% writing the end-of-year report.",
         "text": "Both Sarah and Matt %is,are% writing the end-of-year report.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
           
             {
-        "id": 134,
+        "item": 36,
         "unique_id": 2902,
         "cond": "SS",
       "conj1": "Juan",
@@ -1766,11 +1766,11 @@ let trial_objects = [
         "predicate": "making the admission decisions",
         "sentence": "Both Juan and Antonio %is,are% making the admission decisions.",
         "text": "Both Juan and Antonio %is,are% making the admission decisions.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
           
             {
-        "id": 135,
+        "item": 37,
         "unique_id": 2903,
         "cond": "SS",
         "conj1": "Krishna",
@@ -1780,13 +1780,13 @@ let trial_objects = [
         "predicate": "analyzing the market trends",
         "sentence": "Both Krishna and Amir %is,are% analyzing the market trends.",
         "text": "Both Krishna and Amir %is,are% analyzing the market trends.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
     
            
           
             {
-        "id": 136,
+        "item": 38,
         "unique_id": 3001,
         "cond": "P",
         "conj1": "these architects",
@@ -1796,12 +1796,12 @@ let trial_objects = [
         "predicate": "designing the building's layout",
         "sentence": "These architects %is,are% designing the building's layout.",
         "text": "These architects %is,are% designing the building's layout.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
     
           
             {
-        "id": 137,
+        "item": 39,
         "unique_id": 3002,
         "cond": "P",
         "conj1": "those editors",
@@ -1811,11 +1811,11 @@ let trial_objects = [
         "predicate": "proofreading the manuscripts",
         "sentence": "Those editors %is,are% proofreading the manuscripts.",
         "text": "Those editors %is,are% proofreading the manuscripts.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
           
             {
-        "id": 138,
+        "item": 40,
         "unique_id": 3003,
         "cond": "P",
         "conj1": "those lawyers",
@@ -1825,11 +1825,11 @@ let trial_objects = [
         "predicate": "handling the legal documents",
         "sentence": "Those lawyers %is,are% handling the legal documents.",
         "text": "Those lawyers %is,are% handling the legal documents.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             
             {
-        "id": 139,
+        "item": 41,
         "unique_id": 3004,
         "cond": "P",
         "conj1": "these photographers",
@@ -1839,11 +1839,11 @@ let trial_objects = [
         "predicate": "recording the solar eclipse",
         "sentence": "These photographers %is,are% recording the solar eclipse.",
         "text": "These photographers %is,are% recording the solar eclipse.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             
             {
-        "id": 140,
+        "item": 42,
         "unique_id": 3005,
         "cond": "P",
         "conj1": "those nurses",
@@ -1853,11 +1853,11 @@ let trial_objects = [
         "predicate": "attending to the patients",
         "sentence": "Those nurses %is,are% attending to the patients.",
         "text": "Those nurses %is,are% attending to the patients.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
               
             {
-        "id": 141,
+        "item": 43,
         "unique_id": 3006,
         "cond": "P",
         "conj1": "those kids",
@@ -1867,11 +1867,11 @@ let trial_objects = [
         "predicate": "building the tree house",
         "sentence": "Those kids %is,are% building the tree house.",
         "text": "Those kids %is,are% building the tree house.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
                 
             {
-        "id": 142,
+        "item": 44,
         "unique_id": 3007,
         "cond": "P",
         "conj1": "those tailors",
@@ -1881,11 +1881,11 @@ let trial_objects = [
         "predicate": "sewing the dresses",
         "sentence": "Those tailors %is,are% sewing the dresses.",
         "text": "Those tailors %is,are% sewing the dresses.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
                   
             {
-        "id": 143,
+        "item": 45,
         "unique_id": 3008,
         "cond": "P",
         "conj1": "those volunteers",
@@ -1895,11 +1895,11 @@ let trial_objects = [
         "predicate": "sorting the books",
         "sentence": "Those volunteers %is,are% sorting the books.",
         "text": "Those volunteers %is,are% sorting the books.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
                     
             {
-        "id": 144,
+        "item": 46,
         "unique_id": 3009,
         "cond": "P",
         "conj1": "those painters",
@@ -1909,11 +1909,11 @@ let trial_objects = [
         "predicate": "using the art studio",
         "sentence": "Those painters %is,are% using the art studio.",
         "text": "Those painters %is,are% using the art studio.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
                       
             {
-        "id": 145,
+        "item": 47,
         "unique_id": 3010,
         "cond": "P",
         "conj1": "those farmers",
@@ -1923,11 +1923,11 @@ let trial_objects = [
         "predicate": "tending to the crops",
         "sentence": "Those farmers %is,are% tending to the crops.",
         "text": "Those farmers %is,are% tending to the crops.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
                         
             {
-        "id": 146,
+        "item": 48,
         "unique_id": 3011,
         "cond": "P",
         "conj1": "those athletes",
@@ -1937,10 +1937,10 @@ let trial_objects = [
         "predicate": "working out at the gym",
         "sentence": "Those athletes %is,are% working out at the gym.",
         "text": "Those athletes %is,are% working out at the gym.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 147,
+        "item": 49,
         "unique_id": 3012,
         "cond": "P",
         "conj1": "those parents",
@@ -1950,10 +1950,10 @@ let trial_objects = [
         "predicate": "taking care of the babies",
         "sentence": "Those parents %is,are% taking care of the babies.",
         "text": "Those parents %is,are% taking care of the babies.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 148,
+        "item": 50,
         "unique_id": 3101,
         "cond": "S",
         "conj1": "Mateo",
@@ -1963,10 +1963,10 @@ let trial_objects = [
         "predicate": "organizing the charity event.",
         "sentence": "Mateo %is,are% organizing the charity event.",
         "text": "Mateo %is,are% organizing the charity event.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
               {
-        "id": 149,
+        "item": 51,
         "unique_id": 3102,
         "cond": "S",
         "conj1": "Lin",
@@ -1976,10 +1976,10 @@ let trial_objects = [
         "predicate": "reviewing the project proposals",
         "sentence": "Lin %is,are% reviewing the project proposals.",
         "text": "Lin %is,are% reviewing the project proposals.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
               {
-        "id": 150,
+        "item": 52,
         "unique_id": 3103,
         "cond": "S",
         "conj1": "Elias",
@@ -1989,10 +1989,10 @@ let trial_objects = [
         "predicate": "leading the scientific research",
         "sentence": "Elias %is,are% leading the scientific research.",
         "text": "Elias %is,are% leading the scientific research.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
               {
-        "id": 151,
+        "item": 53,
         "unique_id": 3104,
         "cond": "S",
         "conj1": "Pedro",
@@ -2002,10 +2002,10 @@ let trial_objects = [
         "predicate": "editing the academic journal",
         "sentence": "Pedro %is,are% editing the academic journal.",
         "text": "Pedro %is,are% editing the academic journal.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 152,
+        "item": 54,
         "unique_id": 3105,
         "cond": "S",
         "conj1": "Zeynab",
@@ -2015,10 +2015,10 @@ let trial_objects = [
         "predicate": "caring for the garden",
         "sentence": "Zeynab %is,are% caring for the garden.",
         "text": "Zeynab %is,are% caring for the garden.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
               {
-        "id": 153,
+        "item": 55,
         "unique_id": 3106,
         "cond": "S",
         "conj1": "Emma",
@@ -2028,10 +2028,10 @@ let trial_objects = [
         "predicate": "resolving the network issues",
         "sentence": "Emma %is,are% resolving the network issues.",
         "text": "Emma %is,are% resolving the network issues",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 154,
+        "item": 56,
         "unique_id": 3107,
         "cond": "S",
         "conj1": "Peter",
@@ -2041,10 +2041,10 @@ let trial_objects = [
         "predicate": "composing the annual report",
         "sentence": "Peter %is,are% composing the annual report.",
         "text": "Peter %is,are% composing the annual report.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 155,
+        "item": 57,
         "unique_id": 3108,
         "cond": "S",
         "conj1": "Noah",
@@ -2054,10 +2054,10 @@ let trial_objects = [
         "predicate": "servicing the air conditioning units",
         "sentence": "Noah %is,are% servicing the air conditioning units.",
         "text": "Noah %is,are% servicing the air conditioning units.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 156,
+        "item": 58,
         "unique_id": 3109,
         "cond": "S",
         "conj1": "Alex",
@@ -2067,10 +2067,10 @@ let trial_objects = [
         "predicate": "installing the security system",
         "sentence": "Alex %is,are% installing the security system.",
         "text": "Alex %is,are% installing the security system.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 157,
+        "item": 59,
         "unique_id": 3110,
         "cond": "S",
         "conj1": "Bill",
@@ -2080,10 +2080,10 @@ let trial_objects = [
         "predicate": "planning the conference",
         "sentence": "Bill %is,are% planning the conference.",
         "text": "Bill %is,are% planning the conference.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 158,
+        "item": 60,
         "unique_id": 3111,
         "cond": "S",
         "conj1": "Kim",
@@ -2093,10 +2093,10 @@ let trial_objects = [
         "predicate": "cataloging the library collection",
         "sentence": "Kim %is,are% cataloging the library collection.",
         "text": "Kim %is,are% cataloging the library collection.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 159,
+        "item": 61,
         "unique_id": 3112,
         "cond": "S",
         "conj1": "Jimmy",
@@ -2106,10 +2106,10 @@ let trial_objects = [
         "predicate": "fertilizing the fields",
         "sentence": "Jimmy %is,are% fertilizing the fields.",
         "text": "Jimmy %is,are% fertilizing the fields.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },        
       {
-        "id": 160,
+        "item": 62,
         "unique_id": 3113,
         "cond": "S",
         "conj1": "Carlos",
@@ -2119,10 +2119,10 @@ let trial_objects = [
         "predicate": "painting the mural",
         "sentence": "Carlos %is,are% painting the mural.",
         "text": "Carlos %is,are% painting the mural.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 161,
+        "item": 63,
         "unique_id": 3114,
         "cond": "S",
         "conj1": "Thomas",
@@ -2132,10 +2132,10 @@ let trial_objects = [
         "predicate": "training at the sports center",
         "sentence": "Thomas %is,are% training at the sports center.",
         "text": "Thomas %is,are% training at the sports center.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 162,
+        "item": 64,
         "unique_id": 3115,
         "cond": "S",
         "conj1": "Maria",
@@ -2145,10 +2145,10 @@ let trial_objects = [
         "predicate": "producing the documentary film",
         "sentence": "Maria %is,are% producing the documentary film.",
         "text": "Maria %is,are% producing the documentary film.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
               {
-        "id": 163,
+        "item": 65,
         "unique_id": 3116,
         "cond": "S",
         "conj1": "Hasan",
@@ -2158,10 +2158,10 @@ let trial_objects = [
         "predicate": "decorating the gallery",
         "sentence": "Hasan %is,are% decorating the gallery.",
         "text": "Hasan %is,are% decorating the gallery.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 164,
+        "item": 66,
         "unique_id": 3117,
         "cond": "S",
         "conj1": "Yuki",
@@ -2171,10 +2171,10 @@ let trial_objects = [
         "predicate": "evaluating the scholarship applications",
         "sentence": "Yuki %is,are% evaluating the scholarship applications.",
         "text": "Yuki %is,are% evaluating the scholarship applications.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 165,
+        "item": 67,
         "unique_id": 3118,
         "cond": "S",
         "conj1": "Lydia",
@@ -2184,10 +2184,10 @@ let trial_objects = [
         "predicate": "tailoring the costumes",
         "sentence": "Lydia %is,are% tailoring the costumes.",
         "text": "Lydia %is,are% tailoring the costumes.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 166,
+        "item": 68,
         "unique_id": 3119,
         "cond": "S",
         "conj1": "Liam",
@@ -2197,10 +2197,10 @@ let trial_objects = [
         "predicate": "solving the mystery case",
         "sentence": "Liam %is,are% solving the mystery case.",
         "text": "Liam %is,are% solving the mystery case.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
             {
-        "id": 167,
+        "item": 69,
         "unique_id": 3120,
         "cond": "S",
         "conj1": "Andy",
@@ -2210,10 +2210,10 @@ let trial_objects = [
         "predicate": "capturing the wildlife in photographs",
         "sentence": "Andy %is,are% capturing the wildlife in photographs.",
         "text": "Andy %is,are% capturing the wildlife in photographs.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
            {
-        "id": 168,
+        "item": 70,
         "unique_id": 3121,
         "cond": "S",
         "conj1": "Joey",
@@ -2223,10 +2223,10 @@ let trial_objects = [
         "predicate": "developing the game software",
         "sentence": "Joey %is,are% developing the game software.",
         "text": "Joey %is,are% developing the game software.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
            {
-        "id": 169,
+        "item": 71,
         "unique_id": 3122,
         "cond": "S",
         "conj1": "Ellen",
@@ -2236,10 +2236,10 @@ let trial_objects = [
         "predicate": "renovating the historic building",
         "sentence": "Ellen %is,are% renovating the historic building.",
         "text": "Ellen %is,are% renovating the historic building.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
            {
-        "id": 170,
+        "item": 72,
         "unique_id": 3123,
         "cond": "S",
         "conj1": "Ali",
@@ -2249,10 +2249,10 @@ let trial_objects = [
         "predicate": "cooking the festive meal",
         "sentence": "Ali %is,are% cooking the festive meal.",
         "text": "Ali %is,are% cooking the festive meal.",
-        "dataType": "filler"
+        "dataType": "Filler"
       },
            {
-        "id": 171,
+        "item": 73,
         "unique_id": 3124,
         "cond": "S",
         "conj1": "Hank",
@@ -2262,6 +2262,6 @@ let trial_objects = [
         "predicate": "constructing the playground",
         "sentence": "Hank %is,are% constructing the playground.",
         "text": "Hank %is,are% constructing the playground.",
-        "dataType": "filler"
+        "dataType": "Filler"
       }
 ]

@@ -45,7 +45,7 @@ timeline.push(instructions);
 
 let tv_array = create_tv_array(trial_objects)
 shuffleArray(tv_array)
-// console.log(tv_array.length)
+console.log(tv_array.length)
 // console.log("tv_array"+tv_array)
 // let tv_array_modded = check_dupes(tv_array)
 // 
@@ -61,7 +61,7 @@ const trials = {
             text: jsPsych.timelineVariable('text'), 
             allow_blanks: false,
             check_answers: true,
-            mistake_fn: function (){ alert("Please ensure your answer is either 'is' or 'are.'") },
+            mistake_fn: function (){ alert("Please ensure your answer is either 'is', 'are', or 'am'.") },
             on_finish: function(data) {
                 jsPsych.setProgressBar((data.trial_index - 1) / (timeline.length + tv_array.length));
                 console.log("data.cond: "+data.cond)
