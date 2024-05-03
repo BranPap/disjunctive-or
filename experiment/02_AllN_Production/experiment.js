@@ -33,7 +33,7 @@ timeline.push(irb)
 
 const instructions = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: "In this experiment, you will read a series of sentences and will be asked to indicate the word which best completes it.<br><br><strong>Please type the word 'is' or 'are' in the blank.</strong> <br><br>If you're unsure about your choice, follow your first instinct.<br><br>When you're ready to begin, press the space bar.",
+    stimulus: "In this experiment, you will read a series of sentences and will be asked to indicate the word which best completes each one.<br><br><strong>Please type the word 'is', 'are', or 'am' in the blank.</strong> <br><br>If you're unsure about your choice, follow your first instinct.<br><br>When you're ready to begin, press the space bar.",
     choices: [" "],
     on_finish: function(data) {
         data.category = "instructions"
