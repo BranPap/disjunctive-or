@@ -1620,8 +1620,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "P",
         "predicate": "interviewing the movie star",
-        "sentence": "Both these girls and those boys %is,are% interviewing the movie star.",
-        "text": "Both these girls and those boys %is,are% interviewing the movie star.",
+        "sentence": "Both these girls and those boys %is,are,am% interviewing the movie star.",
+        "text": "Both these girls and those boys %is,are,am% interviewing the movie star.",
         "dataType": "filler"
       },
        
@@ -1634,8 +1634,8 @@ let trial_objects = [
             "conj1_num": "P",
         "conj2_num": "P",
         "predicate": "drafting the important email",
-        "sentence": "Both these professors and those students %is,are% drafting the important email.",
-        "text": "Both these professors and those students %is,are% drafting the important email.",
+        "sentence": "Both these professors and those students %is,are,am% drafting the important email.",
+        "text": "Both these professors and those students %is,are,am% drafting the important email.",
         "dataType": "filler"
       },
        
@@ -1648,8 +1648,8 @@ let trial_objects = [
             "conj1_num": "P",
         "conj2_num": "P",
         "predicate": "investigating the crime scene",
-        "sentence": "Both those police officers and those detectives %is,are% investigating the crime scene.",
-        "text": "Both those police officers and those detectives %is,are% investigating the crime scene.",
+        "sentence": "Both those police officers and those detectives %is,are,am% investigating the crime scene.",
+        "text": "Both those police officers and those detectives %is,are,am% investigating the crime scene.",
         "dataType": "filler"
       },
     
@@ -1664,8 +1664,8 @@ let trial_objects = [
             "conj1_num": "S",
         "conj2_num": "P",
         "predicate": "repairing the truck engine",
-        "sentence": "Both Hanako and those mechanics %is,are% repairing the truck engine.",
-        "text": "Both Hanako and those mechanics %is,are% repairing the truck engine.",
+        "sentence": "Both Hanako and those mechanics %is,are,am% repairing the truck engine.",
+        "text": "Both Hanako and those mechanics %is,are,am% repairing the truck engine.",
         "dataType": "filler"
       },
         
@@ -1678,8 +1678,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "P",
         "predicate": "preparing dinner",
-        "sentence": "Both Lisa and those children %is,are% preparing dinner.",
-        "text": "Both Lisa and those children %is,are% preparing dinner.",
+        "sentence": "Both Lisa and those children %is,are,am% preparing dinner.",
+        "text": "Both Lisa and those children %is,are,am% preparing dinner.",
         "dataType": "filler"
       },
           
@@ -1692,8 +1692,8 @@ let trial_objects = [
                 "conj1_num": "S",
         "conj2_num": "P",
         "predicate": "fixing the leaking pipe",
-        "sentence": "Both David and those plumbers %is,are% fixing the leaking pipe.",
-        "text": "Both David and those plumbers %is,are% fixing the leaking pipe.",
+        "sentence": "Both David and those plumbers %is,are,am% fixing the leaking pipe.",
+        "text": "Both David and those plumbers %is,are,am% fixing the leaking pipe.",
         "dataType": "filler"
       },
          
@@ -1707,8 +1707,8 @@ let trial_objects = [
                 "conj1_num": "P",
         "conj2_num": "S",
         "predicate": "conducting the experiments",
-        "sentence": "Both these research assistants and Fatima %is,are% conducting the experiments.",
-        "text": "Both these research assistants and Fatima %is,are% conducting the experiments.",
+        "sentence": "Both these research assistants and Fatima %is,are,am% conducting the experiments.",
+        "text": "Both these research assistants and Fatima %is,are,am% conducting the experiments.",
         "dataType": "filler"
       },
           
@@ -1721,8 +1721,8 @@ let trial_objects = [
                     "conj1_num": "P",
         "conj2_num": "S",
         "predicate": "fixing the wiring issues",
-        "sentence": "Both those electricians and Melissa %is,are% fixing the wiring issues.",
-        "text": "Both those electricians and Melissa %is,are% fixing the wiring issues.",
+        "sentence": "Both those electricians and Melissa %is,are,am% fixing the wiring issues.",
+        "text": "Both those electricians and Melissa %is,are,am% fixing the wiring issues.",
         "dataType": "filler"
       },
           
@@ -1735,8 +1735,8 @@ let trial_objects = [
                     "conj1_num": "P",
         "conj2_num": "S",
         "predicate": "creating the fashion collection",
-        "sentence": "Both those designers and Brian %is,are% creating the fashion collection.",
-        "text": "Both those designers and Brian %is,are% creating the fashion collection.",
+        "sentence": "Both those designers and Brian %is,are,am% creating the fashion collection.",
+        "text": "Both those designers and Brian %is,are,am% creating the fashion collection.",
         "dataType": "filler"
       },
          
@@ -1750,8 +1750,8 @@ let trial_objects = [
                     "conj1_num": "S",
         "conj2_num": "S",
         "predicate": "writing the end-of-year report",
-        "sentence": "Both Sarah and Matt %is,are% writing the end-of-year report.",
-        "text": "Both Sarah and Matt %is,are% writing the end-of-year report.",
+        "sentence": "Both Sarah and Matt %is,are,am% writing the end-of-year report.",
+        "text": "Both Sarah and Matt %is,are,am% writing the end-of-year report.",
         "dataType": "filler"
       },
           
@@ -1764,8 +1764,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "S",
         "predicate": "making the admission decisions",
-        "sentence": "Both Juan and Antonio %is,are% making the admission decisions.",
-        "text": "Both Juan and Antonio %is,are% making the admission decisions.",
+        "sentence": "Both Juan and Antonio %is,are,am% making the admission decisions.",
+        "text": "Both Juan and Antonio %is,are,am% making the admission decisions.",
         "dataType": "filler"
       },
           
@@ -1778,8 +1778,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "S",
         "predicate": "analyzing the market trends",
-        "sentence": "Both Krishna and Amir %is,are% analyzing the market trends.",
-        "text": "Both Krishna and Amir %is,are% analyzing the market trends.",
+        "sentence": "Both Krishna and Amir %is,are,am% analyzing the market trends.",
+        "text": "Both Krishna and Amir %is,are,am% analyzing the market trends.",
         "dataType": "filler"
       },
     
@@ -1794,8 +1794,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "designing the building's layout",
-        "sentence": "These architects %is,are% designing the building's layout.",
-        "text": "These architects %is,are% designing the building's layout.",
+        "sentence": "These architects %is,are,am% designing the building's layout.",
+        "text": "These architects %is,are,am% designing the building's layout.",
         "dataType": "filler"
       },
     
@@ -1809,8 +1809,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "proofreading the manuscripts",
-        "sentence": "Those editors %is,are% proofreading the manuscripts.",
-        "text": "Those editors %is,are% proofreading the manuscripts.",
+        "sentence": "Those editors %is,are,am% proofreading the manuscripts.",
+        "text": "Those editors %is,are,am% proofreading the manuscripts.",
         "dataType": "filler"
       },
           
@@ -1823,8 +1823,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "handling the legal documents",
-        "sentence": "Those lawyers %is,are% handling the legal documents.",
-        "text": "Those lawyers %is,are% handling the legal documents.",
+        "sentence": "Those lawyers %is,are,am% handling the legal documents.",
+        "text": "Those lawyers %is,are,am% handling the legal documents.",
         "dataType": "filler"
       },
             
@@ -1837,8 +1837,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "recording the solar eclipse",
-        "sentence": "These photographers %is,are% recording the solar eclipse.",
-        "text": "These photographers %is,are% recording the solar eclipse.",
+        "sentence": "These photographers %is,are,am% recording the solar eclipse.",
+        "text": "These photographers %is,are,am% recording the solar eclipse.",
         "dataType": "filler"
       },
             
@@ -1851,8 +1851,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "attending to the patients",
-        "sentence": "Those nurses %is,are% attending to the patients.",
-        "text": "Those nurses %is,are% attending to the patients.",
+        "sentence": "Those nurses %is,are,am% attending to the patients.",
+        "text": "Those nurses %is,are,am% attending to the patients.",
         "dataType": "filler"
       },
               
@@ -1865,8 +1865,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "building the tree house",
-        "sentence": "Those kids %is,are% building the tree house.",
-        "text": "Those kids %is,are% building the tree house.",
+        "sentence": "Those kids %is,are,am% building the tree house.",
+        "text": "Those kids %is,are,am% building the tree house.",
         "dataType": "filler"
       },
                 
@@ -1879,8 +1879,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "sewing the dresses",
-        "sentence": "Those tailors %is,are% sewing the dresses.",
-        "text": "Those tailors %is,are% sewing the dresses.",
+        "sentence": "Those tailors %is,are,am% sewing the dresses.",
+        "text": "Those tailors %is,are,am% sewing the dresses.",
         "dataType": "filler"
       },
                   
@@ -1893,8 +1893,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "sorting the books",
-        "sentence": "Those volunteers %is,are% sorting the books.",
-        "text": "Those volunteers %is,are% sorting the books.",
+        "sentence": "Those volunteers %is,are,am% sorting the books.",
+        "text": "Those volunteers %is,are,am% sorting the books.",
         "dataType": "filler"
       },
                     
@@ -1907,8 +1907,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "using the art studio",
-        "sentence": "Those painters %is,are% using the art studio.",
-        "text": "Those painters %is,are% using the art studio.",
+        "sentence": "Those painters %is,are,am% using the art studio.",
+        "text": "Those painters %is,are,am% using the art studio.",
         "dataType": "filler"
       },
                       
@@ -1921,8 +1921,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "tending to the crops",
-        "sentence": "Those farmers %is,are% tending to the crops.",
-        "text": "Those farmers %is,are% tending to the crops.",
+        "sentence": "Those farmers %is,are,am% tending to the crops.",
+        "text": "Those farmers %is,are,am% tending to the crops.",
         "dataType": "filler"
       },
                         
@@ -1935,8 +1935,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "working out at the gym",
-        "sentence": "Those athletes %is,are% working out at the gym.",
-        "text": "Those athletes %is,are% working out at the gym.",
+        "sentence": "Those athletes %is,are,am% working out at the gym.",
+        "text": "Those athletes %is,are,am% working out at the gym.",
         "dataType": "filler"
       },
             {
@@ -1948,8 +1948,8 @@ let trial_objects = [
         "conj1_num": "P",
         "conj2_num": "",
         "predicate": "taking care of the babies",
-        "sentence": "Those parents %is,are% taking care of the babies.",
-        "text": "Those parents %is,are% taking care of the babies.",
+        "sentence": "Those parents %is,are,am% taking care of the babies.",
+        "text": "Those parents %is,are,am% taking care of the babies.",
         "dataType": "filler"
       },
             {
@@ -1961,8 +1961,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "organizing the charity event.",
-        "sentence": "Mateo %is,are% organizing the charity event.",
-        "text": "Mateo %is,are% organizing the charity event.",
+        "sentence": "Mateo %is,are,am% organizing the charity event.",
+        "text": "Mateo %is,are,am% organizing the charity event.",
         "dataType": "filler"
       },
               {
@@ -1974,8 +1974,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "reviewing the project proposals",
-        "sentence": "Lin %is,are% reviewing the project proposals.",
-        "text": "Lin %is,are% reviewing the project proposals.",
+        "sentence": "Lin %is,are,am% reviewing the project proposals.",
+        "text": "Lin %is,are,am% reviewing the project proposals.",
         "dataType": "filler"
       },
               {
@@ -1987,8 +1987,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "leading the scientific research",
-        "sentence": "Elias %is,are% leading the scientific research.",
-        "text": "Elias %is,are% leading the scientific research.",
+        "sentence": "Elias %is,are,am% leading the scientific research.",
+        "text": "Elias %is,are,am% leading the scientific research.",
         "dataType": "filler"
       },
               {
@@ -2000,8 +2000,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "editing the academic journal",
-        "sentence": "Pedro %is,are% editing the academic journal.",
-        "text": "Pedro %is,are% editing the academic journal.",
+        "sentence": "Pedro %is,are,am% editing the academic journal.",
+        "text": "Pedro %is,are,am% editing the academic journal.",
         "dataType": "filler"
       },
             {
@@ -2013,8 +2013,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "caring for the garden",
-        "sentence": "Zeynab %is,are% caring for the garden.",
-        "text": "Zeynab %is,are% caring for the garden.",
+        "sentence": "Zeynab %is,are,am% caring for the garden.",
+        "text": "Zeynab %is,are,am% caring for the garden.",
         "dataType": "filler"
       },
               {
@@ -2026,8 +2026,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "resolving the network issues",
-        "sentence": "Emma %is,are% resolving the network issues.",
-        "text": "Emma %is,are% resolving the network issues",
+        "sentence": "Emma %is,are,am% resolving the network issues.",
+        "text": "Emma %is,are,am% resolving the network issues",
         "dataType": "filler"
       },
             {
@@ -2039,8 +2039,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "composing the annual report",
-        "sentence": "Peter %is,are% composing the annual report.",
-        "text": "Peter %is,are% composing the annual report.",
+        "sentence": "Peter %is,are,am% composing the annual report.",
+        "text": "Peter %is,are,am% composing the annual report.",
         "dataType": "filler"
       },
             {
@@ -2052,8 +2052,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "servicing the air conditioning units",
-        "sentence": "Noah %is,are% servicing the air conditioning units.",
-        "text": "Noah %is,are% servicing the air conditioning units.",
+        "sentence": "Noah %is,are,am% servicing the air conditioning units.",
+        "text": "Noah %is,are,am% servicing the air conditioning units.",
         "dataType": "filler"
       },
             {
@@ -2065,8 +2065,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "installing the security system",
-        "sentence": "Alex %is,are% installing the security system.",
-        "text": "Alex %is,are% installing the security system.",
+        "sentence": "Alex %is,are,am% installing the security system.",
+        "text": "Alex %is,are,am% installing the security system.",
         "dataType": "filler"
       },
             {
@@ -2078,8 +2078,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "planning the conference",
-        "sentence": "Bill %is,are% planning the conference.",
-        "text": "Bill %is,are% planning the conference.",
+        "sentence": "Bill %is,are,am% planning the conference.",
+        "text": "Bill %is,are,am% planning the conference.",
         "dataType": "filler"
       },
             {
@@ -2091,8 +2091,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "cataloging the library collection",
-        "sentence": "Kim %is,are% cataloging the library collection.",
-        "text": "Kim %is,are% cataloging the library collection.",
+        "sentence": "Kim %is,are,am% cataloging the library collection.",
+        "text": "Kim %is,are,am% cataloging the library collection.",
         "dataType": "filler"
       },
             {
@@ -2104,8 +2104,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "fertilizing the fields",
-        "sentence": "Jimmy %is,are% fertilizing the fields.",
-        "text": "Jimmy %is,are% fertilizing the fields.",
+        "sentence": "Jimmy %is,are,am% fertilizing the fields.",
+        "text": "Jimmy %is,are,am% fertilizing the fields.",
         "dataType": "filler"
       },        
       {
@@ -2117,8 +2117,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "painting the mural",
-        "sentence": "Carlos %is,are% painting the mural.",
-        "text": "Carlos %is,are% painting the mural.",
+        "sentence": "Carlos %is,are,am% painting the mural.",
+        "text": "Carlos %is,are,am% painting the mural.",
         "dataType": "filler"
       },
             {
@@ -2130,8 +2130,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "training at the sports center",
-        "sentence": "Thomas %is,are% training at the sports center.",
-        "text": "Thomas %is,are% training at the sports center.",
+        "sentence": "Thomas %is,are,am% training at the sports center.",
+        "text": "Thomas %is,are,am% training at the sports center.",
         "dataType": "filler"
       },
             {
@@ -2143,8 +2143,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "producing the documentary film",
-        "sentence": "Maria %is,are% producing the documentary film.",
-        "text": "Maria %is,are% producing the documentary film.",
+        "sentence": "Maria %is,are,am% producing the documentary film.",
+        "text": "Maria %is,are,am% producing the documentary film.",
         "dataType": "filler"
       },
               {
@@ -2156,8 +2156,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "decorating the gallery",
-        "sentence": "Hasan %is,are% decorating the gallery.",
-        "text": "Hasan %is,are% decorating the gallery.",
+        "sentence": "Hasan %is,are,am% decorating the gallery.",
+        "text": "Hasan %is,are,am% decorating the gallery.",
         "dataType": "filler"
       },
             {
@@ -2169,8 +2169,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "evaluating the scholarship applications",
-        "sentence": "Yuki %is,are% evaluating the scholarship applications.",
-        "text": "Yuki %is,are% evaluating the scholarship applications.",
+        "sentence": "Yuki %is,are,am% evaluating the scholarship applications.",
+        "text": "Yuki %is,are,am% evaluating the scholarship applications.",
         "dataType": "filler"
       },
             {
@@ -2182,8 +2182,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "tailoring the costumes",
-        "sentence": "Lydia %is,are% tailoring the costumes.",
-        "text": "Lydia %is,are% tailoring the costumes.",
+        "sentence": "Lydia %is,are,am% tailoring the costumes.",
+        "text": "Lydia %is,are,am% tailoring the costumes.",
         "dataType": "filler"
       },
             {
@@ -2195,8 +2195,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "solving the mystery case",
-        "sentence": "Liam %is,are% solving the mystery case.",
-        "text": "Liam %is,are% solving the mystery case.",
+        "sentence": "Liam %is,are,am% solving the mystery case.",
+        "text": "Liam %is,are,am% solving the mystery case.",
         "dataType": "filler"
       },
             {
@@ -2208,8 +2208,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "capturing the wildlife in photographs",
-        "sentence": "Andy %is,are% capturing the wildlife in photographs.",
-        "text": "Andy %is,are% capturing the wildlife in photographs.",
+        "sentence": "Andy %is,are,am% capturing the wildlife in photographs.",
+        "text": "Andy %is,are,am% capturing the wildlife in photographs.",
         "dataType": "filler"
       },
            {
@@ -2221,8 +2221,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "developing the game software",
-        "sentence": "Joey %is,are% developing the game software.",
-        "text": "Joey %is,are% developing the game software.",
+        "sentence": "Joey %is,are,am% developing the game software.",
+        "text": "Joey %is,are,am% developing the game software.",
         "dataType": "filler"
       },
            {
@@ -2234,8 +2234,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "renovating the historic building",
-        "sentence": "Ellen %is,are% renovating the historic building.",
-        "text": "Ellen %is,are% renovating the historic building.",
+        "sentence": "Ellen %is,are,am% renovating the historic building.",
+        "text": "Ellen %is,are,am% renovating the historic building.",
         "dataType": "filler"
       },
            {
@@ -2247,8 +2247,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "cooking the festive meal",
-        "sentence": "Ali %is,are% cooking the festive meal.",
-        "text": "Ali %is,are% cooking the festive meal.",
+        "sentence": "Ali %is,are,am% cooking the festive meal.",
+        "text": "Ali %is,are,am% cooking the festive meal.",
         "dataType": "filler"
       },
            {
@@ -2260,8 +2260,8 @@ let trial_objects = [
         "conj1_num": "S",
         "conj2_num": "",
         "predicate": "constructing the playground",
-        "sentence": "Hank %is,are% constructing the playground.",
-        "text": "Hank %is,are% constructing the playground.",
+        "sentence": "Hank %is,are,am% constructing the playground.",
+        "text": "Hank %is,are,am% constructing the playground.",
         "dataType": "filler"
       }
 ]
