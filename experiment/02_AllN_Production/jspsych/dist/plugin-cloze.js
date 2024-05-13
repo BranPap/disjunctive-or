@@ -1,4 +1,4 @@
-// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU, ALEXIA HERNANDEZ, JIAYI LU, AND SARANG JEONG TO ACCEPT MULTIPLE CLOZE ANSWERS AND TO DISABLE PASTING. THIS IS NOT THE STANDARD JSPSYCH CLOZE MODULE. THIS MODULE ONLY ALLOWS FOR THE USE OF A SINGLE BLANK, BUT DOES ALLOW FOR MULTIPLE ANSWERS
+// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU, ALEXIA HERNANDEZ, JIAYI LU, AND SARANG JEONG TO ACCEPT MULTIPLE CLOZE ANSWERS AND TO DISABLE PASTING. THIS IS NOT THE STANDARD JSPSYCH CLOZE MODULE. THIS MODULE ONLY ALLOWS FOR THE USE OF A SINGLE BLANK, BUT DOES ALLOW FOR MULTIPLE ANSWERS. IT ALSO NOW FORCES THE PARTICIPANT TO HIT "ENTER" WHILE TYPING TO CONTINUE INSTEAD OF PRESSING THE CONTINUE BUTTON. IT WILL ALSO AUTOFOCUS THE TEXTBOXES AS THEY APPEAR
 
 
 var jsPsychCloze = (function (jspsych) {
@@ -62,7 +62,7 @@ var jsPsychCloze = (function (jspsych) {
                   html += elements[i];
               }
               else {
-                  html += `<input onpaste="return false" type="text" id="input${solution_counter}" value="">`;
+                  html += `<input class = "inputBox" onpaste="return false" type="text" id="input${solution_counter}" value="">`;
                   solution_counter++;
               }
           }
@@ -102,11 +102,15 @@ var jsPsychCloze = (function (jspsych) {
                   this.jsPsych.finishTrial(trial_data);
             }
           };
-          display_element.innerHTML +=
-              '<br><button class="jspsych-html-button-response-button" type="button" id="finish_cloze_button">' +
-                  trial.button_text +
-                  "</button>";
-          display_element.querySelector("#finish_cloze_button").addEventListener("click", check);
+          function enterPress(p) {
+              if (p.key == "Enter") {
+                  p.preventDefault();
+                  console.log("Yay!");
+                  check();
+              }
+          };
+          display_element.querySelector(".inputBox").addEventListener("keypress", enterPress);
+          display_element.querySelector(".inputBox").focus()
       }
       getSolutions(text) {
         const solutions = [];
