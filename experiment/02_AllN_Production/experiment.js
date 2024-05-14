@@ -33,7 +33,7 @@ timeline.push(irb)
 
 const instructions = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: "In this experiment, you will read a series of sentences and will be asked to indicate the word which best completes each one.<br><br><strong>Please type the word 'is', 'are', or 'am' in the blank.</strong> <br><br>If you're unsure about your choice, follow your first instinct.<br><br>When you're ready to begin, press the space bar.",
+    stimulus: "In this experiment, you will read a series of sentences and will be asked to indicate the word which best completes each one.<br><br><strong>Please type the word 'is', 'are', or 'am' in the blank, then press ENTER when you're ready to move on to the next sentence.</strong> <br><br>If you're unsure about your choice, follow your first instinct.<br><br>When you're ready to begin, press the space bar.",
     choices: [" "],
     on_finish: function(data) {
         data.category = "instructions"
@@ -61,6 +61,7 @@ const trials = {
             text: jsPsych.timelineVariable('text'), 
             allow_blanks: false,
             check_answers: true,
+            prompt: "Press enter to continue",
             mistake_fn: function (){ alert("Please ensure your answer is either 'is', 'are', or 'am'.") },
             on_finish: function(data) {
                 jsPsych.setProgressBar((data.trial_index - 1) / (timeline.length + tv_array.length));

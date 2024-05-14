@@ -130,7 +130,7 @@ AmVPs = ["eating my lunch.", "conversing with my mother.", "laughing at myself i
 print(len(AmVPs))
 random.shuffle(AmVPs)
 
-AreVPs = ["brushing a cat.", "helping remove lice from a child's hair.", "building a model train set.", "playing Scrabble", "drinking black coffee.", "purchasing new phones.", "traveling down Route 66.", "following a Bob Ross tutorial.", "waving through a window.", "reading the dictionary cover to cover.", "participating in a beauty pageant.", "meditating at the airport.", "painting over the original Mona Lisa.", "putting together a heist.", "seeking external validation.", "helping a tiger escape the circus.", "failing Spanish class.", "reworking the building's evacuation plans.", "planning a trip to Jupiter.", "designing tote bags for the funeral home.", "blowing kisses to the Queen."]
+AreVPs = ["brushing a cat.", "helping remove lice from a child's hair.", "building a model train set.", "playing Scrabble.", "drinking black coffee.", "purchasing new phones.", "traveling down Route 66.", "following a Bob Ross tutorial.", "waving through a window.", "reading the dictionary cover to cover.", "participating in a beauty pageant.", "meditating at the airport.", "painting over the original Mona Lisa.", "putting together a heist.", "seeking external validation.", "helping a tiger escape the circus.", "failing Spanish class.", "reworking the building's evacuation plans.", "planning a trip to Jupiter.", "designing tote bags for the funeral home.", "blowing kisses to the Queen."]
 print(len(AreVPs))
 random.shuffle(AreVPs)
 

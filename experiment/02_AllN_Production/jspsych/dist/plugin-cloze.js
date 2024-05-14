@@ -1,4 +1,4 @@
-// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU, ALEXIA HERNANDEZ, JIAYI LU, AND SARANG JEONG TO ACCEPT MULTIPLE CLOZE ANSWERS AND TO DISABLE PASTING. THIS IS NOT THE STANDARD JSPSYCH CLOZE MODULE. THIS MODULE ONLY ALLOWS FOR THE USE OF A SINGLE BLANK, BUT DOES ALLOW FOR MULTIPLE ANSWERS. IT ALSO NOW FORCES THE PARTICIPANT TO HIT "ENTER" WHILE TYPING TO CONTINUE INSTEAD OF PRESSING THE CONTINUE BUTTON. IT WILL ALSO AUTOFOCUS THE TEXTBOXES AS THEY APPEAR
+// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU AS PART OF HERNANDEZ ET AL (2024) TO ACCEPT MULTIPLE CLOZE ANSWERS AND TO DISABLE PASTING. THIS IS NOT THE STANDARD JSPSYCH CLOZE MODULE. THIS MODULE ONLY ALLOWS FOR THE USE OF A SINGLE BLANK, BUT DOES ALLOW FOR MULTIPLE ANSWERS. IT ALSO NOW FORCES THE PARTICIPANT TO HIT "ENTER" WHILE TYPING TO CONTINUE INSTEAD OF PRESSING THE CONTINUE BUTTON. IT WILL ALSO AUTOFOCUS THE TEXTBOXES AS THEY APPEAR. IT ALSO HAS AN OPTION FOR A PROMPT BENEATH THE STIMULUS
 
 
 var jsPsychCloze = (function (jspsych) {
@@ -37,6 +37,12 @@ var jsPsychCloze = (function (jspsych) {
               pretty_name: "Mistake function",
               default: () => { },
           },
+          /** This code adds the option for a prompt, to be displayed beneath the cloze task */
+          prompt: {
+            type: jspsych.ParameterType.HTML_STRING,
+            pretty_name: "Prompt",
+            default: null,
+          }
       },
   };
   /**
@@ -67,6 +73,9 @@ var jsPsychCloze = (function (jspsych) {
               }
           }
           html += "</div>";
+          if (trial.prompt !== "null") {
+            html += '<br><br><div id="jspsych-html-button-response-prompt" style="font-size:90%"> <strong>' + trial.prompt + "</strong></div>"
+        };
           display_element.innerHTML = html;
           const check = () => {
               var answers = [];
