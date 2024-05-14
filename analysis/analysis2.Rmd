@@ -1,0 +1,34 @@
+---
+title: "analysis.Rmd"
+output: html_document
+date: "2024-05-14"
+---
+#This analysis is for the second experiment
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+source("helpers.R")
+```
+
+```{r}
+DisjunctiveData <- read_csv("disjunctive_or_allp_pilot-merged.csv")
+```
+
+```{r}
+CeilingParticipant <- DisjunctiveData %>% 
+  filter(dataType == ("filler" && cond == "PP") | cond == "SS") %>% 
+  mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
+  group_by(cond,workerid) %>% 
+  summarize(
+    areRate = mean(response_binary),
+    CI.Low = ci.low(response_binary),
+    CI.High = ci.high(response_binary),
+    tokens = n()) %>% 
+  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
+```
+

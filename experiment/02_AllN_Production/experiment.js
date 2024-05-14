@@ -84,7 +84,7 @@ const questionnaire = {
         [
             {
                 type: 'html',
-                prompt: "Please answer the following questions. All questions are optional."
+                prompt: "Please answer the following questions. All questions are optional. Scroll all the way to the bottom for the 'finish' button."
             },
             {
                 type: 'multi-choice',
