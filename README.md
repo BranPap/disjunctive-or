@@ -1,5 +1,14 @@
-# disjunctive-or
-Project in collaboration with Alexia Hernandez, Sarang Jeong, and Jiayi Lu on number agreement with disjunctive "or" in English. This repo and file were last updated on May 16th, 2024.
+# Disjunctive 'or'
+Project in collaboration with Alexia Hernandez, Sarang Jeong, and Jiayi Lu on agreement with disjunctive "or" in English. For example, some speakers produce sentences such as:
+> "Either the students or I **are** eating the meal" (possibly using default 'are' as an unmarked variant)
+
+Others produce agreements such as:
+
+> "Either the students or I **am** eating the meal" (closest conjunct agreement) 
+
+This project collects large-scale data from English-speaking participants in order to elucidate the distribution of possible grammars, employing an Optimality Theory based approach to derive the observed variation between grammars.
+
+This repo and file were last updated on May 16th, 2024.
 
 ## Navigating the Repository
 
