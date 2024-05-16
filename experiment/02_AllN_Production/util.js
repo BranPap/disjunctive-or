@@ -13,7 +13,7 @@ function create_tv_array(json_object) {
         obj.data.conj1_per = json_object[i].conj1_per;
         obj.data.conj2_per = json_object[i].conj2_per;
         obj.data.dataType = json_object[i].dataType;
-        obj.data.cond = json_object[i].conj1_num.toString()+json_object[i].conj2_num.toString();
+        obj.data.cond = json_object[i].condition;
         tv_array.push(obj)
     }
     return tv_array;

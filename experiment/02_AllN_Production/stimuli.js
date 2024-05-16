@@ -1,4 +1,4 @@
-[
+let trial_objects = [
     {
         "id": 0,
         "conj1": "I",
