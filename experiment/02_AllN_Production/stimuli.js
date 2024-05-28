@@ -1113,7 +1113,7 @@ let trial_objects = [
     {
         "id": 101,
         "conj1": "I",
-        "conj2": "we",
+        "conj2": "the getaway car drivers",
         "predicate": "traveling down Route 66.",
         "text": "Both I and the getaway car drivers %is,are,am% traveling down Route 66.",
         "conj1_agr": "1S",
@@ -1190,7 +1190,7 @@ let trial_objects = [
     {
         "id": 108,
         "conj1": "we",
-        "conj2": "I",
+        "conj2": "the Duolingo owl",
         "predicate": "building a model train set.",
         "text": "Both we and the Duolingo owl %is,are,am% building a model train set.",
         "conj1_agr": "1P",
