@@ -46,9 +46,6 @@ timeline.push(instructions);
 let tv_array = create_tv_array(trial_objects)
 shuffleArray(tv_array)
 console.log(tv_array.length)
-// console.log("tv_array"+tv_array)
-// let tv_array_modded = check_dupes(tv_array)
-// 
 
 // TRIALS //
 
