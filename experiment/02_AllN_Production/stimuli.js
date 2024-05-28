@@ -1115,11 +1115,11 @@ let trial_objects = [
         "conj1": "I",
         "conj2": "we",
         "predicate": "traveling down Route 66.",
-        "text": "Both I and we %is,are,am% traveling down Route 66.",
+        "text": "Both I and the getaway car drivers %is,are,am% traveling down Route 66.",
         "conj1_agr": "1S",
-        "conj2_agr": "1P",
+        "conj2_agr": "3P",
         "dataType": "filler_are",
-        "cond": "1S_and_1P"
+        "cond": "1S_and_3P"
     },
     {
         "id": 102,
@@ -1192,11 +1192,11 @@ let trial_objects = [
         "conj1": "we",
         "conj2": "I",
         "predicate": "building a model train set.",
-        "text": "Both we and I %is,are,am% building a model train set.",
+        "text": "Both we and the Duolingo owl %is,are,am% building a model train set.",
         "conj1_agr": "1P",
-        "conj2_agr": "1S",
+        "conj2_agr": "3S",
         "dataType": "filler_are",
-        "cond": "1P_and_1S"
+        "cond": "1P_and_3S"
     },
     {
         "id": 109,

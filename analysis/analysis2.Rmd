@@ -22,7 +22,7 @@ library(cluster)
 ```
 
 ```{r}
-DisjunctiveData <- read_csv("disjunctive_or_allp_pilot-merged.csv")
+DisjunctiveData <- read_csv("disjunction_02_alln_production_sandbox-merged.csv")
 ```
 
 ```{r}
@@ -53,9 +53,9 @@ FirstSGCeilingParticipant <- DisjunctiveData %>%
 
 ```{r}
 PluralCeilingParticipant <- DisjunctiveData %>% 
-  filter(str_detect(cond, "_and_")) %>% 
+  filter(str_detect(dataType, "filler_are")) %>% 
   mutate(response_binary = ifelse(response == "['are']",1,0)) %>% 
-  group_by(cond,workerid) %>% 
+  group_by(dataType,workerid) %>% 
   summarize(
     areRate = mean(response_binary),
     CI.Low = ci.low(response_binary),
@@ -79,21 +79,21 @@ DisjunctiveParticipant <- DisjunctiveCriticalData %>%
 
 ```{r}
 DisjunctiveCriticalData %>%
-  group_by(condition, response,workerid) %>%
+  group_by(cond, response,workerid) %>%
   summarize(count = n()) %>%
-  group_by(condition) %>%
+  group_by(cond) %>%
   mutate(proportion = count / sum(count)) %>%
   ggplot(aes(x = response, y = proportion, fill=response)) +
   geom_bar(stat = "identity", position = position_dodge(preserve = "single")) +
   labs(title = "Proportional Side-by-Side Bar Chart by Type of Response", y = "Proportion") + 
   scale_fill_brewer(palette = "Pastel2") + 
   theme_bw() + 
-  facet_grid(workerid~condition)
+  facet_grid(workerid~cond)
 ```
 
 ```{r}
 DistDf <- DisjunctiveCriticalData %>% 
-  select(c("workerid","condition","response")) %>%
+  select(c("workerid","cond","response")) %>%
   filter(response != '[\'am\']') %>%
   mutate(
     is_are = ifelse(response == '[\'are\']',1,0),
@@ -101,9 +101,9 @@ DistDf <- DisjunctiveCriticalData %>%
     # is_am = ifelse(response == '[\'am\']',1,0)
   ) %>% 
   select(-response) %>% 
-  group_by(workerid,condition) %>% 
+  group_by(workerid,cond) %>% 
   summarize_all(mean) %>% 
-  pivot_wider(names_from = condition, values_from = starts_with("is_"))
+  pivot_wider(names_from = cond, values_from = starts_with("is_"))
 
 
 response_vectors <- DistDf[ ,-1]
