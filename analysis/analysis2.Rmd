@@ -71,9 +71,9 @@ DisjunctiveCriticalData <- DisjunctiveData %>%
 
 ```{r}
 DisjunctiveParticipant <- DisjunctiveCriticalData %>%
-  group_by(condition, response,workerid) %>%
+  group_by(cond, response,workerid) %>%
   summarize(count = n()) %>%
-  group_by(condition) %>%
+  group_by(cond) %>%
   mutate(proportion = count / sum(count))
 ```
 
@@ -93,11 +93,12 @@ DisjunctiveCriticalData %>%
 
 ```{r}
 DistDf <- DisjunctiveCriticalData %>% 
-  select(c("workerid","condition","response")) %>% 
+  select(c("workerid","condition","response")) %>%
+  filter(response != '[\'am\']') %>%
   mutate(
     is_are = ifelse(response == '[\'are\']',1,0),
     is_is = ifelse(response == '[\'is\']',1,0),
-    is_am = ifelse(response == '[\'am\']',1,0)
+    # is_am = ifelse(response == '[\'am\']',1,0)
   ) %>% 
   select(-response) %>% 
   group_by(workerid,condition) %>% 

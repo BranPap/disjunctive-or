@@ -111,6 +111,19 @@ const questionnaire = {
                 options: ['Some high school', 'Graduated high school', 'Some college', 'Graduated college', 'Hold a higher degree']
             },
             {
+                type: 'drop-down',
+                prompt: 'In what US state did you spend the longest period of time during your childhood?',
+                name: 'state',
+                options: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Washington DC', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming', 'I was raised primarily outside of the United States']
+            },
+            {
+                type: 'text',
+                prompt: 'What city(ies) did you spend the longest period of time during your childhood? These cities should be located in the state you indicated on the previous question.',
+                name: 'city',
+                textbox_columns: 30,
+                textbox_rows: 5
+            },
+            {
                 type: 'multi-choice',
                 prompt: "Is English your first language (i.e. did you start speaking English before age 5)?",
                 name: 'language',
