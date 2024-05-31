@@ -1,4 +1,12 @@
-// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU AS PART OF HERNANDEZ ET AL (2024) TO ACCEPT MULTIPLE CLOZE ANSWERS AND TO DISABLE PASTING. THIS IS NOT THE STANDARD JSPSYCH CLOZE MODULE. THIS MODULE ONLY ALLOWS FOR THE USE OF A SINGLE BLANK, BUT DOES ALLOW FOR MULTIPLE ANSWERS. IT ALSO NOW FORCES THE PARTICIPANT TO HIT "ENTER" WHILE TYPING TO CONTINUE INSTEAD OF PRESSING THE CONTINUE BUTTON. IT WILL ALSO AUTOFOCUS THE TEXTBOXES AS THEY APPEAR. IT ALSO HAS AN OPTION FOR A PROMPT BENEATH THE STIMULUS
+// NOTE: THIS VERSION OF JSPSYCH CLOZE HAS BEEN MODIFIED BY BRANDON PAPINEAU TO ACCEPT MULTIPLE CLOZE ANSWERS AND TO DISABLE PASTING. 
+
+// Features of this version include:
+
+// - An optional "prompt parameter"
+// - Multiple possible answers with custom getAnswers function
+// - Does not allow for multiple cloze blanks within a task
+// - This version auto-focuses the text box for entry, so participants don't have to click on it each time
+// - Similarly, the "continue" button has been replaced with an event listener for the enter key when the text entry box is in focus
 
 
 var jsPsychCloze = (function (jspsych) {
@@ -37,7 +45,7 @@ var jsPsychCloze = (function (jspsych) {
               pretty_name: "Mistake function",
               default: () => { },
           },
-          /** This code adds the option for a prompt, to be displayed beneath the cloze task */
+          /** This parameter adds the option for a prompt, to be displayed beneath the cloze task */
           prompt: {
             type: jspsych.ParameterType.HTML_STRING,
             pretty_name: "Prompt",
@@ -73,7 +81,7 @@ var jsPsychCloze = (function (jspsych) {
               }
           }
           html += "</div>";
-          if (trial.prompt !== "null") {
+          if (trial.prompt !== "null") { // Adds the prompt functionality
             html += '<br><br><div id="jspsych-html-button-response-prompt" style="font-size:90%"> <strong>' + trial.prompt + "</strong></div>"
         };
           display_element.innerHTML = html;
@@ -84,8 +92,8 @@ var jsPsychCloze = (function (jspsych) {
               var field = document.getElementById("input"+0);
               var user_response = field.value.trim();
               answers.push(user_response);
-              console.log("Solutions: "+solutions);
-              console.log("User Response:"+user_response);
+            //   console.log("Solutions: "+solutions);
+            //   console.log("User Response:"+user_response);
               if (trial.check_answers) {
                 if (!solutions.includes(user_response)) {
                     field.style.color = "red";
@@ -111,16 +119,17 @@ var jsPsychCloze = (function (jspsych) {
                   this.jsPsych.finishTrial(trial_data);
             }
           };
-          function enterPress(p) {
+          // Function for enter key being used to progress the trial, and added EventListener below
+          function enterPress(p) { 
               if (p.key == "Enter") {
                   p.preventDefault();
-                  console.log("Yay!");
                   check();
               }
           };
-          display_element.querySelector(".inputBox").addEventListener("keypress", enterPress);
-          display_element.querySelector(".inputBox").focus()
+          display_element.querySelector(".inputBox").addEventListener("keypress", enterPress); 
+          display_element.querySelector(".inputBox").focus() // Auto focuses the text box
       }
+      // custom getSolutions method for multiple answers, which are contained in the format "%answer1,answer2,answer3%"
       getSolutions(text) {
         const solutions = [];
         const elements = text.split("%");

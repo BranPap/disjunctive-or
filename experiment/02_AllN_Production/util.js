@@ -1,9 +1,11 @@
+// create_tv_array is a function used to read in the js formatted stimuli and convert them into object dictionaries that can be used by jspsych
+
 function create_tv_array(json_object) {
     let tv_array = [];
     for (let i = 0; i < json_object.length; i++) {
         obj = {};
         obj.text = json_object[i].text;
-        obj.data = {};
+        obj.data = {}; // everything defined in obj.data will be available to jsPsych when "jsPsych.timelinevariable('data)" is called
         obj.data.id = json_object[i].id;
         obj.data.conj1 = json_object[i].conj1;
         obj.data.conj2 = json_object[i].conj2;
@@ -27,18 +29,3 @@ function shuffleArray(array) {
     }
     return array;
   }
-
-// function check_dupes(tv_array) {
-//     let tv_array_modded = shuffleArray(tv_array);
-//     console.log("TEST: "+tv_array_modded);
-//     let final_array = [];
-//     let unique_list = [];
-//     for (let i = 0; i < tv_array_modded.length; i++) {
-//         if (!unique_list.includes(tv_array_modded[i].data.item)) {
-//             // console.log(tv_array_modded[i].data.item);
-//             final_array.push(tv_array_modded[i]);
-//             unique_list.push(tv_array_modded[i].data.item);
-//         }
-//     }
-//     return final_array;
-// }

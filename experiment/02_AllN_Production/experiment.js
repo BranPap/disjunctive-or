@@ -4,8 +4,8 @@ const jsPsych = initJsPsych({
     show_progress_bar: true,
     auto_update_progress_bar: false,
     on_finish: function(data) {
-        proliferate.submit({"trials": data.values()});
-        // jsPsych.data.displayData('csv');
+        proliferate.submit({"trials": data.values()}); // This onfinish function calls the proliferate pipeline to collect data
+        // jsPsych.data.displayData('csv'); // Uncomment to see the sumbitted csv at the end of the experiment
     }
 });
 
@@ -23,11 +23,11 @@ const irb = {
     // What should the button(s) say
     choices: ['Continue'],
     on_finish: function(data) {
-        data.category = "irb"
+        data.category = "irb" // Setting a custom category allows for easy filtering in the data analysis stage
     }
 };
 
-timeline.push(irb)
+timeline.push(irb) // This adds the previous constant (irb) to the experimental timeline. =
 
 // INSTRUCTIONS //
 
@@ -43,9 +43,8 @@ const instructions = {
 timeline.push(instructions);
 
 
-let tv_array = create_tv_array(trial_objects)
-shuffleArray(tv_array)
-console.log(tv_array.length)
+let tv_array = create_tv_array(trial_objects) // Import our stimuli, defined in a separate js file as "trial_objects", and convert them into object types that jsPsych can use
+shuffleArray(tv_array) // Shuffle the array for randomization
 
 // TRIALS //
 
@@ -54,33 +53,30 @@ const trials = {
         {
             type: jsPsychCloze,
             button_text: "Submit",
-            data: jsPsych.timelineVariable('data'),
-            text: jsPsych.timelineVariable('text'), 
-            allow_blanks: false,
-            check_answers: true,
+            data: jsPsych.timelineVariable('data'), // make sure that the data from the stimuli object is imported
+            text: jsPsych.timelineVariable('text'), // same with the text, which will define what is shown in the html
+            allow_blanks: false, // Disallow participants to proceed without entering something
+            check_answers: true, // Will display an error, defined in "mistake_fn", if the participant does not provide an allowed answer
             prompt: "Press enter to continue",
-            mistake_fn: function (){ alert("Please ensure your answer is either 'is', 'are', or 'am'.") },
+            mistake_fn: function (){ alert("Please ensure your answer is either 'is', 'are', or 'am'.") }, // define the error returned when participants do not provide an accepted answer
             on_finish: function(data) {
-                jsPsych.setProgressBar((data.trial_index - 1) / (timeline.length + tv_array.length));
+                jsPsych.setProgressBar((data.trial_index - 1) / (timeline.length + tv_array.length)); // Defines how far along the progress bar should be advanced at the end of the trial
                 console.log("data.cond: "+data.cond)
             }
-            // on_finish: function(data) {
-            //     record_response(data)
-            // }
         }
     ],
-    timeline_variables: tv_array,
-    randomize_order: true
+    timeline_variables: tv_array, // Import the list of stimuli defined in 'let tv_array' above
+    randomize_order: true // Randomize stimuli order. This is redundant in this because we already shuffled the array, but it's nice to have just in case.
 }
 
 timeline.push(trials)
 
 const questionnaire = {
     type: jsPsychSurvey,
-    pages: [
+    pages: [ // each page will generate a unique question, defined by the 'type' parameter
         [
             {
-                type: 'html',
+                type: 'html', // Basic text to display at the top of the page
                 prompt: "Please answer the following questions. All questions are optional. Scroll all the way to the bottom for the 'finish' button."
             },
             {
@@ -174,9 +170,3 @@ timeline.push(thanks)
 // FINAL FUNCTION CALL //
 
 jsPsych.run(timeline)
-
-/// NOTES TO BRAN
-// Fix trial types
-// Fix progress bar
-
-// For future: fixed typos from Lu et al 2024 (eg. repairing < reparing)
