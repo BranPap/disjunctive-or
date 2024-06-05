@@ -8,6 +8,8 @@ date: "2024-05-14"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+dodge = position_dodge(0.9)
 ```
 
 ```{r}
@@ -87,6 +89,13 @@ PluralCeilingParticipant <- DisjunctiveData %>%
   select(c("workerid","cond","areRate")) #ibid 
 ```
 
+```{r}
+ParticipantChecks <- FirstSGCeilingParticipant %>% 
+  left_join(PluralCeilingParticipant, by = "workerid") %>% 
+  left_join(ThirdSGCeilingParticipant, by = "workerid") %>% 
+  select(c("workerid","areRate","isRate","amRate"))
+```
+
 # Main Analysis
 
 ## Subsetting Critical Data
@@ -100,16 +109,13 @@ DisjunctiveCriticalData <- DisjunctiveData %>%
 
 ```{r}
 DisjunctiveParticipant <- DisjunctiveCriticalData %>%
-  group_by(workerid, cond, response, state) %>%
+  group_by(workerid, cond, response) %>%
   summarize(count = n()) %>%
   ungroup() %>%
-  group_by(workerid, cond, state) %>%
+  group_by(workerid, cond) %>%
   mutate(proportion = count / sum(count)) %>%
   ungroup()
 ```
-
-
-## Distance Calculations
 
 ```{r}
 DistDf <- DisjunctiveCriticalData %>% 
@@ -119,106 +125,14 @@ DistDf <- DisjunctiveCriticalData %>%
     is_is = ifelse(response == '[\'is\']',1,0),
     # is_am = ifelse(response == '[\'am\']',1,0)
   ) %>% 
-  select(-response) %>% 
-  group_by(workerid,cond) %>% 
+  select(-response) %>%
+  group_by(workerid,cond) %>%
   summarize_all(mean) %>% 
   pivot_wider(names_from = cond, values_from = starts_with("is_"))
 ```
 
 
-
-### BIC Method
-
 ```{r}
-BIC <- mclustBIC(DistDf)
-```
-
-
-```{r}
-summary(BIC)
-```
-```{r}
-plot(BIC)
-```
-
-```{r}
-mod1 <- Mclust(DistDf, x = BIC)
-```
-
-```{r}
-summary(mod1, parameters = TRUE)
-```
-
-
-### PCA + DBSCAN Method
-
-```{r}
-normalized_data <- scale(DistDf)
-
-data.pca <- princomp(normalized_data)
-summary(data.pca)
-```
-
-```{r}
-data.pca$loadings[, 1:12]
-```
-
-```{r}
-fviz_eig(data.pca)
-```
-
-```{r}
-eig.val<-get_eigenvalue(data.pca)
-eig.val
-```
-
-```{r}
-var<-get_pca_var(data.pca)
-a<-fviz_contrib(data.pca, "var", axes=1, xtickslab.rt=90) # default angle=45°
-plot(a,main = "Variables percentage contribution of first Principal Components")
-```
-
-```{r}
-var<-get_pca_var(data.pca)
-a<-fviz_contrib(data.pca, "var", axes=2, xtickslab.rt=90) # default angle=45°
-plot(a,main = "Variables percentage contribution of second Principal Components")
-```
-
-```{r}
-var<-get_pca_var(data.pca)
-a<-fviz_contrib(data.pca, "var", axes=2, xtickslab.rt=90) # default angle=45°
-plot(a,main = "Variables percentage contribution of second Principal Components")
-```
-
-
-```{r}
-data.pca<-prcomp(df.n, center=FALSE, scale.=FALSE, rank. = 7) # stats::
-results <- data.pca$x
-fviz_nbclust(results, FUNcluster=kmeans, k.max = 8) 
-```
-
-
-# BELOW THIS IS TO BE CLEANED!*!*!*!*!
-
-
-```{r}
-DisjunctiveCriticalData %>%
-  group_by(cond, response,workerid) %>%
-  summarize(count = n()) %>%
-  group_by(cond) %>%
-  mutate(proportion = count / sum(count)) %>%
-  ggplot(aes(x = response, y = proportion, fill=response)) +
-  geom_bar(stat = "identity", position = position_dodge(preserve = "single")) +
-  labs(title = "Proportional Side-by-Side Bar Chart by Type of Response", y = "Proportion") + 
-  scale_fill_brewer(palette = "Pastel2") + 
-  theme_bw() + 
-  facet_grid(workerid~cond)
-```
-
-```{r}
-
-
-
 response_vectors <- DistDf[ ,-1]
 workerid <- DistDf$workerid
 
@@ -231,182 +145,6 @@ wss <- sapply(1:9, function(k) {
 plot(1:9, wss, type = "b", pch = 19, frame = FALSE,
      xlab = "Number of Clusters",
      ylab = "Total Within-cluster Sum of Squares")
-
-#Silhouette method
-fviz_nbclust(response_vectors, kmeans, method = "silhouette", k.max=9)+
-  labs(subtitle = "Silhouette method")
-
-```
-
-```{r}
-
-# Perform k-means clustering
-kmeans_result <- kmeans(response_vectors, centers = 2)
-
-# Get cluster labels for each workerid
-cluster_labels <- as.factor(kmeans_result$cluster)
-
-# Combine cluster labels with workerid
-clustered_workerid <- data.frame(workerid, cluster_labels)
-
-#calculate distance scores 
-distances <- apply(response_vectors, 1, function(x) sqrt(rowSums((x - kmeans_result$centers)^2)))
-# Option 1: Calculate a score as the inverse of the distance (smaller distance = higher score)
-#likelihood_scores <- 1 / distances
-
-# Option 2: Use distance as score (greater distance = higher score)
-likelihood_scores <- distances
-
-# Transpose the likelihood_scores matrix to get scores for each workerid
-worker_scores <- t(likelihood_scores)
-
-# Create a data frame with workerid and the three scores
-worker_scores_df <- data.frame(workerid, worker_scores)
-
-# Print the worker scores
-print(worker_scores_df)
-
-merged_data <- DisjunctiveParticipant %>% 
-  left_join(clustered_workerid, by = "workerid") %>%
-  left_join(worker_scores_df, by = "workerid")
-merged_data <- na.omit(merged_data)
-
-averaged_responses <- merged_data %>%
-  group_by(cond, cluster_labels, response) %>%
-  summarize(mean_proportion = mean(proportion), 
-            CI.Low = ci.low(proportion),
-            CI.High = ci.high(proportion))%>%
-   mutate(YMin = mean_proportion - CI.Low, YMax = mean_proportion + CI.High)
-
-# Plot the clustering result as a bar plot
-ggplot(averaged_responses, aes(x = response, y = mean_proportion, fill = response)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  # scale_fill_manual(values = cbPalette) +
-  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
-  labs(x = "Response Copula",
-       y = "Proportion of Copula Realization") +
-  # coord_flip() + 
-  facet_grid(cluster_labels~cond) +
-  scale_fill_brewer(palette = "Pastel2") + 
-  theme_bw()
-```
-
-### For Hierarchical Clustering analysis
-
-```{r}
-cols_to_convert <- setdiff(names(DistDf),"workerid")
-DistDf[cols_to_convert] <- lapply(DistDf[cols_to_convert], as.numeric)
-
-dissim <- daisy(DistDf[,-1])
-
-agg.clust.c <- hclust(dissim,method="single")
-
-plot(agg.clust.c,
-     main="Agglomerative, complete linkages")
-
-  # mutate(
-  #   is_1P_or_1S = ifelse(condition == '1P_or_1S',1,0),
-  #   is_1P_or_3P = ifelse(condition == '1P_or_3P',1,0),
-  #   is_1P_or_3S = ifelse(condition == '1P_or_3S',1,0),
-  #   is_1S_or_1P = ifelse(condition == '1S_or_1P',1,0),
-  #   is_1S_or_3P = ifelse(condition == '1S_or_3P',1,0),
-  #   is_1S_or_3S = ifelse(condition == '1S_or_3S',1,0),
-  #   is_3P_or_1P = ifelse(condition == '3P_or_1P',1,0),
-  #   is_3P_or_1S = ifelse(condition == '3P_or_1S',1,0),
-  #   is_3P_or_3S = ifelse(condition == '3P_or_3S',1,0),
-  #   is_3S_or_1P = ifelse(condition == '3S_or_1P',1,0),
-  #   is_3S_or_1S = ifelse(condition == '3S_or_1S',1,0),
-  #   is_3S_or_3P = ifelse(condition == '3S_or_3P',1,0)
-  # ) %>% 
-  # select(-condition)
-
-# dist_matrix <- daisy(DistDf[, -1], metric = "gower")
-```
-
-### Geography
-
-```{r}
-geography <- merged_data %>% 
-  filter(state != "") %>%
-  select(c("workerid","state","cluster_labels")) %>%
-  mutate(cluster_labels = as.numeric(cluster_labels)) %>% 
-  mutate(region = str_to_lower(state)) %>% 
-  unique() %>% 
-  group_by(region, cluster_labels) %>% 
-  summarize(
-    count = n()
-  ) %>% 
-  pivot_wider(names_prefix = "cluster", names_from = cluster_labels, values_from = "count") %>% 
-  mutate(
-    groupOneProp = cluster1/sum(cluster1,cluster2),
-    groupTwoProp = cluster2/sum(cluster1,cluster2),
-    # groupThreeProp = cluster3/sum(cluster1,cluster2,cluster3),
-    # meanGrammar = mean(cluster1,cluster)
-  ) %>% 
-  select(c("region","groupOneProp","groupTwoProp"))
-```
-
-```{r}
-state <- map_data("state")
-
-state <- state %>% 
-  left_join(geography, by="region")
-```
-
-```{r}
-ggplot(data=state, aes(x=long,y=lat,group=group, fill=groupOneProp)) + 
-  geom_polygon(color="white") + 
-  guides() 
-```
-
-```{r}
-ggplot(data=state, aes(x=long,y=lat,group=group, fill=groupTwoProp)) + 
-  geom_polygon(color="white") + 
-  guides() 
-```
-
-```{r}
-ggplot(data=state, aes(x=long,y=lat,group=group, fill=groupThreeProp)) + 
-  geom_polygon(color="white") + 
-  guides() 
-```
-
-# Sanity Check
-
-```{r}
-DisjunctiveParticipantOld <- test %>% 
-  filter(dataType == "critical") %>% 
-  filter(cond %in% c("3P_or_3P", "3P_or_3S", "3S_or_3S", "3S_or_3P")) %>% 
-  mutate(response_binary = ifelse(response=="['are']",1,0)) %>% 
-  group_by(workerid,cond) %>% 
-  summarize(
-    areRate = mean(response_binary),
-    CI.Low = ci.low(response_binary),
-    CI.High = ci.high(response_binary)
-    ) %>% 
-  mutate(YMin = areRate - CI.Low, YMax = areRate + CI.High)
-```
-
-```{r}
-# Pivot the data to create a vector for each workerid
-pivot_data <- DisjunctiveParticipantOld %>%
-  select(workerid, cond, areRate) %>%
-pivot_wider(names_from = cond, values_from = areRate, values_fill = NA)
-pivot_data <- na.omit(pivot_data)
-
-# Extract workerid and response vectors
-response_vectors <- pivot_data[, -1]
-workerid <- pivot_data$workerid
-
-wss <- sapply(1:10, function(k) {
-  kmeans_result <- kmeans(response_vectors, centers = k)
-  kmeans_result$tot.withinss
-})
-
-# Plot the elbow curve
-plot(1:10, wss, type = "b", pch = 19, frame = FALSE,
-     xlab = "Number of Clusters",
-     ylab = "Total Within-cluster Sum of Squares")
 ```
 
 ```{r}
@@ -414,133 +152,7 @@ fviz_nbclust(response_vectors, kmeans, method = "silhouette")+
   labs(subtitle = "Silhouette method")
 ```
 
-```{r}
-# Perform k-means clustering
-kmeans_result <- kmeans(response_vectors, centers = 4)
-
-# Get cluster labels for each workerid
-cluster_labels <- as.factor(kmeans_result$cluster)
-
-# Combine cluster labels with workerid
-clustered_workerid <- data.frame(workerid, cluster_labels)
-
-#calculate distance scores 
-distances <- apply(response_vectors, 1, function(x) sqrt(rowSums((x - kmeans_result$centers)^2)))
-# Option 1: Calculate a score as the inverse of the distance (smaller distance = higher score)
-#likelihood_scores <- 1 / distances
-
-# Option 2: Use distance as score (greater distance = higher score)
-likelihood_scores <- distances
-
-# Transpose the likelihood_scores matrix to get scores for each workerid
-worker_scores <- t(likelihood_scores)
-
-# Create a data frame with workerid and the three scores
-worker_scores_df <- data.frame(workerid, worker_scores)
-
-# Print the worker scores
-print(worker_scores_df)
-
-merged_data <- DisjunctiveParticipantOld %>%
-  left_join(clustered_workerid, by = "workerid")%>%
-  left_join(worker_scores_df, by = "workerid")
-merged_data <- na.omit(merged_data)
-
-averaged_responses <- merged_data %>%
-  group_by(cond, cluster_labels) %>%
-  summarize(mean_plural = mean(areRate), 
-            CI.Low = ci.low(areRate),
-            CI.High = ci.high(areRate))%>%
-   mutate(YMin = mean_plural - CI.Low, YMax = mean_plural + CI.High)
-  
-
-# Plot the clustering result as a bar plot
-ggplot(averaged_responses, aes(x = cond, y = mean_plural)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  # scale_fill_manual(values = cbPalette) +
-  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
-  labs(x = "Condition",
-       y = "Rate of plural copula") +
-  facet_wrap(~ cluster_labels ) +
-  theme_minimal() + 
-  coord_flip()
-```
-
-```{r}
-# Calculate the counts of workerid in each cluster
-cluster_counts <- table(clustered_workerid$cluster_labels)
-
-# Print the cluster counts
-print(cluster_counts)
-```
-
-```{r}
-merged_data %>% 
-  filter(cluster_labels == "1") %>% 
-  ggplot(aes(x=cond,y=areRate, fill=cond)) +
-  geom_bar(stat="identity", position="dodge") + 
-  # geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
-  facet_wrap(~workerid)
-```
-
-```{r}
-ParticipantChecks <- FirstSGCeilingParticipant %>% 
-  left_join(PluralCeilingParticipant, by = "workerid") %>% 
-  left_join(ThirdSGCeilingParticipant, by = "workerid") %>% 
-  select(c("workerid","areRate","isRate","amRate"))
-```
-
-## Subcluster Analysis
-
-```{r}
-OGClusters <- merged_data %>% 
-  filter(cluster_labels != 4) %>% 
-  select(c("workerid","cluster_labels")) %>% 
-  unique()
-```
-
-```{r}
-DistDf <- DisjunctiveCriticalData %>% 
-  select(c("workerid","cond","response")) %>%
-  mutate(
-    is_are = ifelse(response == '[\'are\']',1,0),
-    is_is = ifelse(response == '[\'is\']',1,0),
-    # is_am = ifelse(response == '[\'am\']',1,0)
-  ) %>% 
-  select(-response) %>% 
-  group_by(workerid,cond) %>% 
-  summarize_all(mean) %>% 
-  pivot_wider(names_from = cond, values_from = starts_with("is_")) %>% 
-  left_join(OGClusters, by="workerid")
-```
-
-## Cluster 1 Sub-Clusters(?)
-
-```{r}
-Cluster1DistDif <- DistDf %>% 
-  filter(cluster_labels == 1) %>% 
-  select(-c("cluster_labels"))
-
-response_vectors <- Cluster1DistDif[ ,-1]
-workerid <- Cluster1DistDif$workerid
-
-wss <- sapply(1:9, function(k) {
-  kmeans_result <- kmeans(response_vectors, centers = k)
-  kmeans_result$tot.withinss
-})
-
-# Plot the elbow curve
-plot(1:9, wss, type = "b", pch = 19, frame = FALSE,
-     xlab = "Number of Clusters",
-     ylab = "Total Within-cluster Sum of Squares")
-```
-
-
-```{r}
-#Silhouette method
-fviz_nbclust(response_vectors, kmeans, method = "silhouette", k.max=9)+
-  labs(subtitle = "Silhouette method")
-```
+## Clustering on the assumption of 3 clusters
 
 ```{r}
 # Perform k-means clustering
@@ -568,195 +180,49 @@ worker_scores_df <- data.frame(workerid, worker_scores)
 
 # Print the worker scores
 print(worker_scores_df)
+```
 
-merged_data <- DisjunctiveParticipant %>% 
-  left_join(clustered_workerid, by = "workerid") %>%
-  left_join(worker_scores_df, by = "workerid")
-merged_data <- na.omit(merged_data)
+```{r}
+# Calculate the counts of workerid in each cluster
+cluster_counts <- table(clustered_workerid$cluster_labels)
 
-averaged_responses <- merged_data %>%
-  group_by(cond, cluster_labels, response) %>%
-  summarize(mean_proportion = mean(proportion), 
+# Print the cluster counts
+print(cluster_counts)
+```
+
+```{r}
+DistDf <- DisjunctiveCriticalData %>% 
+  select(c("workerid","cond","response")) %>%
+  mutate(
+    is_are = ifelse(response == '[\'are\']',1,0),
+    is_is = ifelse(response == '[\'is\']',1,0),
+    is_am = ifelse(response == '[\'am\']',1,0)
+  ) %>% 
+  select(-response) %>%
+  group_by(workerid,cond) %>%
+  summarize_all(mean) %>% 
+  left_join(clustered_workerid) %>% 
+  pivot_longer(
+    cols = starts_with("is"),
+    values_to = "proportion"
+  ) %>% 
+  rename(response = name) %>% 
+  group_by(cond, cluster_labels, response) %>% 
+  summarize(meanProp = mean(proportion),
             CI.Low = ci.low(proportion),
-            CI.High = ci.high(proportion))%>%
-   mutate(YMin = mean_proportion - CI.Low, YMax = mean_proportion + CI.High)
+            CI.High = ci.high(proportion)) %>%
+  mutate(YMin = meanProp - CI.Low, YMax = meanProp + CI.High)
+```
 
-# Plot the clustering result as a bar plot
-Cluster1Plots <- ggplot(averaged_responses, aes(x = response, y = mean_proportion, fill = response)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  # scale_fill_manual(values = cbPalette) +
-  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
-  labs(x = "Response Copula",
-       y = "Proportion of Copula Realization",
-       title = "Cluster 1 Subclusters") +
-  # coord_flip() + 
-  facet_grid(cluster_labels~cond) +
+
+```{r}
+DistDf %>% 
+  ggplot(aes(x=cond, y=meanProp, fill=response)) + 
+  geom_bar(stat="identity",position=dodge) + 
+  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25, position = dodge) +
   scale_fill_brewer(palette = "Pastel2") + 
-  theme_bw()
+  theme_bw() +
+  facet_wrap(~cluster_labels) + 
+  coord_flip() + 
+  labs(x="Condition", y="Mean Proportion", fill="Response")
 ```
-
-## Cluster 2 subclusters(?)
-
-```{r}
-Cluster2DistDif <- DistDf %>% 
-  filter(cluster_labels == 2) %>% 
-  select(-c("cluster_labels"))
-
-response_vectors <- Cluster2DistDif[ ,-1]
-workerid <- Cluster2DistDif$workerid
-
-wss <- sapply(1:9, function(k) {
-  kmeans_result <- kmeans(response_vectors, centers = k)
-  kmeans_result$tot.withinss
-})
-
-# Plot the elbow curve
-plot(1:9, wss, type = "b", pch = 19, frame = FALSE,
-     xlab = "Number of Clusters",
-     ylab = "Total Within-cluster Sum of Squares")
-```
-
-```{r}
-#Silhouette method
-fviz_nbclust(response_vectors, kmeans, method = "silhouette", k.max=9)+
-  labs(subtitle = "Silhouette method")
-```
-
-```{r}
-# Perform k-means clustering
-kmeans_result <- kmeans(response_vectors, centers = 2)
-
-# Get cluster labels for each workerid
-cluster_labels <- as.factor(kmeans_result$cluster)
-
-# Combine cluster labels with workerid
-clustered_workerid <- data.frame(workerid, cluster_labels)
-
-#calculate distance scores 
-distances <- apply(response_vectors, 1, function(x) sqrt(rowSums((x - kmeans_result$centers)^2)))
-# Option 1: Calculate a score as the inverse of the distance (smaller distance = higher score)
-#likelihood_scores <- 1 / distances
-
-# Option 2: Use distance as score (greater distance = higher score)
-likelihood_scores <- distances
-
-# Transpose the likelihood_scores matrix to get scores for each workerid
-worker_scores <- t(likelihood_scores)
-
-# Create a data frame with workerid and the three scores
-worker_scores_df <- data.frame(workerid, worker_scores)
-
-# Print the worker scores
-print(worker_scores_df)
-
-merged_data <- DisjunctiveParticipant %>% 
-  left_join(clustered_workerid, by = "workerid") %>%
-  left_join(worker_scores_df, by = "workerid")
-merged_data <- na.omit(merged_data)
-
-averaged_responses <- merged_data %>%
-  group_by(cond, cluster_labels, response) %>%
-  summarize(mean_proportion = mean(proportion), 
-            CI.Low = ci.low(proportion),
-            CI.High = ci.high(proportion))%>%
-   mutate(YMin = mean_proportion - CI.Low, YMax = mean_proportion + CI.High)
-
-# Plot the clustering result as a bar plot
-Cluster2Plot <- ggplot(averaged_responses, aes(x = response, y = mean_proportion, fill = response)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  # scale_fill_manual(values = cbPalette) +
-  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
-  labs(x = "Response Copula",
-       y = "Proportion of Copula Realization",
-       title = "Cluster 2 Subclusters") +
-  # coord_flip() + 
-  facet_grid(cluster_labels~cond) +
-  scale_fill_brewer(palette = "Pastel2") + 
-  theme_bw()
-```
-
-## Cluster 3 subclusters(?)
-
-```{r}
-Cluster3DistDif <- DistDf %>% 
-  filter(cluster_labels == 3) %>% 
-  select(-c("cluster_labels"))
-
-response_vectors <- Cluster3DistDif[ ,-1]
-workerid <- Cluster3DistDif$workerid
-
-wss <- sapply(1:9, function(k) {
-  kmeans_result <- kmeans(response_vectors, centers = k)
-  kmeans_result$tot.withinss
-})
-
-# Plot the elbow curve
-plot(1:9, wss, type = "b", pch = 19, frame = FALSE,
-     xlab = "Number of Clusters",
-     ylab = "Total Within-cluster Sum of Squares")
-```
-
-```{r}
-#Silhouette method
-fviz_nbclust(response_vectors, kmeans, method = "silhouette", k.max=9)+
-  labs(subtitle = "Silhouette method")
-```
-
-```{r}
-# Perform k-means clustering
-kmeans_result <- kmeans(response_vectors, centers = 4)
-
-# Get cluster labels for each workerid
-cluster_labels <- as.factor(kmeans_result$cluster)
-
-# Combine cluster labels with workerid
-clustered_workerid <- data.frame(workerid, cluster_labels)
-
-#calculate distance scores 
-distances <- apply(response_vectors, 1, function(x) sqrt(rowSums((x - kmeans_result$centers)^2)))
-# Option 1: Calculate a score as the inverse of the distance (smaller distance = higher score)
-#likelihood_scores <- 1 / distances
-
-# Option 2: Use distance as score (greater distance = higher score)
-likelihood_scores <- distances
-
-# Transpose the likelihood_scores matrix to get scores for each workerid
-worker_scores <- t(likelihood_scores)
-
-# Create a data frame with workerid and the three scores
-worker_scores_df <- data.frame(workerid, worker_scores)
-
-# Print the worker scores
-print(worker_scores_df)
-
-merged_data <- DisjunctiveParticipant %>% 
-  left_join(clustered_workerid, by = "workerid") %>%
-  left_join(worker_scores_df, by = "workerid")
-merged_data <- na.omit(merged_data)
-
-averaged_responses <- merged_data %>%
-  group_by(cond, cluster_labels, response) %>%
-  summarize(mean_proportion = mean(proportion), 
-            CI.Low = ci.low(proportion),
-            CI.High = ci.high(proportion))%>%
-   mutate(YMin = mean_proportion - CI.Low, YMax = mean_proportion + CI.High)
-
-# Plot the clustering result as a bar plot
-Cluster3Plot <- ggplot(averaged_responses, aes(x = response, y = mean_proportion, fill = response)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  # scale_fill_manual(values = cbPalette) +
-  geom_errorbar(aes(ymin=YMin,ymax=YMax), width=.25) + 
-  labs(x = "Response Copula",
-       y = "Proportion of Copula Realization",
-       title = "Cluster 3 Subclusters") +
-  # coord_flip() + 
-  facet_grid(cluster_labels~cond) +
-  scale_fill_brewer(palette = "Pastel2") + 
-  theme_bw()
-```
-
-
-```{r}
-ggarrange(Cluster1Plots,Cluster2Plot,Cluster3Plot, common.legend = TRUE, ncol = 1, nrow=3)
-```
-
