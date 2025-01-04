@@ -1,0 +1,10 @@
+experiment_condition	has_either	conj_1_number	conj_1_person	conj_2_number	conj_2_person	nsubj	verb_form	verb_lemma	verb_number	main_predicate_lemma	sentence	filename
+SS	True	Sing	Not Pronoun	Sing	Not Pronoun	Either John or Mary	goes	go	Sing	go	Either John or Mary goes to the store	shorttest.conllu
+SS	True	Sing	Not Pronoun	Sing	Not Pronoun	Either John or Mary	go	go		go	Either John or Mary go to the store	shorttest.conllu
+SS	True	Sing	Not Pronoun	Sing	Not Pronoun	Either John or Mary	have	have	Plur	go	Either John or Mary have gone to the store	shorttest.conllu
+SS	True	Sing	Not Pronoun	Sing	Not Pronoun	Either John or Mary	has	have	Sing	go	Either John or Mary has gone to the store	shorttest.conllu
+SS	True	Sing	Not Pronoun	Sing	Not Pronoun	Either John or Mary	are	be	Plur	room	Either John or Mary are in the room	shorttest.conllu
+SS	True	Sing	Not Pronoun	Sing	Not Pronoun	Either John or Mary	is	be	Sing	room	Either John or Mary is in the room.	shorttest.conllu
+SP	False	Sing	3	Plur	Not Pronoun	She or the students	know	know	Plur	know	She or the students know about this.	shorttest.conllu
+SP	False	Sing	1	Plur	Not Pronoun	I or the students	know	know	Plur	know	I or the students know about this	shorttest.conllu
+PP	False	Plur	Not Pronoun	Plur	Not Pronoun	Cancellations or early departures due to inclement weather	do	do	Plur	warrant	Cancellations or early departures due to inclement weather do not warrant any refund of rent.	shorttest.conllu

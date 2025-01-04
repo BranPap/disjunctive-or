@@ -1,0 +1,1094 @@
+# text = Beginners BBQ Class Taking Place in Missoula!
+# sent_id = 0
+# doc_id = 0
+1	Beginners	beginner	NOUN	NNS	Number=Plur	3	compound	_	start_char=0|end_char=9
+2	BBQ	bbq	NOUN	NN	Number=Sing	3	compound	_	start_char=10|end_char=13
+3	Class	Class	NOUN	NN	Number=Sing	0	root	_	start_char=14|end_char=19
+4	Taking	take	VERB	VBG	VerbForm=Ger	3	acl	_	start_char=20|end_char=26
+5	Place	place	NOUN	NN	Number=Sing	4	obj	_	start_char=27|end_char=32
+6	in	in	ADP	IN	_	7	case	_	start_char=33|end_char=35
+7	Missoula	Missoula	PROPN	NNP	Number=Sing	4	obl	_	start_char=36|end_char=44
+8	!	!	PUNCT	.	_	3	punct	_	start_char=44|end_char=45
+
+# text = Do you want to get better at making delicious BBQ?
+# sent_id = 1
+# doc_id = 0
+1	Do	do	AUX	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	3	aux	_	start_char=46|end_char=48
+2	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	start_char=49|end_char=52
+3	want	want	VERB	VB	VerbForm=Inf	0	root	_	start_char=53|end_char=57
+4	to	to	PART	TO	_	5	mark	_	start_char=58|end_char=60
+5	get	get	VERB	VB	VerbForm=Inf	3	xcomp	_	start_char=61|end_char=64
+6	better	good	ADJ	JJR	Degree=Cmp	5	xcomp	_	start_char=65|end_char=71
+7	at	at	SCONJ	IN	_	8	mark	_	start_char=72|end_char=74
+8	making	make	VERB	VBG	VerbForm=Ger	6	advcl	_	start_char=75|end_char=81
+9	delicious	delicious	ADJ	JJ	Degree=Pos	10	amod	_	start_char=82|end_char=91
+10	BBQ	bbq	NOUN	NN	Number=Sing	8	obj	_	start_char=92|end_char=95
+11	?	?	PUNCT	.	_	3	punct	_	start_char=95|end_char=96
+
+# text = You will have the opportunity, put this on your calendar now.
+# sent_id = 2
+# doc_id = 0
+1	You	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	start_char=97|end_char=100
+2	will	will	AUX	MD	VerbForm=Fin	3	aux	_	start_char=101|end_char=105
+3	have	have	VERB	VB	VerbForm=Inf	0	root	_	start_char=106|end_char=110
+4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	start_char=111|end_char=114
+5	opportunity	opportunity	NOUN	NN	Number=Sing	3	obj	_	start_char=115|end_char=126
+6	,	,	PUNCT	,	_	7	punct	_	start_char=126|end_char=127
+7	put	put	VERB	VB	Mood=Imp|VerbForm=Fin	3	parataxis	_	start_char=128|end_char=131
+8	this	this	PRON	DT	Number=Sing|PronType=Dem	7	obj	_	start_char=132|end_char=136
+9	on	on	ADP	IN	_	11	case	_	start_char=137|end_char=139
+10	your	your	PRON	PRP$	Case=Gen|Person=2|Poss=Yes|PronType=Prs	11	nmod:poss	_	start_char=140|end_char=144
+11	calendar	calendar	NOUN	NN	Number=Sing	7	obl	_	start_char=145|end_char=153
+12	now	now	ADV	RB	_	7	advmod	_	start_char=154|end_char=157
+13	.	.	PUNCT	.	_	3	punct	_	start_char=157|end_char=158
+
+# text = Thursday, September 22nd join World Class BBQ Champion, Tony Balay from Lonestar Smoke Rangers.
+# sent_id = 3
+# doc_id = 0
+1	Thursday	Thursday	PROPN	NNP	Number=Sing	5	obl:tmod	_	start_char=159|end_char=167
+2	,	,	PUNCT	,	_	1	punct	_	start_char=167|end_char=168
+3	September	September	PROPN	NNP	Number=Sing	1	appos	_	start_char=169|end_char=178
+4	22nd	22nd	NOUN	NN	NumType=Ord|Number=Sing	1	nmod:tmod	_	start_char=179|end_char=183
+5	join	join	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	start_char=184|end_char=188
+6	World	World	PROPN	NNP	Number=Sing	7	compound	_	start_char=189|end_char=194
+7	Class	Class	PROPN	NNP	Number=Sing	9	compound	_	start_char=195|end_char=200
+8	BBQ	bbq	PROPN	NNP	Number=Sing	9	compound	_	start_char=201|end_char=204
+9	Champion	Champion	PROPN	NNP	Number=Sing	5	obj	_	start_char=205|end_char=213
+10	,	,	PUNCT	,	_	9	punct	_	start_char=213|end_char=214
+11	Tony	Tony	PROPN	NNP	Number=Sing	9	appos	_	start_char=215|end_char=219
+12	Balay	Balay	PROPN	NNP	Number=Sing	11	flat	_	start_char=220|end_char=225
+13	from	from	ADP	IN	_	16	case	_	start_char=226|end_char=230
+14	Lonestar	Lonestar	PROPN	NNP	Number=Sing	16	compound	_	start_char=231|end_char=239
+15	Smoke	Smoke	PROPN	NNP	Number=Sing	16	compound	_	start_char=240|end_char=245
+16	Rangers	ranger	PROPN	NNPS	Number=Plur	5	obl	_	start_char=246|end_char=253
+17	.	.	PUNCT	.	_	5	punct	_	start_char=253|end_char=254
+
+# text = He will be teaching a beginner level class for everyone who wants to get better with their culinary skills.
+# sent_id = 4
+# doc_id = 0
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	start_char=255|end_char=257
+2	will	will	AUX	MD	VerbForm=Fin	4	aux	_	start_char=258|end_char=262
+3	be	be	AUX	VB	VerbForm=Inf	4	aux	_	start_char=263|end_char=265
+4	teaching	teach	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	start_char=266|end_char=274
+5	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	start_char=275|end_char=276
+6	beginner	beginner	NOUN	NN	Number=Sing	7	compound	_	start_char=277|end_char=285
+7	level	level	NOUN	NN	Number=Sing	8	compound	_	start_char=286|end_char=291
+8	class	class	NOUN	NN	Number=Sing	4	obj	_	start_char=292|end_char=297
+9	for	for	ADP	IN	_	10	case	_	start_char=298|end_char=301
+10	everyone	everyone	PRON	NN	Number=Sing|PronType=Tot	4	obl	_	start_char=302|end_char=310
+11	who	who	PRON	WP	PronType=Rel	12	nsubj	_	start_char=311|end_char=314
+12	wants	want	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	start_char=315|end_char=320
+13	to	to	PART	TO	_	14	mark	_	start_char=321|end_char=323
+14	get	get	VERB	VB	VerbForm=Inf	12	xcomp	_	start_char=324|end_char=327
+15	better	good	ADJ	JJR	Degree=Cmp	14	xcomp	_	start_char=328|end_char=334
+16	with	with	ADP	IN	_	19	case	_	start_char=335|end_char=339
+17	their	their	PRON	PRP$	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	start_char=340|end_char=345
+18	culinary	culinary	ADJ	JJ	Degree=Pos	19	amod	_	start_char=346|end_char=354
+19	skills	skill	NOUN	NNS	Number=Plur	15	obl	_	start_char=355|end_char=361
+20	.	.	PUNCT	.	_	4	punct	_	start_char=361|end_char=362
+
+# text = He will teach you everything you need to know to compete in a KCBS BBQ competition, including techniques, recipes, timelines, meat selection and trimming, plus smoker and fire information.
+# sent_id = 5
+# doc_id = 0
+1	He	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=363|end_char=365
+2	will	will	AUX	MD	VerbForm=Fin	3	aux	_	start_char=366|end_char=370
+3	teach	teach	VERB	VB	VerbForm=Inf	0	root	_	start_char=371|end_char=376
+4	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	3	iobj	_	start_char=377|end_char=380
+5	everything	everything	PRON	NN	Number=Sing|PronType=Tot	3	obj	_	start_char=381|end_char=391
+6	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	7	nsubj	_	start_char=392|end_char=395
+7	need	need	VERB	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	start_char=396|end_char=400
+8	to	to	PART	TO	_	9	mark	_	start_char=401|end_char=403
+9	know	know	VERB	VB	VerbForm=Inf	7	xcomp	_	start_char=404|end_char=408
+10	to	to	PART	TO	_	11	mark	_	start_char=409|end_char=411
+11	compete	compete	VERB	VB	VerbForm=Inf	9	advcl	_	start_char=412|end_char=419
+12	in	in	ADP	IN	_	16	case	_	start_char=420|end_char=422
+13	a	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	start_char=423|end_char=424
+14	KCBS	KCBS	PROPN	NNP	Number=Sing	16	compound	_	start_char=425|end_char=429
+15	BBQ	bbq	NOUN	NN	Number=Sing	16	compound	_	start_char=430|end_char=433
+16	competition	competition	NOUN	NN	Number=Sing	11	obl	_	start_char=434|end_char=445
+17	,	,	PUNCT	,	_	19	punct	_	start_char=445|end_char=446
+18	including	include	VERB	VBG	VerbForm=Ger	19	case	_	start_char=447|end_char=456
+19	techniques	technique	NOUN	NNS	Number=Plur	5	nmod	_	start_char=457|end_char=467
+20	,	,	PUNCT	,	_	21	punct	_	start_char=467|end_char=468
+21	recipes	recipe	NOUN	NNS	Number=Plur	19	conj	_	start_char=469|end_char=476
+22	,	,	PUNCT	,	_	23	punct	_	start_char=476|end_char=477
+23	timelines	timeline	NOUN	NNS	Number=Plur	19	conj	_	start_char=478|end_char=487
+24	,	,	PUNCT	,	_	26	punct	_	start_char=487|end_char=488
+25	meat	meat	NOUN	NN	Number=Sing	26	compound	_	start_char=489|end_char=493
+26	selection	selection	NOUN	NN	Number=Sing	19	conj	_	start_char=494|end_char=503
+27	and	and	CCONJ	CC	_	28	cc	_	start_char=504|end_char=507
+28	trimming	trimming	NOUN	NN	Number=Sing	26	conj	_	start_char=508|end_char=516
+29	,	,	PUNCT	,	_	34	punct	_	start_char=516|end_char=517
+30	plus	plus	CCONJ	CC	_	34	cc	_	start_char=518|end_char=522
+31	smoker	smoker	NOUN	NN	Number=Sing	34	compound	_	start_char=523|end_char=529
+32	and	and	CCONJ	CC	_	33	cc	_	start_char=530|end_char=533
+33	fire	fire	NOUN	NN	Number=Sing	31	conj	_	start_char=534|end_char=538
+34	information	information	NOUN	NN	Number=Sing	19	conj	_	start_char=539|end_char=550
+35	.	.	PUNCT	.	_	3	punct	_	start_char=550|end_char=551
+
+# text = The cost to be in the class is $35 per person, and for spectators it is free.
+# sent_id = 6
+# doc_id = 0
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	start_char=552|end_char=555
+2	cost	cost	NOUN	NN	Number=Sing	9	nsubj	_	start_char=556|end_char=560
+3	to	to	PART	TO	_	7	mark	_	start_char=561|end_char=563
+4	be	be	AUX	VB	VerbForm=Inf	7	cop	_	start_char=564|end_char=566
+5	in	in	ADP	IN	_	7	case	_	start_char=567|end_char=569
+6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	start_char=570|end_char=573
+7	class	class	NOUN	NN	Number=Sing	2	acl	_	start_char=574|end_char=579
+8	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=580|end_char=582
+9	$	$	SYM	$	_	0	root	_	start_char=583|end_char=584
+10	35	35	NUM	CD	NumForm=Digit|NumType=Card	9	nummod	_	start_char=584|end_char=586
+11	per	per	ADP	IN	_	12	case	_	start_char=587|end_char=590
+12	person	person	NOUN	NN	Number=Sing	9	nmod	_	start_char=591|end_char=597
+13	,	,	PUNCT	,	_	19	punct	_	start_char=597|end_char=598
+14	and	and	CCONJ	CC	_	19	cc	_	start_char=599|end_char=602
+15	for	for	ADP	IN	_	16	case	_	start_char=603|end_char=606
+16	spectators	spectator	NOUN	NNS	Number=Plur	19	obl	_	start_char=607|end_char=617
+17	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	start_char=618|end_char=620
+18	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	cop	_	start_char=621|end_char=623
+19	free	free	ADJ	JJ	Degree=Pos	9	conj	_	start_char=624|end_char=628
+20	.	.	PUNCT	.	_	9	punct	_	start_char=628|end_char=629
+
+# text = Included in the cost will be either a t-shirt or apron and you will be tasting samples of each meat that is prepared.
+# sent_id = 7
+# doc_id = 0
+1	Included	include	VERB	VBN	Tense=Past|VerbForm=Part	11	acl	_	start_char=630|end_char=638
+2	in	in	ADP	IN	_	4	case	_	start_char=639|end_char=641
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	start_char=642|end_char=645
+4	cost	cost	NOUN	NN	Number=Sing	1	obl	_	start_char=646|end_char=650
+5	will	will	AUX	MD	VerbForm=Fin	1	aux	_	start_char=651|end_char=655
+6	be	be	AUX	VB	VerbForm=Inf	0	root	_	start_char=656|end_char=658
+7	either	either	CCONJ	CC	_	11	cc:preconj	_	start_char=659|end_char=665
+8	a	a	DET	DT	Definite=Ind|PronType=Art	11	det	_	start_char=666|end_char=667
+9	t	t	NOUN	NN	Number=Sing	11	compound	_	start_char=668|end_char=669
+10	-	-	PUNCT	HYPH	_	11	punct	_	start_char=669|end_char=670
+11	shirt	shirt	NOUN	NN	Number=Sing	6	nsubj	_	start_char=670|end_char=675
+12	or	or	CCONJ	CC	_	13	cc	_	start_char=676|end_char=678
+13	apron	apron	NOUN	NN	Number=Sing	11	conj	_	start_char=679|end_char=684
+14	and	and	CCONJ	CC	_	18	cc	_	start_char=685|end_char=688
+15	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	18	nsubj	_	start_char=689|end_char=692
+16	will	will	AUX	MD	VerbForm=Fin	18	aux	_	start_char=693|end_char=697
+17	be	be	AUX	VB	VerbForm=Inf	18	aux	_	start_char=698|end_char=700
+18	tasting	taste	VERB	VBG	Tense=Pres|VerbForm=Part	6	conj	_	start_char=701|end_char=708
+19	samples	sample	NOUN	NNS	Number=Plur	18	obj	_	start_char=709|end_char=716
+20	of	of	ADP	IN	_	22	case	_	start_char=717|end_char=719
+21	each	each	DET	DT	_	22	det	_	start_char=720|end_char=724
+22	meat	meat	NOUN	NN	Number=Sing	19	nmod	_	start_char=725|end_char=729
+23	that	that	PRON	WDT	PronType=Rel	25	nsubj:pass	_	start_char=730|end_char=734
+24	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	aux:pass	_	start_char=735|end_char=737
+25	prepared	prepare	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	22	acl:relcl	_	start_char=738|end_char=746
+26	.	.	PUNCT	.	_	6	punct	_	start_char=746|end_char=747
+
+# text = Discussion in 'Mac OS X Lion (10.7)' started by axboi87, Jan 20, 2012.
+# sent_id = 8
+# doc_id = 1
+1	Discussion	discussion	NOUN	NN	Number=Sing	0	root	_	start_char=0|end_char=10
+2	in	in	ADP	IN	_	7	case	_	start_char=11|end_char=13
+3	'	'	PUNCT	``	_	7	punct	_	start_char=14|end_char=15
+4	Mac	Mac	PROPN	NNP	Number=Sing	7	compound	_	start_char=15|end_char=18
+5	OS	os	PROPN	NNP	Number=Sing	7	compound	_	start_char=19|end_char=21
+6	X	X	PROPN	NNP	Number=Sing	7	compound	_	start_char=22|end_char=23
+7	Lion	Lion	PROPN	NNP	Number=Sing	1	nmod	_	start_char=24|end_char=28
+8	(	(	PUNCT	-LRB-	_	9	punct	_	start_char=29|end_char=30
+9	10.7	10.7	NUM	CD	NumForm=Digit|NumType=Card	7	appos	_	start_char=30|end_char=34
+10	)	)	PUNCT	-RRB-	_	9	punct	_	start_char=34|end_char=35
+11	'	'	PUNCT	''	_	7	punct	_	start_char=35|end_char=36
+12	started	start	VERB	VBN	Tense=Past|VerbForm=Part	7	acl	_	start_char=37|end_char=44
+13	by	by	ADP	IN	_	14	case	_	start_char=45|end_char=47
+14	axboi87	axboi87	PROPN	NNP	Number=Sing	12	obl	_	start_char=48|end_char=55
+15	,	,	PUNCT	,	_	17	punct	_	start_char=55|end_char=56
+16	Jan	January	PROPN	NNP	Abbr=Yes|Number=Sing	17	compound	_	start_char=57|end_char=60
+17	20	20	NUM	CD	NumForm=Digit|NumType=Card	12	obl:tmod	_	start_char=61|end_char=63
+18	,	,	PUNCT	,	_	19	punct	_	start_char=63|end_char=64
+19	2012	2012	NUM	CD	NumForm=Digit|NumType=Card	17	nmod:tmod	_	start_char=65|end_char=69
+20	.	.	PUNCT	.	_	1	punct	_	start_char=69|end_char=70
+
+# text = I've got a 500gb internal drive and a 240gb SSD.
+# sent_id = 9
+# doc_id = 1
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	start_char=71|end_char=72
+2	've	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	start_char=72|end_char=75
+3	got	get	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	start_char=76|end_char=79
+4	a	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	start_char=80|end_char=81
+5	500gb	500gb	NUM	CD	NumForm=Digit|NumType=Card	7	nummod	_	start_char=82|end_char=87
+6	internal	internal	ADJ	JJ	Degree=Pos	7	amod	_	start_char=88|end_char=96
+7	drive	drive	NOUN	NN	Number=Sing	3	obj	_	start_char=97|end_char=102
+8	and	and	CCONJ	CC	_	11	cc	_	start_char=103|end_char=106
+9	a	a	DET	DT	Definite=Ind|PronType=Art	11	det	_	start_char=107|end_char=108
+10	240gb	240gb	NOUN	NN	Number=Sing	11	compound	_	start_char=109|end_char=114
+11	SSD	ssd	NOUN	NN	Number=Sing	7	conj	_	start_char=115|end_char=118
+12	.	.	PUNCT	.	_	3	punct	_	start_char=118|end_char=119
+
+# text = When trying to restore using disk utility i'm given the error "Not enough space on disk ____ to restore"
+# sent_id = 10
+# doc_id = 1
+1	When	when	ADV	WRB	PronType=Int	2	advmod	_	start_char=120|end_char=124
+2	trying	try	VERB	VBG	VerbForm=Ger	9	advcl	_	start_char=125|end_char=131
+3	to	to	PART	TO	_	4	mark	_	start_char=132|end_char=134
+4	restore	restore	VERB	VB	VerbForm=Inf	2	xcomp	_	start_char=135|end_char=142
+5	using	use	VERB	VBG	VerbForm=Ger	4	advcl	_	start_char=143|end_char=148
+6	disk	disk	PROPN	NNP	Number=Sing	7	compound	_	start_char=149|end_char=153
+7	utility	utility	PROPN	NNP	Number=Sing	5	obj	_	start_char=154|end_char=161
+8	i'm	I	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:pass	_	start_char=162|end_char=165
+9	given	give	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	0	root	_	start_char=166|end_char=171
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	start_char=172|end_char=175
+11	error	error	NOUN	NN	Number=Sing	9	obj	_	start_char=176|end_char=181
+12	"	"	PUNCT	``	_	11	punct	_	start_char=182|end_char=183
+13	Not	not	PART	RB	_	14	advmod	_	start_char=183|end_char=186
+14	enough	enough	ADJ	JJ	Degree=Pos	15	amod	_	start_char=187|end_char=193
+15	space	space	NOUN	NN	Number=Sing	11	appos	_	start_char=194|end_char=199
+16	on	on	ADP	IN	_	17	case	_	start_char=200|end_char=202
+17	disk	disk	NOUN	NN	Number=Sing	15	nmod	_	start_char=203|end_char=207
+18	____	____	PUNCT	NFP	_	15	punct	_	start_char=208|end_char=212
+19	to	to	PART	TO	_	20	mark	_	start_char=213|end_char=215
+20	restore	restore	VERB	VB	VerbForm=Inf	15	acl	_	start_char=216|end_char=223
+21	"	"	PUNCT	''	_	9	punct	_	start_char=223|end_char=224
+
+# text = But I shouldn't have to do that!!!
+# sent_id = 11
+# doc_id = 1
+1	But	but	CCONJ	CC	_	5	cc	_	start_char=225|end_char=228
+2	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	start_char=229|end_char=230
+3	should	should	AUX	MD	VerbForm=Fin	5	aux	_	start_char=231|end_char=237
+4	n't	not	PART	RB	_	5	advmod	_	start_char=237|end_char=240
+5	have	have	VERB	VB	VerbForm=Inf	0	root	_	start_char=241|end_char=245
+6	to	to	PART	TO	_	7	mark	_	start_char=246|end_char=248
+7	do	do	VERB	VB	VerbForm=Inf	5	xcomp	_	start_char=249|end_char=251
+8	that	that	PRON	DT	Number=Sing|PronType=Dem	7	obj	_	start_char=252|end_char=256
+9	!!!	!!!	PUNCT	.	_	5	punct	_	start_char=256|end_char=259
+
+# text = Any ideas or workarounds before resorting to the above?
+# sent_id = 12
+# doc_id = 1
+1	Any	any	DET	DT	_	2	det	_	start_char=260|end_char=263
+2	ideas	idea	NOUN	NNS	Number=Plur	0	root	_	start_char=264|end_char=269
+3	or	or	CCONJ	CC	_	4	cc	_	start_char=270|end_char=272
+4	workarounds	workaround	NOUN	NNS	Number=Plur	2	conj	_	start_char=273|end_char=284
+5	before	before	SCONJ	IN	_	6	mark	_	start_char=285|end_char=291
+6	resorting	resort	VERB	VBG	VerbForm=Ger	2	acl	_	start_char=292|end_char=301
+7	to	to	ADP	IN	_	9	case	_	start_char=302|end_char=304
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	start_char=305|end_char=308
+9	above	above	ADJ	JJ	Degree=Pos	6	obl	_	start_char=309|end_char=314
+10	?	?	PUNCT	.	_	2	punct	_	start_char=314|end_char=315
+
+# text = Use Carbon Copy Cloner to copy one drive to the other.
+# sent_id = 13
+# doc_id = 1
+1	Use	use	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	start_char=316|end_char=319
+2	Carbon	Carbon	PROPN	NNP	Number=Sing	3	compound	_	start_char=320|end_char=326
+3	Copy	copy	PROPN	NNP	Number=Sing	4	compound	_	start_char=327|end_char=331
+4	Cloner	Cloner	PROPN	NNP	Number=Sing	1	obj	_	start_char=332|end_char=338
+5	to	to	PART	TO	_	6	mark	_	start_char=339|end_char=341
+6	copy	copy	VERB	VB	VerbForm=Inf	1	advcl	_	start_char=342|end_char=346
+7	one	one	NUM	CD	NumForm=Word|NumType=Card	8	nummod	_	start_char=347|end_char=350
+8	drive	drive	NOUN	NN	Number=Sing	6	obj	_	start_char=351|end_char=356
+9	to	to	ADP	IN	_	11	case	_	start_char=357|end_char=359
+10	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	start_char=360|end_char=363
+11	other	other	ADJ	JJ	Degree=Pos	6	obl	_	start_char=364|end_char=369
+12	.	.	PUNCT	.	_	1	punct	_	start_char=369|end_char=370
+
+# text = I've done this several times going from larger HDD to smaller SSD and I wound up with a bootable SSD drive.
+# sent_id = 14
+# doc_id = 1
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	start_char=371|end_char=372
+2	've	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	start_char=372|end_char=375
+3	done	do	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	start_char=376|end_char=380
+4	this	this	DET	DT	Number=Sing|PronType=Dem	3	obj	_	start_char=381|end_char=385
+5	several	several	ADJ	JJ	Degree=Pos	6	amod	_	start_char=386|end_char=393
+6	times	time	NOUN	NNS	Number=Plur	3	obl:tmod	_	start_char=394|end_char=399
+7	going	go	VERB	VBG	VerbForm=Ger	3	advcl	_	start_char=400|end_char=405
+8	from	from	ADP	IN	_	10	case	_	start_char=406|end_char=410
+9	larger	large	ADJ	JJR	Degree=Cmp	10	amod	_	start_char=411|end_char=417
+10	HDD	hdd	NOUN	NN	Number=Sing	7	obl	_	start_char=418|end_char=421
+11	to	to	ADP	IN	_	13	case	_	start_char=422|end_char=424
+12	smaller	small	ADJ	JJR	Degree=Cmp	13	amod	_	start_char=425|end_char=432
+13	SSD	ssd	NOUN	NN	Number=Sing	7	obl	_	start_char=433|end_char=436
+14	and	and	CCONJ	CC	_	16	cc	_	start_char=437|end_char=440
+15	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	start_char=441|end_char=442
+16	wound	wind	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	3	conj	_	start_char=443|end_char=448
+17	up	up	ADP	RP	_	16	compound:prt	_	start_char=449|end_char=451
+18	with	with	ADP	IN	_	22	case	_	start_char=452|end_char=456
+19	a	a	DET	DT	Definite=Ind|PronType=Art	22	det	_	start_char=457|end_char=458
+20	bootable	bootable	ADJ	JJ	Degree=Pos	22	amod	_	start_char=459|end_char=467
+21	SSD	ssd	NOUN	NN	Number=Sing	22	compound	_	start_char=468|end_char=471
+22	drive	drive	NOUN	NN	Number=Sing	16	obl	_	start_char=472|end_char=477
+23	.	.	PUNCT	.	_	3	punct	_	start_char=477|end_char=478
+
+# text = One step you have to remember not to skip is to use Disk Utility to partition the SSD as GUID partition scheme HFS+ before doing the clone.
+# sent_id = 15
+# doc_id = 1
+1	One	one	NUM	CD	NumForm=Word|NumType=Card	2	nummod	_	start_char=479|end_char=482
+2	step	step	NOUN	NN	Number=Sing	12	nsubj:outer	_	start_char=483|end_char=487
+3	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	4	nsubj	_	start_char=488|end_char=491
+4	have	have	VERB	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	start_char=492|end_char=496
+5	to	to	PART	TO	_	6	mark	_	start_char=497|end_char=499
+6	remember	remember	VERB	VB	VerbForm=Inf	4	xcomp	_	start_char=500|end_char=508
+7	not	not	PART	RB	_	9	advmod	_	start_char=509|end_char=512
+8	to	to	PART	TO	_	9	mark	_	start_char=513|end_char=515
+9	skip	skip	VERB	VB	VerbForm=Inf	6	xcomp	_	start_char=516|end_char=520
+10	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	start_char=521|end_char=523
+11	to	to	PART	TO	_	12	mark	_	start_char=524|end_char=526
+12	use	use	VERB	VB	VerbForm=Inf	0	root	_	start_char=527|end_char=530
+13	Disk	Disk	PROPN	NNP	Number=Sing	14	compound	_	start_char=531|end_char=535
+14	Utility	Utility	PROPN	NNP	Number=Sing	12	obj	_	start_char=536|end_char=543
+15	to	to	PART	TO	_	16	mark	_	start_char=544|end_char=546
+16	partition	partition	VERB	VB	VerbForm=Inf	12	advcl	_	start_char=547|end_char=556
+17	the	the	DET	DT	Definite=Def|PronType=Art	18	det	_	start_char=557|end_char=560
+18	SSD	ssd	NOUN	NN	Number=Sing	16	obj	_	start_char=561|end_char=564
+19	as	as	ADP	IN	_	22	case	_	start_char=565|end_char=567
+20	GUID	guid	NOUN	NN	Number=Sing	22	compound	_	start_char=568|end_char=572
+21	partition	partition	NOUN	NN	Number=Sing	22	compound	_	start_char=573|end_char=582
+22	scheme	scheme	NOUN	NN	Number=Sing	16	obl	_	start_char=583|end_char=589
+23	HFS	HFS	PROPN	NNP	Number=Sing	16	obl	_	start_char=590|end_char=593
+24	+	+	SYM	SYM	_	23	nummod	_	start_char=593|end_char=594
+25	before	before	SCONJ	IN	_	26	mark	_	start_char=595|end_char=601
+26	doing	do	VERB	VBG	VerbForm=Ger	16	advcl	_	start_char=602|end_char=607
+27	the	the	DET	DT	Definite=Def|PronType=Art	28	det	_	start_char=608|end_char=611
+28	clone	clone	NOUN	NN	Number=Sing	26	obj	_	start_char=612|end_char=617
+29	.	.	PUNCT	.	_	12	punct	_	start_char=617|end_char=618
+
+# text = If it came Apple Partition Scheme, even if you let CCC do the clone, the resulting drive won't be bootable.
+# sent_id = 16
+# doc_id = 1
+1	If	if	SCONJ	IN	_	3	mark	_	start_char=619|end_char=621
+2	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	start_char=622|end_char=624
+3	came	come	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	23	advcl	_	start_char=625|end_char=629
+4	Apple	Apple	PROPN	NNP	Number=Sing	6	compound	_	start_char=630|end_char=635
+5	Partition	partition	NOUN	NN	Number=Sing	6	compound	_	start_char=636|end_char=645
+6	Scheme	scheme	NOUN	NN	Number=Sing	3	obj	_	start_char=646|end_char=652
+7	,	,	PUNCT	,	_	23	punct	_	start_char=652|end_char=653
+8	even	even	ADV	RB	_	11	advmod	_	start_char=654|end_char=658
+9	if	if	SCONJ	IN	_	11	mark	_	start_char=659|end_char=661
+10	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	11	nsubj	_	start_char=662|end_char=665
+11	let	let	VERB	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	23	advcl	_	start_char=666|end_char=669
+12	CCC	CCC	PROPN	NNP	Number=Sing	11	obj	_	start_char=670|end_char=673
+13	do	do	VERB	VB	VerbForm=Inf	11	xcomp	_	start_char=674|end_char=676
+14	the	the	DET	DT	Definite=Def|PronType=Art	15	det	_	start_char=677|end_char=680
+15	clone	clone	NOUN	NN	Number=Sing	13	obj	_	start_char=681|end_char=686
+16	,	,	PUNCT	,	_	23	punct	_	start_char=686|end_char=687
+17	the	the	DET	DT	Definite=Def|PronType=Art	19	det	_	start_char=688|end_char=691
+18	resulting	result	VERB	VBG	VerbForm=Ger	19	amod	_	start_char=692|end_char=701
+19	drive	drive	NOUN	NN	Number=Sing	23	nsubj	_	start_char=702|end_char=707
+20	wo	will	AUX	MD	VerbForm=Fin	23	aux	_	start_char=708|end_char=710
+21	n't	not	PART	RB	_	23	advmod	_	start_char=710|end_char=713
+22	be	be	AUX	VB	VerbForm=Inf	23	cop	_	start_char=714|end_char=716
+23	bootable	bootable	ADJ	JJ	Degree=Pos	0	root	_	start_char=717|end_char=725
+24	.	.	PUNCT	.	_	23	punct	_	start_char=725|end_char=726
+
+# text = CCC usually works in "file mode" and it can easily copy a larger drive (that's mostly empty) onto a smaller drive.
+# sent_id = 17
+# doc_id = 1
+1	CCC	CCC	PROPN	NNP	Number=Sing	3	nsubj	_	start_char=727|end_char=730
+2	usually	usually	ADV	RB	_	3	advmod	_	start_char=731|end_char=738
+3	works	work	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=739|end_char=744
+4	in	in	ADP	IN	_	7	case	_	start_char=745|end_char=747
+5	"	"	PUNCT	``	_	7	punct	_	start_char=748|end_char=749
+6	file	file	NOUN	NN	Number=Sing	7	compound	_	start_char=749|end_char=753
+7	mode	mode	NOUN	NN	Number=Sing	3	obl	_	start_char=754|end_char=758
+8	"	"	PUNCT	''	_	7	punct	_	start_char=758|end_char=759
+9	and	and	CCONJ	CC	_	13	cc	_	start_char=760|end_char=763
+10	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	start_char=764|end_char=766
+11	can	can	AUX	MD	VerbForm=Fin	13	aux	_	start_char=767|end_char=770
+12	easily	easily	ADV	RB	_	13	advmod	_	start_char=771|end_char=777
+13	copy	copy	VERB	VB	VerbForm=Inf	3	conj	_	start_char=778|end_char=782
+14	a	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	start_char=783|end_char=784
+15	larger	large	ADJ	JJR	Degree=Cmp	16	amod	_	start_char=785|end_char=791
+16	drive	drive	NOUN	NN	Number=Sing	13	obj	_	start_char=792|end_char=797
+17	(	(	PUNCT	-LRB-	_	21	punct	_	start_char=798|end_char=799
+18	that	that	PRON	WDT	PronType=Rel	21	nsubj	_	start_char=799|end_char=803
+19	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	cop	_	start_char=803|end_char=805
+20	mostly	mostly	ADV	RB	_	21	advmod	_	start_char=806|end_char=812
+21	empty	empty	ADJ	JJ	Degree=Pos	16	acl:relcl	_	start_char=813|end_char=818
+22	)	)	PUNCT	-RRB-	_	21	punct	_	start_char=818|end_char=819
+23	onto	onto	ADP	IN	_	26	case	_	start_char=820|end_char=824
+24	a	a	DET	DT	Definite=Ind|PronType=Art	26	det	_	start_char=825|end_char=826
+25	smaller	small	ADJ	JJR	Degree=Cmp	26	amod	_	start_char=827|end_char=834
+26	drive	drive	NOUN	NN	Number=Sing	13	obl	_	start_char=835|end_char=840
+27	.	.	PUNCT	.	_	3	punct	_	start_char=840|end_char=841
+
+# text = If you tell CCC to clone a drive you did NOT boot from, it can work in block copy mode where the destination drive must be the same size or larger than the drive you are cloning from (if I recall).
+# sent_id = 18
+# doc_id = 1
+1	If	if	SCONJ	IN	_	3	mark	_	start_char=842|end_char=844
+2	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	3	nsubj	_	start_char=845|end_char=848
+3	tell	tell	VERB	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	17	advcl	_	start_char=849|end_char=853
+4	CCC	CCC	PROPN	NNP	Number=Sing	3	iobj	_	start_char=854|end_char=857
+5	to	to	PART	TO	_	6	mark	_	start_char=858|end_char=860
+6	clone	clone	VERB	VB	VerbForm=Inf	3	xcomp	_	start_char=861|end_char=866
+7	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	start_char=867|end_char=868
+8	drive	drive	NOUN	NN	Number=Sing	6	obj	_	start_char=869|end_char=874
+9	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	12	nsubj	_	start_char=875|end_char=878
+10	did	do	AUX	VBD	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin	12	aux	_	start_char=879|end_char=882
+11	NOT	not	PART	RB	_	12	advmod	_	start_char=883|end_char=886
+12	boot	boot	VERB	VB	VerbForm=Inf	8	acl:relcl	_	start_char=887|end_char=891
+13	from	from	ADP	IN	_	12	obl	_	start_char=892|end_char=896
+14	,	,	PUNCT	,	_	17	punct	_	start_char=896|end_char=897
+15	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	start_char=898|end_char=900
+16	can	can	AUX	MD	VerbForm=Fin	17	aux	_	start_char=901|end_char=904
+17	work	work	VERB	VB	VerbForm=Inf	0	root	_	start_char=905|end_char=909
+18	in	in	ADP	IN	_	21	case	_	start_char=910|end_char=912
+19	block	block	NOUN	NN	Number=Sing	20	compound	_	start_char=913|end_char=918
+20	copy	copy	NOUN	NN	Number=Sing	21	compound	_	start_char=919|end_char=923
+21	mode	mode	NOUN	NN	Number=Sing	17	obl	_	start_char=924|end_char=928
+22	where	where	ADV	WRB	PronType=Rel	30	advmod	_	start_char=929|end_char=934
+23	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	start_char=935|end_char=938
+24	destination	destination	NOUN	NN	Number=Sing	25	compound	_	start_char=939|end_char=950
+25	drive	drive	NOUN	NN	Number=Sing	30	nsubj	_	start_char=951|end_char=956
+26	must	must	AUX	MD	VerbForm=Fin	30	aux	_	start_char=957|end_char=961
+27	be	be	AUX	VB	VerbForm=Inf	30	cop	_	start_char=962|end_char=964
+28	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	start_char=965|end_char=968
+29	same	same	ADJ	JJ	Degree=Pos	30	amod	_	start_char=969|end_char=973
+30	size	size	NOUN	NN	Number=Sing	21	acl:relcl	_	start_char=974|end_char=978
+31	or	or	CCONJ	CC	_	32	cc	_	start_char=979|end_char=981
+32	larger	large	ADJ	JJR	Degree=Cmp	30	conj	_	start_char=982|end_char=988
+33	than	than	ADP	IN	_	35	case	_	start_char=989|end_char=993
+34	the	the	DET	DT	Definite=Def|PronType=Art	35	det	_	start_char=994|end_char=997
+35	drive	drive	NOUN	NN	Number=Sing	32	obl	_	start_char=998|end_char=1003
+36	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	38	nsubj	_	start_char=1004|end_char=1007
+37	are	be	AUX	VBP	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	38	aux	_	start_char=1008|end_char=1011
+38	cloning	clone	VERB	VBG	Tense=Pres|VerbForm=Part	35	acl:relcl	_	start_char=1012|end_char=1019
+39	from	from	ADP	IN	_	38	obl	_	start_char=1020|end_char=1024
+40	(	(	PUNCT	-LRB-	_	43	punct	_	start_char=1025|end_char=1026
+41	if	if	SCONJ	IN	_	43	mark	_	start_char=1026|end_char=1028
+42	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	43	nsubj	_	start_char=1029|end_char=1030
+43	recall	recall	VERB	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	30	advcl	_	start_char=1031|end_char=1037
+44	)	)	PUNCT	-RRB-	_	43	punct	_	start_char=1037|end_char=1038
+45	.	.	PUNCT	.	_	17	punct	_	start_char=1038|end_char=1039
+
+# text = I've actually done this somehow on Disk Utility several times (booting from a different drive (or even the dvd) so not running disk utility from the drive your cloning) and had it work just fine from larger to smaller bootable clone.
+# sent_id = 19
+# doc_id = 1
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	start_char=1040|end_char=1041
+2	've	have	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	aux	_	start_char=1041|end_char=1044
+3	actually	actually	ADV	RB	_	4	advmod	_	start_char=1045|end_char=1053
+4	done	do	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	start_char=1054|end_char=1058
+5	this	this	PRON	DT	Number=Sing|PronType=Dem	4	obj	_	start_char=1059|end_char=1063
+6	somehow	somehow	ADV	RB	_	4	advmod	_	start_char=1064|end_char=1071
+7	on	on	ADP	IN	_	9	case	_	start_char=1072|end_char=1074
+8	Disk	Disk	PROPN	NNP	Number=Sing	9	compound	_	start_char=1075|end_char=1079
+9	Utility	Utility	PROPN	NNP	Number=Sing	4	obl	_	start_char=1080|end_char=1087
+10	several	several	ADJ	JJ	Degree=Pos	11	amod	_	start_char=1088|end_char=1095
+11	times	time	NOUN	NNS	Number=Plur	4	obl:tmod	_	start_char=1096|end_char=1101
+12	(	(	PUNCT	-LRB-	_	13	punct	_	start_char=1102|end_char=1103
+13	booting	boot	VERB	VBG	VerbForm=Ger	4	advcl	_	start_char=1103|end_char=1110
+14	from	from	ADP	IN	_	17	case	_	start_char=1111|end_char=1115
+15	a	a	DET	DT	Definite=Ind|PronType=Art	17	det	_	start_char=1116|end_char=1117
+16	different	different	ADJ	JJ	Degree=Pos	17	amod	_	start_char=1118|end_char=1127
+17	drive	drive	NOUN	NN	Number=Sing	13	obl	_	start_char=1128|end_char=1133
+18	(	(	PUNCT	-LRB-	_	17	punct	_	start_char=1134|end_char=1135
+19	or	or	CCONJ	CC	_	22	cc	_	start_char=1135|end_char=1137
+20	even	even	ADV	RB	_	22	advmod	_	start_char=1138|end_char=1142
+21	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	start_char=1143|end_char=1146
+22	dvd	dvd	NOUN	NN	Number=Sing	17	conj	_	start_char=1147|end_char=1150
+23	)	)	PUNCT	-RRB-	_	17	punct	_	start_char=1150|end_char=1151
+24	so	so	ADV	RB	_	26	advmod	_	start_char=1152|end_char=1154
+25	not	not	PART	RB	_	26	advmod	_	start_char=1155|end_char=1158
+26	running	run	VERB	VBG	VerbForm=Ger	13	parataxis	_	start_char=1159|end_char=1166
+27	disk	disk	NOUN	NN	Number=Sing	28	compound	_	start_char=1167|end_char=1171
+28	utility	utility	NOUN	NN	Number=Sing	26	obj	_	start_char=1172|end_char=1179
+29	from	from	ADP	IN	_	31	case	_	start_char=1180|end_char=1184
+30	the	the	DET	DT	Definite=Def|PronType=Art	31	det	_	start_char=1185|end_char=1188
+31	drive	drive	NOUN	NN	Number=Sing	26	obl	_	start_char=1189|end_char=1194
+32	your	your	PRON	PRP$	Case=Gen|Person=2|Poss=Yes|PronType=Prs	33	nsubj	_	start_char=1195|end_char=1199
+33	cloning	cloning	NOUN	NN	Number=Sing	31	acl:relcl	_	start_char=1200|end_char=1207
+34	)	)	PUNCT	-RRB-	_	13	punct	_	start_char=1207|end_char=1208
+35	and	and	CCONJ	CC	_	36	cc	_	start_char=1209|end_char=1212
+36	had	have	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	conj	_	start_char=1213|end_char=1216
+37	it	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	36	obj	_	start_char=1217|end_char=1219
+38	work	work	VERB	VB	VerbForm=Inf	36	xcomp	_	start_char=1220|end_char=1224
+39	just	just	ADV	RB	_	40	advmod	_	start_char=1225|end_char=1229
+40	fine	fine	ADV	RB	_	38	advmod	_	start_char=1230|end_char=1234
+41	from	from	ADP	IN	_	46	case	_	start_char=1235|end_char=1239
+42	larger	large	ADJ	JJR	Degree=Cmp	46	amod	_	start_char=1240|end_char=1246
+43	to	to	ADP	IN	_	44	case	_	start_char=1247|end_char=1249
+44	smaller	small	ADJ	JJR	Degree=Cmp	42	obl	_	start_char=1250|end_char=1257
+45	bootable	bootable	ADJ	JJ	Degree=Pos	46	amod	_	start_char=1258|end_char=1266
+46	clone	clone	NOUN	NN	Number=Sing	38	obl	_	start_char=1267|end_char=1272
+47	.	.	PUNCT	.	_	4	punct	_	start_char=1272|end_char=1273
+
+# text = Definitely format the drive cloning to first, as bootable Apple etc..
+# sent_id = 20
+# doc_id = 1
+1	Definitely	definitely	ADV	RB	_	2	advmod	_	start_char=1274|end_char=1284
+2	format	format	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	start_char=1285|end_char=1291
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	start_char=1292|end_char=1295
+4	drive	drive	NOUN	NN	Number=Sing	2	obj	_	start_char=1296|end_char=1301
+5	cloning	cloning	NOUN	NN	Number=Sing	2	obj	_	start_char=1302|end_char=1309
+6	to	to	ADP	IN	_	5	nmod	_	start_char=1310|end_char=1312
+7	first	first	ADV	RB	Degree=Pos|NumType=Ord	2	advmod	_	start_char=1313|end_char=1318
+8	,	,	PUNCT	,	_	2	punct	_	start_char=1318|end_char=1319
+9	as	as	ADP	IN	_	11	case	_	start_char=1320|end_char=1322
+10	bootable	bootable	ADJ	JJ	Degree=Pos	11	amod	_	start_char=1323|end_char=1331
+11	Apple	Apple	PROPN	NNP	Number=Sing	2	obl	_	start_char=1332|end_char=1337
+12	etc	etc.	NOUN	FW	Abbr=Yes|Number=Plur	11	conj	_	start_char=1338|end_char=1341
+13	..	..	PUNCT	.	_	2	punct	_	start_char=1341|end_char=1343
+
+# text = Thanks for pointing this out.
+# sent_id = 21
+# doc_id = 1
+1	Thanks	thanks	NOUN	NN	Number=Sing	0	root	_	start_char=1344|end_char=1350
+2	for	for	SCONJ	IN	_	3	mark	_	start_char=1351|end_char=1354
+3	pointing	point	VERB	VBG	VerbForm=Ger	1	acl	_	start_char=1355|end_char=1363
+4	this	this	PRON	DT	Number=Sing|PronType=Dem	3	obj	_	start_char=1364|end_char=1368
+5	out	out	ADP	RP	_	3	compound:prt	_	start_char=1369|end_char=1372
+6	.	.	PUNCT	.	_	1	punct	_	start_char=1372|end_char=1373
+
+# text = My only experience using DU to go larger to smaller was when I was trying to make a Lion install stick and I was unable to restore InstallESD.dmg to a 4 GB USB stick but of course the reason that wouldn't fit is there was slightly more than 4 GB of data.
+# sent_id = 22
+# doc_id = 1
+1	My	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	start_char=1374|end_char=1376
+2	only	only	ADJ	JJ	Degree=Pos	3	amod	_	start_char=1377|end_char=1381
+3	experience	experience	NOUN	NN	Number=Sing	15	nsubj:outer	_	start_char=1382|end_char=1392
+4	using	use	VERB	VBG	VerbForm=Ger	3	acl	_	start_char=1393|end_char=1398
+5	DU	DU	PROPN	NNP	Number=Sing	4	obj	_	start_char=1399|end_char=1401
+6	to	to	PART	TO	_	7	mark	_	start_char=1402|end_char=1404
+7	go	go	VERB	VB	VerbForm=Inf	4	advcl	_	start_char=1405|end_char=1407
+8	larger	large	ADJ	JJR	Degree=Cmp	7	xcomp	_	start_char=1408|end_char=1414
+9	to	to	ADP	IN	_	10	case	_	start_char=1415|end_char=1417
+10	smaller	small	ADJ	JJR	Degree=Cmp	7	obl	_	start_char=1418|end_char=1425
+11	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	start_char=1426|end_char=1429
+12	when	when	ADV	WRB	PronType=Int	15	advmod	_	start_char=1430|end_char=1434
+13	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	start_char=1435|end_char=1436
+14	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	15	aux	_	start_char=1437|end_char=1440
+15	trying	try	VERB	VBG	Tense=Pres|VerbForm=Part	0	root	_	start_char=1441|end_char=1447
+16	to	to	PART	TO	_	17	mark	_	start_char=1448|end_char=1450
+17	make	make	VERB	VB	VerbForm=Inf	15	xcomp	_	start_char=1451|end_char=1455
+18	a	a	DET	DT	Definite=Ind|PronType=Art	21	det	_	start_char=1456|end_char=1457
+19	Lion	Lion	PROPN	NNP	Number=Sing	21	compound	_	start_char=1458|end_char=1462
+20	install	install	NOUN	NN	Number=Sing	21	compound	_	start_char=1463|end_char=1470
+21	stick	stick	NOUN	NN	Number=Sing	17	obj	_	start_char=1471|end_char=1476
+22	and	and	CCONJ	CC	_	25	cc	_	start_char=1477|end_char=1480
+23	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	25	nsubj	_	start_char=1481|end_char=1482
+24	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	25	cop	_	start_char=1483|end_char=1486
+25	unable	unable	ADJ	JJ	Degree=Pos	15	conj	_	start_char=1487|end_char=1493
+26	to	to	PART	TO	_	27	mark	_	start_char=1494|end_char=1496
+27	restore	restore	VERB	VB	VerbForm=Inf	25	xcomp	_	start_char=1497|end_char=1504
+28	InstallESD.dmg	InstallESD.dmg	PROPN	NNP	Number=Sing	27	obj	_	start_char=1505|end_char=1519
+29	to	to	ADP	IN	_	34	case	_	start_char=1520|end_char=1522
+30	a	a	DET	DT	Definite=Ind|PronType=Art	34	det	_	start_char=1523|end_char=1524
+31	4	4	NUM	CD	NumForm=Digit|NumType=Card	32	nummod	_	start_char=1525|end_char=1526
+32	GB	GB	NOUN	NN	Number=Sing	34	compound	_	start_char=1527|end_char=1529
+33	USB	USB	NOUN	NN	Number=Sing	34	compound	_	start_char=1530|end_char=1533
+34	stick	stick	NOUN	NN	Number=Sing	27	obl	_	start_char=1534|end_char=1539
+35	but	but	CCONJ	CC	_	46	cc	_	start_char=1540|end_char=1543
+36	of	of	ADP	IN	ExtPos=ADV	46	advmod	_	start_char=1544|end_char=1546
+37	course	course	NOUN	NN	Number=Sing	36	fixed	_	start_char=1547|end_char=1553
+38	the	the	DET	DT	Definite=Def|PronType=Art	39	det	_	start_char=1554|end_char=1557
+39	reason	reason	NOUN	NN	Number=Sing	46	nsubj:outer	_	start_char=1558|end_char=1564
+40	that	that	PRON	DT	Number=Sing|PronType=Dem	43	nsubj	_	start_char=1565|end_char=1569
+41	would	would	AUX	MD	VerbForm=Fin	43	aux	_	start_char=1570|end_char=1575
+42	n't	not	PART	RB	_	43	advmod	_	start_char=1575|end_char=1578
+43	fit	fit	VERB	VB	VerbForm=Inf	39	acl:relcl	_	start_char=1579|end_char=1582
+44	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	cop	_	start_char=1583|end_char=1585
+45	there	there	PRON	EX	_	46	expl	_	start_char=1586|end_char=1591
+46	was	be	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	start_char=1592|end_char=1595
+47	slightly	slightly	ADV	RB	_	48	advmod	_	start_char=1596|end_char=1604
+48	more	more	ADJ	JJR	Degree=Cmp|ExtPos=ADV	50	advmod	_	start_char=1605|end_char=1609
+49	than	than	ADP	IN	_	48	fixed	_	start_char=1610|end_char=1614
+50	4	4	NUM	CD	NumForm=Digit|NumType=Card	51	nummod	_	start_char=1615|end_char=1616
+51	GB	GB	NOUN	NNS	Number=Plur	46	nsubj	_	start_char=1617|end_char=1619
+52	of	of	ADP	IN	_	53	case	_	start_char=1620|end_char=1622
+53	data	datum	NOUN	NNS	Number=Plur	51	nmod	_	start_char=1623|end_char=1627
+54	.	.	PUNCT	.	_	15	punct	_	start_char=1627|end_char=1628
+
+# text = Foil plaid lycra and spandex shortall with metallic slinky insets.
+# sent_id = 23
+# doc_id = 2
+1	Foil	foil	NOUN	NN	Number=Sing	2	compound	_	start_char=0|end_char=4
+2	plaid	plaid	NOUN	NN	Number=Sing	6	compound	_	start_char=5|end_char=10
+3	lycra	lycra	NOUN	NN	Number=Sing	6	compound	_	start_char=11|end_char=16
+4	and	and	CCONJ	CC	_	5	cc	_	start_char=17|end_char=20
+5	spandex	spandex	NOUN	NN	Number=Sing	3	conj	_	start_char=21|end_char=28
+6	shortall	shortall	NOUN	NN	Number=Sing	0	root	_	start_char=29|end_char=37
+7	with	with	ADP	IN	_	10	case	_	start_char=38|end_char=42
+8	metallic	metallic	ADJ	JJ	Degree=Pos	10	amod	_	start_char=43|end_char=51
+9	slinky	slinky	ADJ	JJ	Degree=Pos	10	amod	_	start_char=52|end_char=58
+10	insets	inset	NOUN	NNS	Number=Plur	6	nmod	_	start_char=59|end_char=65
+11	.	.	PUNCT	.	_	6	punct	_	start_char=65|end_char=66
+
+# text = Attached metallic elastic belt with O-ring.
+# sent_id = 24
+# doc_id = 2
+1	Attached	attach	VERB	VBN	Tense=Past|VerbForm=Part	4	amod	_	start_char=67|end_char=75
+2	metallic	metallic	ADJ	JJ	Degree=Pos	4	amod	_	start_char=76|end_char=84
+3	elastic	elastic	ADJ	JJ	Degree=Pos	4	amod	_	start_char=85|end_char=92
+4	belt	belt	NOUN	NN	Number=Sing	0	root	_	start_char=93|end_char=97
+5	with	with	ADP	IN	_	7	case	_	start_char=98|end_char=102
+6	O-	o-	NOUN	NN	Number=Sing	7	compound	_	start_char=103|end_char=105
+7	ring	ring	NOUN	NN	Number=Sing	4	nmod	_	start_char=105|end_char=109
+8	.	.	PUNCT	.	_	4	punct	_	start_char=109|end_char=110
+
+# text = Headband included.
+# sent_id = 25
+# doc_id = 2
+1	Headband	headband	NOUN	NN	Number=Sing	2	nsubj	_	start_char=111|end_char=119
+2	included	include	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	start_char=120|end_char=128
+3	.	.	PUNCT	.	_	2	punct	_	start_char=128|end_char=129
+
+# text = Great hip hop or jazz dance costume.
+# sent_id = 26
+# doc_id = 2
+1	Great	great	ADJ	JJ	Degree=Pos	7	amod	_	start_char=130|end_char=135
+2	hip	hip	NOUN	NN	Number=Sing	3	compound	_	start_char=136|end_char=139
+3	hop	hop	NOUN	NN	Number=Sing	6	compound	_	start_char=140|end_char=143
+4	or	or	CCONJ	CC	_	5	cc	_	start_char=144|end_char=146
+5	jazz	jazz	NOUN	NN	Number=Sing	3	conj	_	start_char=147|end_char=151
+6	dance	dance	NOUN	NN	Number=Sing	7	compound	_	start_char=152|end_char=157
+7	costume	costume	NOUN	NN	Number=Sing	0	root	_	start_char=158|end_char=165
+8	.	.	PUNCT	.	_	7	punct	_	start_char=165|end_char=166
+
+# text = Made in the USA.
+# sent_id = 27
+# doc_id = 2
+1	Made	make	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	start_char=167|end_char=171
+2	in	in	ADP	IN	_	4	case	_	start_char=172|end_char=174
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	start_char=175|end_char=178
+4	USA	USA	PROPN	NNP	Number=Sing	1	obl	_	start_char=179|end_char=182
+5	.	.	PUNCT	.	_	1	punct	_	start_char=182|end_char=183
+
+# text = How many backlinks per day for new site?
+# sent_id = 28
+# doc_id = 3
+1	How	how	ADV	WRB	PronType=Int	2	advmod	_	start_char=0|end_char=3
+2	many	many	ADJ	JJ	Degree=Pos	3	amod	_	start_char=4|end_char=8
+3	backlinks	backlink	NOUN	NNS	Number=Plur	0	root	_	start_char=9|end_char=18
+4	per	per	ADP	IN	_	5	case	_	start_char=19|end_char=22
+5	day	day	NOUN	NN	Number=Sing	3	nmod	_	start_char=23|end_char=26
+6	for	for	ADP	IN	_	8	case	_	start_char=27|end_char=30
+7	new	new	ADJ	JJ	Degree=Pos	8	amod	_	start_char=31|end_char=34
+8	site	site	NOUN	NN	Number=Sing	3	nmod	_	start_char=35|end_char=39
+9	?	?	PUNCT	.	_	3	punct	_	start_char=39|end_char=40
+
+# text = Discussion in 'Black Hat SEO' started by Omoplata, Dec 3, 2010.
+# sent_id = 29
+# doc_id = 3
+1	Discussion	discussion	NOUN	NN	Number=Sing	0	root	_	start_char=41|end_char=51
+2	in	in	ADP	IN	_	6	case	_	start_char=52|end_char=54
+3	'	'	PUNCT	``	_	6	punct	_	start_char=55|end_char=56
+4	Black	Black	ADJ	NNP	Degree=Pos	5	amod	_	start_char=56|end_char=61
+5	Hat	Hat	PROPN	NNP	Number=Sing	6	compound	_	start_char=62|end_char=65
+6	SEO	seo	NOUN	NN	Number=Sing	1	nmod	_	start_char=66|end_char=69
+7	'	'	PUNCT	''	_	6	punct	_	start_char=69|end_char=70
+8	started	start	VERB	VBN	Tense=Past|VerbForm=Part	6	acl	_	start_char=71|end_char=78
+9	by	by	ADP	IN	_	10	case	_	start_char=79|end_char=81
+10	Omoplata	Omoplata	PROPN	NNP	Number=Sing	8	obl	_	start_char=82|end_char=90
+11	,	,	PUNCT	,	_	12	punct	_	start_char=90|end_char=91
+12	Dec	December	PROPN	NNP	Abbr=Yes|Number=Sing	8	obl:tmod	_	start_char=92|end_char=95
+13	3	3	NUM	CD	NumForm=Digit|NumType=Card	12	nummod	_	start_char=96|end_char=97
+14	,	,	PUNCT	,	_	12	punct	_	start_char=97|end_char=98
+15	2010	2010	NUM	CD	NumForm=Digit|NumType=Card	12	nummod	_	start_char=99|end_char=103
+16	.	.	PUNCT	.	_	1	punct	_	start_char=103|end_char=104
+
+# text = 1) for a newly created site, what's the max # backlinks per day I should do to be safe?
+# sent_id = 30
+# doc_id = 3
+1	1	1	NUM	LS	_	9	nummod	_	start_char=105|end_char=106
+2	)	)	PUNCT	-RRB-	_	1	punct	_	start_char=106|end_char=107
+3	for	for	ADP	IN	_	7	case	_	start_char=108|end_char=111
+4	a	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	start_char=112|end_char=113
+5	newly	newly	ADV	RB	_	6	advmod	_	start_char=114|end_char=119
+6	created	create	VERB	VBN	Tense=Past|VerbForm=Part	7	amod	_	start_char=120|end_char=127
+7	site	site	NOUN	NN	Number=Sing	9	obl	_	start_char=128|end_char=132
+8	,	,	PUNCT	,	_	9	punct	_	start_char=132|end_char=133
+9	what	what	PRON	WP	PronType=Int	0	root	_	start_char=134|end_char=138
+10	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	start_char=138|end_char=140
+11	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	start_char=141|end_char=144
+12	max	max	NOUN	NN	Number=Sing	14	amod	_	start_char=145|end_char=148
+13	#	#	SYM	NN	Number=Sing	14	compound	_	start_char=149|end_char=150
+14	backlinks	backlink	NOUN	NNS	Number=Plur	9	nsubj	_	start_char=151|end_char=160
+15	per	per	ADP	IN	_	16	case	_	start_char=161|end_char=164
+16	day	day	NOUN	NN	Number=Sing	14	nmod	_	start_char=165|end_char=168
+17	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	start_char=169|end_char=170
+18	should	should	AUX	MD	VerbForm=Fin	19	aux	_	start_char=171|end_char=177
+19	do	do	VERB	VB	VerbForm=Inf	14	acl:relcl	_	start_char=178|end_char=180
+20	to	to	PART	TO	_	22	mark	_	start_char=181|end_char=183
+21	be	be	AUX	VB	VerbForm=Inf	22	cop	_	start_char=184|end_char=186
+22	safe	safe	ADJ	JJ	Degree=Pos	19	advcl	_	start_char=187|end_char=191
+23	?	?	PUNCT	.	_	9	punct	_	start_char=191|end_char=192
+
+# text = 2) how long do I have to let my site age before I can start making more blinks?
+# sent_id = 31
+# doc_id = 3
+1	2	2	NUM	LS	_	7	nummod	_	start_char=193|end_char=194
+2	)	)	PUNCT	-RRB-	_	1	punct	_	start_char=194|end_char=195
+3	how	how	ADV	WRB	PronType=Int	4	advmod	_	start_char=196|end_char=199
+4	long	long	ADV	RB	Degree=Pos	7	advmod	_	start_char=200|end_char=204
+5	do	do	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	aux	_	start_char=205|end_char=207
+6	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	start_char=208|end_char=209
+7	have	have	VERB	VB	VerbForm=Inf	0	root	_	start_char=210|end_char=214
+8	to	to	PART	TO	_	9	mark	_	start_char=215|end_char=217
+9	let	let	VERB	VB	VerbForm=Inf	7	xcomp	_	start_char=218|end_char=221
+10	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	start_char=222|end_char=224
+11	site	site	NOUN	NN	Number=Sing	9	obj	_	start_char=225|end_char=229
+12	age	age	VERB	VB	VerbForm=Inf	9	xcomp	_	start_char=230|end_char=233
+13	before	before	SCONJ	IN	_	16	mark	_	start_char=234|end_char=240
+14	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	start_char=241|end_char=242
+15	can	can	AUX	MD	VerbForm=Fin	16	aux	_	start_char=243|end_char=246
+16	start	start	VERB	VB	VerbForm=Inf	9	advcl	_	start_char=247|end_char=252
+17	making	make	VERB	VBG	VerbForm=Ger	16	xcomp	_	start_char=253|end_char=259
+18	more	more	ADJ	JJR	Degree=Cmp	19	amod	_	start_char=260|end_char=264
+19	blinks	blink	NOUN	NNS	Number=Plur	17	obj	_	start_char=265|end_char=271
+20	?	?	PUNCT	.	_	7	punct	_	start_char=271|end_char=272
+
+# text = I did about 6000 forum profiles every 24 hours for 10 days for one of my sites which had a brand new domain.
+# sent_id = 32
+# doc_id = 3
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	start_char=273|end_char=274
+2	did	do	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	start_char=275|end_char=278
+3	about	about	ADV	RB	_	4	advmod	_	start_char=279|end_char=284
+4	6000	6000	NUM	CD	NumForm=Digit|NumType=Card	6	nummod	_	start_char=285|end_char=289
+5	forum	forum	NOUN	NN	Number=Sing	6	compound	_	start_char=290|end_char=295
+6	profiles	profile	NOUN	NNS	Number=Plur	2	obj	_	start_char=296|end_char=304
+7	every	every	DET	DT	_	9	det	_	start_char=305|end_char=310
+8	24	24	NUM	CD	NumForm=Digit|NumType=Card	9	nummod	_	start_char=311|end_char=313
+9	hours	hour	NOUN	NNS	Number=Plur	2	obl:tmod	_	start_char=314|end_char=319
+10	for	for	ADP	IN	_	12	case	_	start_char=320|end_char=323
+11	10	10	NUM	CD	NumForm=Digit|NumType=Card	12	nummod	_	start_char=324|end_char=326
+12	days	day	NOUN	NNS	Number=Plur	2	obl	_	start_char=327|end_char=331
+13	for	for	ADP	IN	_	14	case	_	start_char=332|end_char=335
+14	one	one	NUM	CD	NumForm=Word|NumType=Card	2	obl	_	start_char=336|end_char=339
+15	of	of	ADP	IN	_	17	case	_	start_char=340|end_char=342
+16	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	start_char=343|end_char=345
+17	sites	site	NOUN	NNS	Number=Plur	14	nmod	_	start_char=346|end_char=351
+18	which	which	PRON	WDT	PronType=Rel	19	nsubj	_	start_char=352|end_char=357
+19	had	have	VERB	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	17	acl:relcl	_	start_char=358|end_char=361
+20	a	a	DET	DT	Definite=Ind|PronType=Art	23	det	_	start_char=362|end_char=363
+21	brand	brand	NOUN	NN	Number=Sing	22	advmod	_	start_char=364|end_char=369
+22	new	new	ADJ	JJ	Degree=Pos	23	amod	_	start_char=370|end_char=373
+23	domain	domain	NOUN	NN	Number=Sing	19	obj	_	start_char=374|end_char=380
+24	.	.	PUNCT	.	_	2	punct	_	start_char=380|end_char=381
+
+# text = There is three backlinks for every of these forum profile so thats 18 000 backlinks every 24 hours and nothing happened in terms of being penalized or sandboxed.
+# sent_id = 33
+# doc_id = 3
+1	There	there	PRON	EX	_	2	expl	_	start_char=382|end_char=387
+2	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=388|end_char=390
+3	three	three	NUM	CD	NumForm=Word|NumType=Card	4	nummod	_	start_char=391|end_char=396
+4	backlinks	backlink	NOUN	NNS	Number=Plur	2	nsubj	_	start_char=397|end_char=406
+5	for	for	ADP	IN	_	6	case	_	start_char=407|end_char=410
+6	every	every	DET	DT	_	4	nmod	_	start_char=411|end_char=416
+7	of	of	ADP	IN	_	10	case	_	start_char=417|end_char=419
+8	these	this	DET	DT	Number=Plur|PronType=Dem	10	det	_	start_char=420|end_char=425
+9	forum	forum	NOUN	NN	Number=Sing	10	compound	_	start_char=426|end_char=431
+10	profile	profile	NOUN	NN	Number=Sing	6	nmod	_	start_char=432|end_char=439
+11	so	so	ADV	RB	_	15	advmod	_	start_char=440|end_char=442
+12	thats	that	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	start_char=443|end_char=448
+13	18	18	NUM	CD	NumForm=Digit|NumType=Card	14	compound	_	start_char=449|end_char=451
+14	000	000	NUM	CD	NumForm=Digit|NumType=Card	15	nummod	_	start_char=452|end_char=455
+15	backlinks	backlink	NOUN	NNS	Number=Plur	2	parataxis	_	start_char=456|end_char=465
+16	every	every	DET	DT	_	18	det	_	start_char=466|end_char=471
+17	24	24	NUM	CD	NumForm=Digit|NumType=Card	18	nummod	_	start_char=472|end_char=474
+18	hours	hour	NOUN	NNS	Number=Plur	15	nmod:tmod	_	start_char=475|end_char=480
+19	and	and	CCONJ	CC	_	21	cc	_	start_char=481|end_char=484
+20	nothing	nothing	PRON	NN	Number=Sing|PronType=Neg	21	nsubj	_	start_char=485|end_char=492
+21	happened	happen	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	start_char=493|end_char=501
+22	in	in	ADP	IN	_	23	case	_	start_char=502|end_char=504
+23	terms	term	NOUN	NNS	Number=Plur	21	obl	_	start_char=505|end_char=510
+24	of	of	SCONJ	IN	_	26	mark	_	start_char=511|end_char=513
+25	being	be	AUX	VBG	VerbForm=Ger	26	aux:pass	_	start_char=514|end_char=519
+26	penalized	penalize	VERB	VBN	Tense=Past|VerbForm=Part|Voice=Pass	23	acl	_	start_char=520|end_char=529
+27	or	or	CCONJ	CC	_	28	cc	_	start_char=530|end_char=532
+28	sandboxed	sandboxe	VERB	VBN	Tense=Past|VerbForm=Part	26	conj	_	start_char=533|end_char=542
+29	.	.	PUNCT	.	_	2	punct	_	start_char=542|end_char=543
+
+# text = This is now maybe 3 months ago and the site is ranking on first page for a lot of my targeted keywords.
+# sent_id = 34
+# doc_id = 3
+1	This	this	PRON	DT	Number=Sing|PronType=Dem	7	nsubj	_	start_char=544|end_char=548
+2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	start_char=549|end_char=551
+3	now	now	ADV	RB	_	7	advmod	_	start_char=552|end_char=555
+4	maybe	maybe	ADV	RB	_	5	advmod	_	start_char=556|end_char=561
+5	3	3	NUM	CD	NumForm=Digit|NumType=Card	6	nummod	_	start_char=562|end_char=563
+6	months	month	NOUN	NNS	Number=Plur	7	obl:npmod	_	start_char=564|end_char=570
+7	ago	ago	ADV	RB	_	0	root	_	start_char=571|end_char=574
+8	and	and	CCONJ	CC	_	12	cc	_	start_char=575|end_char=578
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	start_char=579|end_char=582
+10	site	site	NOUN	NN	Number=Sing	12	nsubj	_	start_char=583|end_char=587
+11	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	start_char=588|end_char=590
+12	ranking	rank	VERB	VBG	Tense=Pres|VerbForm=Part	7	conj	_	start_char=591|end_char=598
+13	on	on	ADP	IN	_	15	case	_	start_char=599|end_char=601
+14	first	first	ADJ	JJ	Degree=Pos|NumType=Ord	15	amod	_	start_char=602|end_char=607
+15	page	page	NOUN	NN	Number=Sing	12	obl	_	start_char=608|end_char=612
+16	for	for	ADP	IN	_	18	case	_	start_char=613|end_char=616
+17	a	a	DET	DT	Definite=Ind|PronType=Art	18	det	_	start_char=617|end_char=618
+18	lot	lot	NOUN	NN	Number=Sing	12	obl	_	start_char=619|end_char=622
+19	of	of	ADP	IN	_	22	case	_	start_char=623|end_char=625
+20	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	22	nmod:poss	_	start_char=626|end_char=628
+21	targeted	target	VERB	VBN	Tense=Past|VerbForm=Part	22	amod	_	start_char=629|end_char=637
+22	keywords	keyword	NOUN	NNS	Number=Plur	18	nmod	_	start_char=638|end_char=646
+23	.	.	PUNCT	.	_	7	punct	_	start_char=646|end_char=647
+
+# text = build more you can in starting but do manual submission and not spammy type means manual + relevant to the post.. then after 1 month you can make a big blast..
+# sent_id = 35
+# doc_id = 3
+1	build	build	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	start_char=648|end_char=653
+2	more	more	ADJ	JJR	Degree=Cmp	1	obj	_	start_char=654|end_char=658
+3	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	4	nsubj	_	start_char=659|end_char=662
+4	can	can	AUX	MD	VerbForm=Fin	1	ccomp	_	start_char=663|end_char=666
+5	in	in	SCONJ	IN	_	6	mark	_	start_char=667|end_char=669
+6	starting	start	VERB	VBG	VerbForm=Ger	1	advcl	_	start_char=670|end_char=678
+7	but	but	CCONJ	CC	_	8	cc	_	start_char=679|end_char=682
+8	do	do	VERB	VB	Mood=Imp|VerbForm=Fin	1	conj	_	start_char=683|end_char=685
+9	manual	manual	ADJ	JJ	Degree=Pos	10	amod	_	start_char=686|end_char=692
+10	submission	submission	NOUN	NN	Number=Sing	8	obj	_	start_char=693|end_char=703
+11	and	and	CCONJ	CC	_	14	cc	_	start_char=704|end_char=707
+12	not	not	PART	RB	_	14	advmod	_	start_char=708|end_char=711
+13	spammy	spammy	ADJ	JJ	Degree=Pos	14	amod	_	start_char=712|end_char=718
+14	type	type	NOUN	NN	Number=Sing	10	conj	_	start_char=719|end_char=723
+15	means	mean	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	start_char=724|end_char=729
+16	manual	manual	ADJ	JJ	Degree=Pos	15	ccomp	_	start_char=730|end_char=736
+17	+	+	SYM	SYM	_	18	cc	_	start_char=737|end_char=738
+18	relevant	relevant	ADJ	JJ	Degree=Pos	15	conj	_	start_char=739|end_char=747
+19	to	to	ADP	IN	_	21	case	_	start_char=748|end_char=750
+20	the	the	DET	DT	Definite=Def|PronType=Art	21	det	_	start_char=751|end_char=754
+21	post	post	NOUN	NN	Number=Sing	18	obl	_	start_char=755|end_char=759
+22	..	..	PUNCT	,	_	1	punct	_	start_char=759|end_char=761
+23	then	then	ADV	RB	PronType=Dem	29	advmod	_	start_char=762|end_char=766
+24	after	after	ADP	IN	_	26	case	_	start_char=767|end_char=772
+25	1	1	NUM	CD	NumForm=Digit|NumType=Card	26	nummod	_	start_char=773|end_char=774
+26	month	month	NOUN	NN	Number=Sing	29	obl	_	start_char=775|end_char=780
+27	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	29	nsubj	_	start_char=781|end_char=784
+28	can	can	AUX	MD	VerbForm=Fin	29	aux	_	start_char=785|end_char=788
+29	make	make	VERB	VB	VerbForm=Inf	1	parataxis	_	start_char=789|end_char=793
+30	a	a	DET	DT	Definite=Ind|PronType=Art	32	det	_	start_char=794|end_char=795
+31	big	big	ADJ	JJ	Degree=Pos	32	amod	_	start_char=796|end_char=799
+32	blast	blast	NOUN	NN	Number=Sing	29	obj	_	start_char=800|end_char=805
+33	..	..	PUNCT	.	_	1	punct	_	start_char=805|end_char=807
+
+# text = Wow, dude, you built 18k backlinks a day on a brand new site?
+# sent_id = 36
+# doc_id = 3
+1	Wow	wow	INTJ	UH	_	6	discourse	_	start_char=808|end_char=811
+2	,	,	PUNCT	,	_	6	punct	_	start_char=811|end_char=812
+3	dude	dude	INTJ	UH	_	6	discourse	_	start_char=813|end_char=817
+4	,	,	PUNCT	,	_	3	punct	_	start_char=817|end_char=818
+5	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	6	nsubj	_	start_char=819|end_char=822
+6	built	build	VERB	VBD	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin	0	root	_	start_char=823|end_char=828
+7	18	18	NUM	CD	NumForm=Digit|NumType=Card	8	compound	_	start_char=829|end_char=831
+8	k	thousand	NUM	CD	Abbr=Yes|NumForm=Word|NumType=Card	9	nummod	_	start_char=831|end_char=832
+9	backlinks	backlink	NOUN	NNS	Number=Plur	6	obj	_	start_char=833|end_char=842
+10	a	a	DET	DT	Definite=Ind|PronType=Art	11	det	_	start_char=843|end_char=844
+11	day	day	NOUN	NN	Number=Sing	6	obl:tmod	_	start_char=845|end_char=848
+12	on	on	ADP	IN	_	16	case	_	start_char=849|end_char=851
+13	a	a	DET	DT	Definite=Ind|PronType=Art	16	det	_	start_char=852|end_char=853
+14	brand	brand	ADV	RB	_	15	advmod	_	start_char=854|end_char=859
+15	new	new	ADJ	JJ	Degree=Pos	16	amod	_	start_char=860|end_char=863
+16	site	site	NOUN	NN	Number=Sing	6	obl	_	start_char=864|end_char=868
+17	?	?	PUNCT	.	_	6	punct	_	start_char=868|end_char=869
+
+# text = How quickly did you rank up?
+# sent_id = 37
+# doc_id = 3
+1	How	how	ADV	WRB	PronType=Int	2	advmod	_	start_char=870|end_char=873
+2	quickly	quickly	ADV	RB	_	5	advmod	_	start_char=874|end_char=881
+3	did	do	AUX	VBD	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin	5	aux	_	start_char=882|end_char=885
+4	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	5	nsubj	_	start_char=886|end_char=889
+5	rank	rank	VERB	VB	VerbForm=Inf	0	root	_	start_char=890|end_char=894
+6	up	up	ADP	RP	_	5	compound:prt	_	start_char=895|end_char=897
+7	?	?	PUNCT	.	_	5	punct	_	start_char=897|end_char=898
+
+# text = What kind of competition/searches did those keywords have?
+# sent_id = 38
+# doc_id = 3
+1	What	what	DET	WDT	PronType=Int	2	det	_	start_char=899|end_char=903
+2	kind	kind	NOUN	NN	Number=Sing	10	obj	_	start_char=904|end_char=908
+3	of	of	ADP	IN	_	4	case	_	start_char=909|end_char=911
+4	competition	competition	NOUN	NN	Number=Sing	2	nmod	_	start_char=912|end_char=923
+5	/	/	SYM	,	_	6	cc	_	start_char=923|end_char=924
+6	searches	search	NOUN	NNS	Number=Plur	4	conj	_	start_char=924|end_char=932
+7	did	do	AUX	VBD	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	start_char=933|end_char=936
+8	those	that	DET	DT	Number=Plur|PronType=Dem	9	det	_	start_char=937|end_char=942
+9	keywords	keyword	NOUN	NNS	Number=Plur	10	nsubj	_	start_char=943|end_char=951
+10	have	have	VERB	VB	VerbForm=Inf	0	root	_	start_char=952|end_char=956
+11	?	?	PUNCT	.	_	10	punct	_	start_char=956|end_char=957
+
+# text = The Denver Board of Education opened the 2017-18 school year with an update on projects that include new construction, upgrades, heat mitigation and quality learning environments.
+# sent_id = 39
+# doc_id = 4
+1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	start_char=0|end_char=3
+2	Denver	Denver	PROPN	NNP	Number=Sing	3	compound	_	start_char=4|end_char=10
+3	Board	Board	PROPN	NNP	Number=Sing	6	nsubj	_	start_char=11|end_char=16
+4	of	of	ADP	IN	_	5	case	_	start_char=17|end_char=19
+5	Education	Education	PROPN	NNP	Number=Sing	3	nmod	_	start_char=20|end_char=29
+6	opened	open	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	start_char=30|end_char=36
+7	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	start_char=37|end_char=40
+8	2017	2017	NUM	CD	NumForm=Digit|NumType=Card	12	compound	_	start_char=41|end_char=45
+9	-	-	PUNCT	HYPH	_	10	punct	_	start_char=45|end_char=46
+10	18	18	NUM	CD	NumForm=Digit|NumType=Card	8	nummod	_	start_char=46|end_char=48
+11	school	school	NOUN	NN	Number=Sing	12	compound	_	start_char=49|end_char=55
+12	year	year	NOUN	NN	Number=Sing	6	obj	_	start_char=56|end_char=60
+13	with	with	ADP	IN	_	15	case	_	start_char=61|end_char=65
+14	an	a	DET	DT	Definite=Ind|PronType=Art	15	det	_	start_char=66|end_char=68
+15	update	update	NOUN	NN	Number=Sing	6	obl	_	start_char=69|end_char=75
+16	on	on	ADP	IN	_	17	case	_	start_char=76|end_char=78
+17	projects	project	NOUN	NNS	Number=Plur	15	nmod	_	start_char=79|end_char=87
+18	that	that	PRON	WDT	PronType=Rel	19	nsubj	_	start_char=88|end_char=92
+19	include	include	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	start_char=93|end_char=100
+20	new	new	ADJ	JJ	Degree=Pos	21	amod	_	start_char=101|end_char=104
+21	construction	construction	NOUN	NN	Number=Sing	19	obj	_	start_char=105|end_char=117
+22	,	,	PUNCT	,	_	23	punct	_	start_char=117|end_char=118
+23	upgrades	upgrade	NOUN	NNS	Number=Plur	21	conj	_	start_char=119|end_char=127
+24	,	,	PUNCT	,	_	26	punct	_	start_char=127|end_char=128
+25	heat	heat	NOUN	NN	Number=Sing	26	compound	_	start_char=129|end_char=133
+26	mitigation	mitigation	NOUN	NN	Number=Sing	21	conj	_	start_char=134|end_char=144
+27	and	and	CCONJ	CC	_	30	cc	_	start_char=145|end_char=148
+28	quality	quality	ADJ	JJ	Degree=Pos	30	amod	_	start_char=149|end_char=156
+29	learning	learning	NOUN	NN	Number=Sing	30	compound	_	start_char=157|end_char=165
+30	environments	environment	NOUN	NNS	Number=Plur	21	conj	_	start_char=166|end_char=178
+31	.	.	PUNCT	.	_	6	punct	_	start_char=178|end_char=179
+
+# text = We are excited that Denver students will be the beneficiaries of a four year, $572 million General Obligation Bond.
+# sent_id = 40
+# doc_id = 4
+1	We	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	start_char=180|end_char=182
+2	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	cop	_	start_char=183|end_char=186
+3	excited	excited	ADJ	JJ	Degree=Pos	0	root	_	start_char=187|end_char=194
+4	that	that	SCONJ	IN	_	10	mark	_	start_char=195|end_char=199
+5	Denver	Denver	PROPN	NNP	Number=Sing	6	compound	_	start_char=200|end_char=206
+6	students	student	NOUN	NNS	Number=Plur	10	nsubj	_	start_char=207|end_char=215
+7	will	will	AUX	MD	VerbForm=Fin	10	aux	_	start_char=216|end_char=220
+8	be	be	AUX	VB	VerbForm=Inf	10	cop	_	start_char=221|end_char=223
+9	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	start_char=224|end_char=227
+10	beneficiaries	beneficiary	NOUN	NNS	Number=Plur	3	ccomp	_	start_char=228|end_char=241
+11	of	of	ADP	IN	_	21	case	_	start_char=242|end_char=244
+12	a	a	DET	DT	Definite=Ind|PronType=Art	21	det	_	start_char=245|end_char=246
+13	four	four	NUM	CD	NumForm=Word|NumType=Card	14	nummod	_	start_char=247|end_char=251
+14	year	year	NOUN	NN	Number=Sing	21	compound	_	start_char=252|end_char=256
+15	,	,	PUNCT	,	_	21	punct	_	start_char=256|end_char=257
+16	$	$	SYM	$	_	21	compound	_	start_char=258|end_char=259
+17	572	572	NUM	CD	NumForm=Digit|NumType=Card	18	compound	_	start_char=259|end_char=262
+18	million	million	NUM	CD	NumForm=Word|NumType=Card	16	nummod	_	start_char=263|end_char=270
+19	General	General	ADJ	NNP	Degree=Pos	20	amod	_	start_char=271|end_char=278
+20	Obligation	Obligation	PROPN	NNP	Number=Sing	21	compound	_	start_char=279|end_char=289
+21	Bond	bond	PROPN	NNP	Number=Sing	10	nmod	_	start_char=290|end_char=294
+22	.	.	PUNCT	.	_	3	punct	_	start_char=294|end_char=295
+
+# text = Since the passage of the bond, our construction team has worked to schedule the projects over the four-year term of the bond.
+# sent_id = 41
+# doc_id = 4
+1	Since	since	ADP	IN	_	3	case	_	start_char=296|end_char=301
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	start_char=302|end_char=305
+3	passage	passage	NOUN	NN	Number=Sing	12	obl	_	start_char=306|end_char=313
+4	of	of	ADP	IN	_	6	case	_	start_char=314|end_char=316
+5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	start_char=317|end_char=320
+6	bond	bond	NOUN	NN	Number=Sing	3	nmod	_	start_char=321|end_char=325
+7	,	,	PUNCT	,	_	3	punct	_	start_char=325|end_char=326
+8	our	our	PRON	PRP$	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	start_char=327|end_char=330
+9	construction	construction	NOUN	NN	Number=Sing	10	compound	_	start_char=331|end_char=343
+10	team	team	NOUN	NN	Number=Sing	12	nsubj	_	start_char=344|end_char=348
+11	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	start_char=349|end_char=352
+12	worked	work	VERB	VBN	Tense=Past|VerbForm=Part	0	root	_	start_char=353|end_char=359
+13	to	to	PART	TO	_	14	mark	_	start_char=360|end_char=362
+14	schedule	schedule	VERB	VB	VerbForm=Inf	12	advcl	_	start_char=363|end_char=371
+15	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	start_char=372|end_char=375
+16	projects	project	NOUN	NNS	Number=Plur	14	obj	_	start_char=376|end_char=384
+17	over	over	ADP	IN	_	22	case	_	start_char=385|end_char=389
+18	the	the	DET	DT	Definite=Def|PronType=Art	22	det	_	start_char=390|end_char=393
+19	four	four	NUM	CD	NumForm=Word|NumType=Card	21	nummod	_	start_char=394|end_char=398
+20	-	-	PUNCT	HYPH	_	21	punct	_	start_char=398|end_char=399
+21	year	year	NOUN	NN	Number=Sing	22	compound	_	start_char=399|end_char=403
+22	term	term	NOUN	NN	Number=Sing	14	obl	_	start_char=404|end_char=408
+23	of	of	ADP	IN	_	25	case	_	start_char=409|end_char=411
+24	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	start_char=412|end_char=415
+25	bond	bond	NOUN	NN	Number=Sing	22	nmod	_	start_char=416|end_char=420
+26	.	.	PUNCT	.	_	12	punct	_	start_char=420|end_char=421
+
+# text = Either the students or John are in the room.
+# sent_id = 00
+# doc_id = 00
+1	Either	either	CCONJ	CC	None	3	cc:preconj	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
+3	students	student	NOUN	NNS	Number=Plur	9	nsubj	_	_
+4	or	or	CCONJ	CC	None	5	cc	_	_
+5	John	John	PROPN	NNP	Number=Sing	3	conj	_	_
+6	are	be	AUX	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	9	cop	_	_
+7	in	in	ADP	IN	None	9	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+9	room	room	NOUN	NN	Number=Sing	0	root	_	_
+
+# text = Either the students or John go to the store
+# sent_id = 00 
+# doc_id = 01
+1	Either	either	CCONJ	CC	None	3	cc:preconj
+2	the	the	DET	DT	Definite=Def|PronType=Art	3	det
+3	students	student	NOUN	NNS	Number=Plur	6	nsubj
+4	or	or	CCONJ	CC	None	5	cc
+5	John	John	PROPN	NNP	Number=Sing	3	conj
+6	go	go	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root
+7	to	to	ADP	IN	None	9	case
+8	the	the	DET	DT	Definite=Def|PronType=Art	9	det
+9	store	store	NOUN	NN	Number=Sing	6	obl
+
+
+# text = The students or John go to the store
+# sent_id = 00 
+# doc_id = 02
+1	the	the	DET	DT	Definite=Def|PronType=Art	2	det
+2	students	student	NOUN	NNS	Number=Plur	5	nsubj
+3	or	or	CCONJ	CC	None	4	cc
+4	John	John	PROPN	NNP	Number=Sing	2	conj
+5	go	go	VERB	VBP	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root
+6	to	to	ADP	IN	None	8	case
+7	the	the	DET	DT	Definite=Def|PronType=Art	8	det
+8	store	store	NOUN	NN	Number=Sing	5	obl
+
+# text = I did something similar at my family reunion, when we were trying to figure out who was sober enough to go with my uncle to the liquor store to resupply our alcohol stores, and I said to my sister, “Either thou, or I, or both must go with him!”
+# sent_id = 785
+# doc_id = 287327
+1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	start_char=3620|end_char=3621
+2	did	do	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	root	_	start_char=3622|end_char=3625
+3	something	something	PRON	NN	Number=Sing|PronType=Ind	2	obj	_	start_char=3626|end_char=3635
+4	similar	similar	ADJ	JJ	Degree=Pos	3	amod	_	start_char=3636|end_char=3643
+5	at	at	ADP	IN	_	8	case	_	start_char=3644|end_char=3646
+6	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	start_char=3647|end_char=3649
+7	family	family	NOUN	NN	Number=Sing	8	compound	_	start_char=3650|end_char=3656
+8	reunion	reunion	NOUN	NN	Number=Sing	2	obl	_	start_char=3657|end_char=3664
+9	,	,	PUNCT	,	_	13	punct	_	start_char=3664|end_char=3665
+10	when	when	ADV	WRB	PronType=Int	13	advmod	_	start_char=3666|end_char=3670
+11	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	13	nsubj	_	start_char=3671|end_char=3673
+12	were	be	AUX	VBD	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	13	aux	_	start_char=3674|end_char=3678
+13	trying	try	VERB	VBG	Tense=Pres|VerbForm=Part	2	advcl	_	start_char=3679|end_char=3685
+14	to	to	PART	TO	_	15	mark	_	start_char=3686|end_char=3688
+15	figure	figure	VERB	VB	VerbForm=Inf	13	xcomp	_	start_char=3689|end_char=3695
+16	out	out	ADP	RP	_	15	compound:prt	_	start_char=3696|end_char=3699
+17	who	who	PRON	WP	PronType=Int	19	nsubj	_	start_char=3700|end_char=3703
+18	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	19	cop	_	start_char=3704|end_char=3707
+19	sober	sober	ADJ	JJ	Degree=Pos	15	ccomp	_	start_char=3708|end_char=3713
+20	enough	enough	ADV	RB	_	19	advmod	_	start_char=3714|end_char=3720
+21	to	to	PART	TO	_	22	mark	_	start_char=3721|end_char=3723
+22	go	go	VERB	VB	VerbForm=Inf	19	advcl	_	start_char=3724|end_char=3726
+23	with	with	ADP	IN	_	25	case	_	start_char=3727|end_char=3731
+24	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	25	nmod:poss	_	start_char=3732|end_char=3734
+25	uncle	uncle	NOUN	NN	Number=Sing	22	obl	_	start_char=3735|end_char=3740
+26	to	to	ADP	IN	_	29	case	_	start_char=3741|end_char=3743
+27	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	start_char=3744|end_char=3747
+28	liquor	liquor	NOUN	NN	Number=Sing	29	compound	_	start_char=3748|end_char=3754
+29	store	store	NOUN	NN	Number=Sing	22	obl	_	start_char=3755|end_char=3760
+30	to	to	PART	TO	_	31	mark	_	start_char=3761|end_char=3763
+31	resupply	resupply	VERB	VB	VerbForm=Inf	22	advcl	_	start_char=3764|end_char=3772
+32	our	our	PRON	PRP$	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	34	nmod:poss	_	start_char=3773|end_char=3776
+33	alcohol	alcohol	NOUN	NN	Number=Sing	34	compound	_	start_char=3777|end_char=3784
+34	stores	store	NOUN	NNS	Number=Plur	31	obj	_	start_char=3785|end_char=3791
+35	,	,	PUNCT	,	_	38	punct	_	start_char=3791|end_char=3792
+36	and	and	CCONJ	CC	_	38	cc	_	start_char=3793|end_char=3796
+37	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	38	nsubj	_	start_char=3797|end_char=3798
+38	said	say	VERB	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	conj	_	start_char=3799|end_char=3803
+39	to	to	ADP	IN	_	41	case	_	start_char=3804|end_char=3806
+40	my	my	PRON	PRP$	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	41	nmod:poss	_	start_char=3807|end_char=3809
+41	sister	sister	NOUN	NN	Number=Sing	38	obl	_	start_char=3810|end_char=3816
+42	,	,	PUNCT	,	_	53	punct	_	start_char=3816|end_char=3817
+43	“	''	PUNCT	``	_	53	punct	_	start_char=3818|end_char=3819
+44	Either	either	CCONJ	CC	_	45	cc:preconj	_	start_char=3819|end_char=3825
+45	thou	thou	PRON	PRP	Case=Nom|Person=2|PronType=Prs	53	nsubj	_	start_char=3826|end_char=3830
+46	,	,	PUNCT	,	_	48	punct	_	start_char=3830|end_char=3831
+47	or	or	CCONJ	CC	_	48	cc	_	start_char=3832|end_char=3834
+48	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	45	conj	_	start_char=3835|end_char=3836
+49	,	,	PUNCT	,	_	51	punct	_	start_char=3836|end_char=3837
+50	or	or	CCONJ	CC	_	51	cc	_	start_char=3838|end_char=3840
+51	both	both	DET	DT	_	45	conj	_	start_char=3841|end_char=3845
+52	must	must	AUX	MD	VerbForm=Fin	53	aux	_	start_char=3846|end_char=3850
+53	go	go	VERB	VB	VerbForm=Inf	38	ccomp	_	start_char=3851|end_char=3853
+54	with	with	ADP	IN	_	55	case	_	start_char=3854|end_char=3858
+55	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	53	obl	_	start_char=3859|end_char=3862
+56	!	!	PUNCT	.	_	53	punct	_	start_char=3862|end_char=

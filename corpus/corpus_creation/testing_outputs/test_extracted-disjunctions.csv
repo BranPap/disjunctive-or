@@ -1,0 +1,4 @@
+experiment_condition	has_either	conj_1_number	conj_1_person	conj_2_number	conj_2_person	nsubj	verb_form	verb_lemma	verb_number	main_predicate_lemma	sentence	filename
+PS	True	True	Plur	Not Pronoun	Sing	Not Pronoun	Either the students or John	are	be	Plur	room	Either the students or John are in the room.	test.conllu
+PS	True	True	Plur	Not Pronoun	Sing	Not Pronoun	Either the students or John	go	go	Plur	go	Either the students or John go to the store	test.conllu
+PS	False	False	Plur	Not Pronoun	Sing	Not Pronoun	the students or John	go	go	Plur	go	The students or John go to the store	test.conllu

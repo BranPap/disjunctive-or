@@ -1,0 +1,230 @@
+---
+title: "Disjunction Corpus Analyses"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+# Setup
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+theme_set(theme_bw(base_size = 18))
+```
+Data comes from conlltrain0000-all and conlltrain0001-all and conlltrain0002-xaa,xab and xac for a total of **384 million words.**
+
+- Estimated lifetime words is 1.4 billion.
+- Estimated words before college age is 350 million. 
+
+I extracted **only NPs with two conjuncts ** although sometimes the parser fails to recognize multi-CONJ structures as having3+ conjuncts.
+```{r, include = FALSE}
+
+
+df.data00 <- read_delim('../data/c4-train.00000-of-01024_parsed_xaa_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+
+df.data01_a <- read_delim('../data/c4-train.00001-of-01024_parsed_xaa_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+df.data01_b <- read_delim('../data/c4-train.00001-of-01024_parsed_xab_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+df.data01_c <- read_delim('../data/c4-train.00001-of-01024_parsed_xac_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+df.data01_d <- read_delim('../data/c4-train.00001-of-01024_parsed_xad_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+
+df.data02_a <- read_delim('../data/c4-train.00002-of-01024_parsed_xaa_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+df.data02_b <- read_delim('../data/c4-train.00002-of-01024_parsed_xab_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+
+df.data02_c <- read_delim('../data/c4-train.00002-of-01024_parsed_xac_extracted-disjunctions.tsv', 
+                      delim = '\t',
+                      quote = "")
+
+
+df.data <- rbind(df.data00, 
+                 df.data01_a, df.data01_b, df.data01_c, df.data01_d,
+                 df.data02_a, df.data02_b, df.data02_c)
+
+
+df.data$experiment_condition <- factor(df.data$experiment_condition, 
+                                       levels = c("PP", "PS", "SP","SS"))
+df.data$conj_1_number <- factor(df.data$conj_1_number)
+df.data$conj_2_number <- factor(df.data$conj_2_number)
+df.data$conj_1_person <- factor(df.data$conj_1_person)
+df.data$conj_2_person <- factor(df.data$conj_2_person)
+df.data$verb_number <- factor(df.data$verb_number)
+
+# 23534 examples
+df.data %>% nrow()
+
+# 23374 Unique examples
+df.data %>% unique() %>% nrow()
+
+#remove the 160 duplicates
+df.data <- df.data %>% unique()
+
+```
+
+## Copula-Only Examples
+
+```{r}
+#6128 Copular examples 
+df.cop_data <- df.data %>% 
+  filter(main_predicate_arc == 'cop')
+```
+
+Experimental condition is either
+
+-   PP (Plural disjointed with Plural),
+-   PS (Plural disjointed with Singular)
+-   SS (Singular disjointed with Singular)
+-   SP (Singular disjointed with Plural)
+-   UNK (the parser couldn't label one conjunct for number)
+
+All of the verb number + NP number tags are automatically provided by Stanza. 
+13% of examples are missing an experiment condition label- half of this is 
+instances of "you" 
+```{r}
+# ~ 70.26% are SS condition
+# ~ 11.81% are PP condition
+# ~ 9.77% are UNK condition
+df.cop_data %>% 
+  group_by(experiment_condition) %>% 
+  summarize(n = n(), 
+            percent = n/nrow(df.cop_data))
+
+# Sentences with UNK experimental condition:  
+# 25.87% (n = 155) have "you" as a conjunct (not marked for number in English)
+df.cop_data %>% 
+  filter(is.na(experiment_condition)) %>% 
+  mutate(you_subj = grepl("(Y|y)ou( |$)", nsubj)) %>%
+  filter(you_subj == TRUE) %>% 
+  nrow()
+```
+
+
+```{r}
+# 52 (<1%) examples don't have a verb tagged for number: 
+df.cop_data %>% 
+  group_by(verb_number) %>% 
+  summarize(n())
+
+# Examples of missing verb number
+# E.g. Gerunds, Infinitives (can fix the extraction script to explicitly exclude these)
+df.cop_data %>% 
+  filter(is.na(verb_number)) %>% 
+  select(sentence) %>% 
+  head()
+
+```
+# N in Experiment Condition 
+```{r}
+df.cop_data%>% 
+  mutate(experiment_condition = case_when(
+    is.na(experiment_condition)~ "NA", 
+         .default = experiment_condition)) %>% 
+  group_by(experiment_condition) %>% 
+  summarize(n = n()) %>% 
+  ggplot(aes(y = experiment_condition, 
+             x = n, 
+             label = n,
+             fill = experiment_condition)) + 
+  geom_col() + 
+  geom_text(nudge_x = 250)+
+  ggtitle("Subjects with Disjunction")+
+  ylab("Subject Type") + 
+  xlab("Count")
+
+ggsave("figs/copula-counts.png")
+```
+
+# 3rd Personal Pronouns are rare
+```{r}
+#Personal Pronouns are around 13 % of the dataset; mostly 3rd and 2nd person 
+df.cop_data %>% 
+  group_by(conj_1_person) %>% 
+  summarize(n())
+```
+
+## Examples with "Either"
+
+In the wild, "either X or Y" is basically only used between two Singular NPs, where the verb takes singular agreement.
+
+```{r}
+#Instances with either ("either John or the students...") are very uncommon: 
+# 38 total, less than 1 percent of examples
+df.cop_data %>%
+  group_by(has_either) %>% 
+  summarize(n = n())
+
+# Instances with neither are also very uncommon (4 total)
+df.cop_data %>%
+  group_by(has_neither) %>% 
+  summarize(n = n())
+
+# Disjunctions with either mostly used between two singular nouns
+# 29 out of the 38 are SS condition 
+df.cop_data %>%
+  group_by(has_either, experiment_condition) %>% 
+  summarize(n = n()) %>% 
+  pivot_wider(names_from = has_either, names_prefix = "either_", values_from = n)
+
+# NA conditions is 2 examples with "you", 
+# Plus one that is SS and one that is ungrammatical for me 
+df.cop_data %>%
+  filter(is.na(experiment_condition), 
+         has_either == TRUE) %>% 
+  view()
+
+# In the cases marked "either", 10.71% marked plural 
+df.cop_data %>%
+  filter(has_either == TRUE) %>% 
+  group_by(experiment_condition, verb_number) %>% 
+  summarize(n = n()) %>% 
+  pivot_wider(names_from = verb_number, names_prefix = "number_", values_from = n)
+
+```
+
+The difficulty is that, while extremely common, the SS case is almost always being used with singular verb number.  
+This leaves open the question of how participants use the SS case with plural verb marking, when that is comparatively rare in the data. 
+```{r}
+df.agr_cop <- df.cop_data %>% 
+  filter(!is.na(verb_number), 
+         !is.na(experiment_condition)) %>% 
+  mutate(pluralVerb = verb_number == 'Plur') %>%
+  group_by(experiment_condition) %>% 
+  summarize(proportionPlural = mean(pluralVerb), 
+            nPlural = sum(pluralVerb), 
+            nTotal = n())
+
+df.agr_cop %>% 
+  ggplot(aes(y = experiment_condition, 
+             x = proportionPlural, 
+             label = nPlural, 
+             fill = experiment_condition)) + 
+  geom_col() + 
+  geom_text(nudge_x = .05) + 
+  labs(title = "Rates of Plural Marking") + 
+  xlab("Proportion Verbs with Plural Marking")+ 
+  ylab("Subject Type")
+
+
+ggsave("figs/cop_plural_marking.png")
+```
+
+```{r}
+df.cop_data %>% 
+  filter(experiment_condition == "SS") %>% 
+  filter(verb_number == "Plur") %>% 
+  view()
+
+```
