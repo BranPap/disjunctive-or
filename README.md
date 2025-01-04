@@ -24,6 +24,10 @@ All experimental materials are located in the "Experiments" folder. Within this 
 
 This folder contains all analysis scripts used in this project. This folder will be sub-divided into analysis folders for each of the experiments, but currently contains all analysis scripts and data csvs.
 
+### Corpus
+
+This folder contains all the data-collection and analysis scripts for the corpus work. Corpus_creation contains the script for extracting disjunction examples, Data subdirectory contains the extracted examples, and analysis subdirectory contains the R scripts for analysis and plotting. 
+
 ### Output
 
 This folder contains all papers, publications, conference slides, etc. related to this project. This folder is currently empty.
