@@ -1,5 +1,5 @@
 # Disjunctive 'or'
-Project in collaboration with Alexia Hernandez, Sarang Jeong, and Jiayi Lu on agreement with disjunctive "or" in English. For example, some speakers produce sentences such as:
+Project in collaboration with Alexia Hernandez, Sarang Jeong, Emily Goodwin, Arto Anttila, and Jiayi Lu on agreement with disjunctive "or" in English. For example, some speakers produce sentences such as:
 > "Either the students or I **are** eating the meal" (possibly using default 'are' as an unmarked variant)
 
 Others produce agreements such as:
@@ -8,7 +8,7 @@ Others produce agreements such as:
 
 This project collects large-scale data from English-speaking participants in order to elucidate the distribution of possible grammars, employing an Optimality Theory based approach to derive the observed variation between grammars.
 
-This repo and file were last updated on May 16th, 2024.
+This repo and file were last updated on February 4th 2025.
 
 ## Navigating the Repository
 
@@ -22,12 +22,12 @@ All experimental materials are located in the "Experiments" folder. Within this 
 
 ### Analysis
 
-This folder contains all analysis scripts used in this project. This folder will be sub-divided into analysis folders for each of the experiments, but currently contains all analysis scripts and data csvs.
+This folder contains all analysis scripts used in this project. Within this folder are 3 folders: one for each of the experiments, and one that includes the CoGeTo analysis of our OT.
 
 ### Corpus
 
-This folder contains all the data-collection and analysis scripts for the corpus work. Corpus_creation contains the script for extracting disjunction examples, Data subdirectory contains the extracted examples, and analysis subdirectory contains the R scripts for analysis and plotting. 
+This folder contains all the data-collection and analysis scripts for the corpus work. Corpus_creation contains the script for extracting disjunction examples, Data subdirectory contains the extracted examples, and analysis subdirectory contains the R scripts for analysis and plotting.
 
 ### Output
 
-This folder contains all papers, publications, conference slides, etc. related to this project. This folder is currently empty.
+This folder contains all papers, publications, conference slides, etc. related to this project. Currently this folder contains our abstract and slides from our 2025 LSA talk.

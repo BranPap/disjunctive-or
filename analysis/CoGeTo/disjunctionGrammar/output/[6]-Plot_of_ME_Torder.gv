@@ -1,0 +1,161 @@
+digraph "/results/076d993f-3666-4d75-88ef-594b0130d17a/output/[6]-Plot_of_ME_Torder" {
+	graph [compound=true]
+	node [fontcolor=red rank=source shape=box]
+	"(3S or 1P, am),
+(3S or 3P, am),
+(3P or 1P, is),
+(1P or 3P, is),
+(1S or 1P, am),
+(3P or 3P, is),
+(3S or 1P, is),
+(3S or 3P, is),
+(1S or 3P, is),
+(1S or 3P, am),
+(3P or 1P, am),
+(3P or 3P, am),
+(1S or 1P, is),
+(1P or 3P, am)"
+	node [fontcolor=red rank=source shape=box]
+	"(3P or 1S, is),
+(1S or 3S, am),
+(3S or 1S, is),
+(3P or 3S, am),
+(1P or 3S, am),
+(1P or 1S, is)"
+	node [fontcolor=black shape=box]
+	"(3P or 1S, are (null)),
+(1P or 3S, are (null)),
+(3S or 1S, are (null)),
+(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(1P or 1S, are (null))"
+	node [fontcolor=black shape=box]
+	"(1S or 3S, is ),
+(3S or 1S, am ),
+(1P or 1S, am ),
+(1P or 3S, is ),
+(3P or 1S, am ),
+(3P or 3S, is )"
+	node [fontcolor=black shape=box]
+	"(1S or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(3S or 1P, are (null) ),
+(3S or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1P or 3P, are (null) )"
+	node [fontcolor=black shape=box]
+	"(3S or 3S, is )"
+	node [fontcolor=red rank=source shape=box]
+	"(3S or 3S, am)"
+	node [fontcolor=black shape=box]
+	"(3S or 3S, are (null))"
+	edge [dir=none]
+	"(3S or 1P, am),
+(3S or 3P, am),
+(3P or 1P, is),
+(1P or 3P, is),
+(1S or 1P, am),
+(3P or 3P, is),
+(3S or 1P, is),
+(3S or 3P, is),
+(1S or 3P, is),
+(1S or 3P, am),
+(3P or 1P, am),
+(3P or 3P, am),
+(1S or 1P, is),
+(1P or 3P, am)" -> "(1S or 3S, is ),
+(3S or 1S, am ),
+(1P or 1S, am ),
+(1P or 3S, is ),
+(3P or 1S, am ),
+(3P or 3S, is )"
+	"(3S or 1P, am),
+(3S or 3P, am),
+(3P or 1P, is),
+(1P or 3P, is),
+(1S or 1P, am),
+(3P or 3P, is),
+(3S or 1P, is),
+(3S or 3P, is),
+(1S or 3P, is),
+(1S or 3P, am),
+(3P or 1P, am),
+(3P or 3P, am),
+(1S or 1P, is),
+(1P or 3P, am)" -> "(1S or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(3S or 1P, are (null) ),
+(3S or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1P or 3P, are (null) )"
+	"(3P or 1S, is),
+(1S or 3S, am),
+(3S or 1S, is),
+(3P or 3S, am),
+(1P or 3S, am),
+(1P or 1S, is)" -> "(3S or 1P, am),
+(3S or 3P, am),
+(3P or 1P, is),
+(1P or 3P, is),
+(1S or 1P, am),
+(3P or 3P, is),
+(3S or 1P, is),
+(3S or 3P, is),
+(1S or 3P, is),
+(1S or 3P, am),
+(3P or 1P, am),
+(3P or 3P, am),
+(1S or 1P, is),
+(1P or 3P, am)"
+	"(3P or 1S, is),
+(1S or 3S, am),
+(3S or 1S, is),
+(3P or 3S, am),
+(1P or 3S, am),
+(1P or 1S, is)" -> "(3P or 1S, are (null)),
+(1P or 3S, are (null)),
+(3S or 1S, are (null)),
+(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(1P or 1S, are (null))"
+	"(3P or 1S, are (null)),
+(1P or 3S, are (null)),
+(3S or 1S, are (null)),
+(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(1P or 1S, are (null))" -> "(1S or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(3S or 1P, are (null) ),
+(3S or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1P or 3P, are (null) )"
+	"(1S or 3S, is ),
+(3S or 1S, am ),
+(1P or 1S, am ),
+(1P or 3S, is ),
+(3P or 1S, am ),
+(3P or 3S, is )" -> "(3S or 3S, is )"
+	"(3S or 3S, am)" -> "(3P or 1S, is),
+(1S or 3S, am),
+(3S or 1S, is),
+(3P or 3S, am),
+(1P or 3S, am),
+(1P or 1S, is)"
+	"(3S or 3S, am)" -> "(3S or 3S, are (null))"
+	"(3S or 3S, are (null))" -> "(3P or 1S, are (null)),
+(1P or 3S, are (null)),
+(3S or 1S, are (null)),
+(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(1P or 1S, are (null))"
+	edge [dir=none style=dashed]
+label = "LEGEND: All mappings are considered (both HG feasible and unfeasible);
+red mappings are HG unfeasible;
+solid boxes are ME cycles;
+lines represent arrows from top to bottom;
+solid arrows are ME entailments;
+lines entailed by transitivity are omitted."
+}

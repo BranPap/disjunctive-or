@@ -1,0 +1,70 @@
+digraph "/results/076d993f-3666-4d75-88ef-594b0130d17a/output/[7]-Plot_of_OT_versus_HG_Torders" {
+	graph [compound=true]
+	node [fontcolor=black shape=box]
+	"(3S or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(1P or 3P, are (null) ),
+(3S or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(1S or 3P, are (null) )"
+	node [fontcolor=black shape=box]
+	"(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(3P or 1S, are (null)),
+(3S or 1S, are (null)),
+(1P or 3S, are (null)),
+(1P or 1S, are (null))"
+	node [fontcolor=black shape=box]
+	"(3S or 1S, am ),
+(1S or 3S, is ),
+(3P or 1S, am ),
+(1P or 1S, am ),
+(1P or 3S, is ),
+(3P or 3S, is )"
+	node [fontcolor=black shape=box]
+	"(3S or 3S, is )"
+	node [fontcolor=black shape=box]
+	"(3S or 3S, are (null))"
+	edge [dir=none]
+	"(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(3P or 1S, are (null)),
+(3S or 1S, are (null)),
+(1P or 3S, are (null)),
+(1P or 1S, are (null))" -> "(3S or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(1P or 3P, are (null) ),
+(3S or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(1S or 3P, are (null) )"
+	"(3S or 1S, am ),
+(1S or 3S, is ),
+(3P or 1S, am ),
+(1P or 1S, am ),
+(1P or 3S, is ),
+(3P or 3S, is )" -> "(3S or 3S, is )"
+	"(3S or 3S, is )" -> "(3S or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(1P or 3P, are (null) ),
+(3S or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(1S or 3P, are (null) )"
+	"(3S or 3S, are (null))" -> "(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(3P or 1S, are (null)),
+(3S or 1S, are (null)),
+(1P or 3S, are (null)),
+(1P or 1S, are (null))"
+	edge [dir=none style=dashed]
+label = "LEGEND: Only HG feasible mappings are considered;
+red mappings are HG feasible but OT unfeasible;
+solid boxes are HG (and therefore also OT) cycles;
+dotted boxes are OT cycles which fail in HG;
+lines represent arrows from top to bottom;
+solid lines are HG (and therefore also OT) entailments;
+solid lines entailed by transitivity are omitted;
+dotted arrows are HG entailments which fail in OT."
+}

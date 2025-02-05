@@ -1,0 +1,81 @@
+digraph "/results/076d993f-3666-4d75-88ef-594b0130d17a/output/[8]-Plot_of_HG_versus_ME_Torders_only_HG_feasible_mappings" {
+	graph [compound=true]
+	node [fontcolor=black shape=box]
+	"(3S or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(1P or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(1S or 3P, are (null) ),
+(3S or 3P, are (null) )"
+	node [fontcolor=black shape=box]
+	"(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(3P or 1S, are (null)),
+(3S or 1S, are (null)),
+(1P or 3S, are (null)),
+(1P or 1S, are (null))"
+	node [fontcolor=black shape=box]
+	"(3S or 1S, am ),
+(3P or 1S, am ),
+(1P or 1S, am ),
+(3P or 3S, is ),
+(1P or 3S, is ),
+(1S or 3S, is )"
+	node [fontcolor=black shape=box]
+	"(3S or 3S, is )"
+	node [fontcolor=black shape=box]
+	"(3S or 3S, are (null))"
+	edge [dir=none]
+	"(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(3P or 1S, are (null)),
+(3S or 1S, are (null)),
+(1P or 3S, are (null)),
+(1P or 1S, are (null))" -> "(3S or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(1P or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(1S or 3P, are (null) ),
+(3S or 3P, are (null) )"
+	"(3S or 1S, am ),
+(3P or 1S, am ),
+(1P or 1S, am ),
+(3P or 3S, is ),
+(1P or 3S, is ),
+(1S or 3S, is )" -> "(3S or 3S, is )"
+	"(3S or 3S, are (null))" -> "(3P or 3S, are (null)),
+(1S or 3S, are (null)),
+(3P or 1S, are (null)),
+(3S or 1S, are (null)),
+(1P or 3S, are (null)),
+(1P or 1S, are (null))"
+	edge [dir=none style=dashed]
+	"(3S or 1S, am ),
+(3P or 1S, am ),
+(1P or 1S, am ),
+(3P or 3S, is ),
+(1P or 3S, is ),
+(1S or 3S, is )" -> "(3S or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(1P or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(1S or 3P, are (null) ),
+(3S or 3P, are (null) )"
+	"(3S or 3S, is )" -> "(3S or 1P, are (null) ),
+(3P or 3P, are (null) ),
+(1S or 1P, are (null) ),
+(1P or 3P, are (null) ),
+(3P or 1P, are (null) ),
+(1S or 3P, are (null) ),
+(3S or 3P, are (null) )"
+label = "LEGEND: Only HG feasible mappings are considered;
+solid boxes are ME (and therefore also HG) cycles;
+dotted boxes are HG cycles which fail in ME;
+lines represent arrows from top to bottom;
+solid lines are ME (and therefore also HG) entailments;
+solid lines entailed by transitivity are omitted;
+dotted lines are HG entailments which fail in ME."
+}
